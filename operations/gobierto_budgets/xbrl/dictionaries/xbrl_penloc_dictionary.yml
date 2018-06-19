@@ -1,0 +1,5708 @@
+---
+metadata:
+  year: 2016
+dictionary:
+  IdsEconomicaIngresos_DeudaPublica:
+    kind: E
+    area: functional
+    name: Deuda Pública
+    code: '0'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_DeudaPublica_DeudaPublica:
+    kind: E
+    area: functional
+    name: Deuda Pública
+    code: '01'
+    parent_code:
+    level: 2
+  IdsEconomicaIngresos_DeudaPublica_DeudaPublica_DeudaPublica:
+    kind: E
+    area: functional
+    name: Deuda Pública
+    code: '011'
+    parent_code:
+    level: 3
+  IdsEconomicaIngresos_ServiciosPublicosBasicos:
+    kind: E
+    area: functional
+    name: Servicios públicos básicos
+    code: '1'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_SeguridadYMovilidadCiudadana:
+    kind: E
+    area: functional
+    name: Seguridad y movilidad ciudadana
+    code: '13'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_AdministracionGeneralDeLaSeguridadYProteccionCivil:
+    kind: E
+    area: functional
+    name: Administración General de la Seguridad y Protección Civil
+    code: '130'
+    parent_code: '13'
+    level: 3
+  IdsEconomicaIngresos_SeguridadYOrdenPublico:
+    kind: E
+    area: functional
+    name: Seguridad y Orden Público
+    code: '132'
+    parent_code: '13'
+    level: 3
+  IdsEconomicaIngresos_OrdenacionDelTraficoYDelEstacionamiento:
+    kind: E
+    area: functional
+    name: Ordenación del tráfico y del estacionamiento
+    code: '133'
+    parent_code: '13'
+    level: 3
+  IdsEconomicaIngresos_MovilidadUrbana:
+    kind: E
+    area: functional
+    name: Movilidad urbana
+    code: '134'
+    parent_code: '13'
+    level: 3
+  IdsEconomicaIngresos_ProteccionCivil:
+    kind: E
+    area: functional
+    name: Protección civil
+    code: '135'
+    parent_code: '13'
+    level: 3
+  IdsEconomicaIngresos_ServicioDePrevencionYExtincionDeIncendios:
+    kind: E
+    area: functional
+    name: Servicio de prevención y extinción de incendios
+    code: '136'
+    parent_code: '13'
+    level: 3
+  IdsEconomicaIngresos_ViviendaYUrbanismo:
+    kind: E
+    area: functional
+    name: Vivienda y urbanismo
+    code: '15'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_AdministracionGeneralDeViviendaYUrbanismo:
+    kind: E
+    area: functional
+    name: Administración General de Vivienda y urbanismo
+    code: '150'
+    parent_code: '15'
+    level: 3
+  IdsEconomicaIngresos_UrbanismoPlaneamientoGestionEjecucionYDisciplinaUrbanistica:
+    kind: E
+    area: functional
+    name: Urbanismo:planeamiento,gestión,ejecución y disciplina urbanística
+    code: '151'
+    parent_code: '15'
+    level: 3
+  IdsEconomicaIngresos_Vivienda:
+    kind: E
+    area: functional
+    name: Vivienda
+    code: '152'
+    parent_code: '15'
+    level: 3
+  IdsEconomicaIngresos_PromocionYGestionDeViviendaDeProteccionPublica:
+    kind: E
+    area: functional
+    name: Promoción y gestión de vivienda de protección pública
+    code: '1521'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_ConservacionYRehabilitacionDeLaEdificacion:
+    kind: E
+    area: functional
+    name: Conservación y rehabilitación de la edificación
+    code: '1522'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_ViasPublicas:
+    kind: E
+    area: functional
+    name: Vías públicas
+    code: '155'
+    parent_code: '15'
+    level: 3
+  IdsEconomicaIngresos_AccesoALosNucleosDePoblacion:
+    kind: E
+    area: functional
+    name: Acceso a los núcleos de población
+    code: '1531'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_PavimentacionDeViasPublicas:
+    kind: E
+    area: functional
+    name: Pavimentación de vías públicas
+    code: '1532'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_BienestarComunitario:
+    kind: E
+    area: functional
+    name: Bienestar comunitario
+    code: '16'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_Alcantarillado:
+    kind: E
+    area: functional
+    name: Alcantarillado
+    code: '160'
+    parent_code: '16'
+    level: 3
+  IdsEconomicaIngresos_AbastecimientoDomiciliarioDeAguaPotable:
+    kind: E
+    area: functional
+    name: Abastecimiento domiciliario de agua potable
+    code: '161'
+    parent_code: '16'
+    level: 3
+  IdsEconomicaIngresos_RecogidaGestionYTratamientoDeResiduos:
+    kind: E
+    area: functional
+    name: Recogida, gestión y tratamiento de residuos
+    code: '162'
+    parent_code: '16'
+    level: 3
+  IdsEconomicaIngresos_RecogidaDeResiduos:
+    kind: E
+    area: functional
+    name: Recogida de residuos
+    code: '1621'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_GestionDeResiduosSolidosUrbanos:
+    kind: E
+    area: functional
+    name: Gestión de residuos sólidos urbanos
+    code: '1622'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_TratamientoDeResiduos:
+    kind: E
+    area: functional
+    name: Tratamiento de residuos
+    code: '1623'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_LimpiezaViaria:
+    kind: E
+    area: functional
+    name: Limpieza viaria
+    code: '163'
+    parent_code: '16'
+    level: 3
+  IdsEconomicaIngresos_CementerioYServiciosFunerarios: NOT-FOUND
+  IdsEconomicaIngresos_AlumbradoPublico:
+    kind: E
+    area: functional
+    name: Alumbrado público
+    code: '165'
+    parent_code: '16'
+    level: 3
+  IdsEconomicaIngresos_MedioAmbiente:
+    kind: E
+    area: functional
+    name: Medio ambiente
+    code: '17'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_AdministracionGeneralDelMedioAmbiente:
+    kind: E
+    area: functional
+    name: Administración general del medio ambiente
+    code: '170'
+    parent_code: '17'
+    level: 3
+  IdsEconomicaIngresos_ParquesYJardines:
+    kind: E
+    area: functional
+    name: Parques y jardines
+    code: '171'
+    parent_code: '17'
+    level: 3
+  IdsEconomicaIngresos_ProteccionYMejoraDelMedioAmbiente:
+    kind: E
+    area: functional
+    name: Protección y mejora del medio ambiente
+    code: '172'
+    parent_code: '17'
+    level: 3
+  IdsEconomicaIngresos_ProteccionContraLaContaminacionAcusticaLuminicaYAtmosfericaEnLasZonasUrbanas:
+    kind: E
+    area: functional
+    name: Protección contra la contaminación acústica, lumínica y atmosférica en las
+      zonas urbanas
+    code: '1721'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_ActuacionesDeProteccionYPromocionSocial:
+    kind: E
+    area: functional
+    name: Actuaciones de protección y promoción social
+    code: '2'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_Pensiones:
+    kind: E
+    area: functional
+    name: Pensiones
+    code: '21'
+    parent_code: '2'
+    level: 2
+  IdsEconomicaIngresos_Pensiones_Pensiones:
+    kind: E
+    area: functional
+    name: Pensiones
+    code: '211'
+    parent_code: '21'
+    level: 3
+  IdsEconomicaIngresos_OtrasPrestacionesEconomicasAFavorDeEmpleados:
+    kind: E
+    area: functional
+    name: Otras prestaciones económicas a favor de empleados
+    code: '22'
+    parent_code: '2'
+    level: 2
+  IdsEconomicaIngresos_OtrasPrestacionesEconomicasAFavorDeEmpleados_OtrasPrestacionesEconomicasAFavorDeEmpleados:
+    kind: E
+    area: functional
+    name: Otras prestaciones económicas a favor de empleados
+    code: '221'
+    parent_code: '22'
+    level: 3
+  IdsEconomicaIngresos_ServiciosSocialesYPromocionSocial:
+    kind: E
+    area: functional
+    name: Servicios Sociales y promoción social
+    code: '23'
+    parent_code: '2'
+    level: 2
+  IdsEconomicaIngresos_AsistenciaSocialPrimaria:
+    kind: E
+    area: functional
+    name: Asistencia social primaria
+    code: '231'
+    parent_code: '23'
+    level: 3
+  IdsEconomicaIngresos_FomentoDelEmpleo:
+    kind: E
+    area: functional
+    name: Fomento del Empleo
+    code: '24'
+    parent_code: '2'
+    level: 2
+  IdsEconomicaIngresos_FomentoDelEmpleo_FomentoDelEmpleo:
+    kind: E
+    area: functional
+    name: Fomento del Empleo
+    code: '241'
+    parent_code: '24'
+    level: 3
+  IdsEconomicaIngresos_ProduccionDeBienesPublicosDeCaracterPreferente:
+    kind: E
+    area: functional
+    name: Producción de bienes públicos de carácter preferente
+    code: '3'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_Sanidad:
+    kind: E
+    area: functional
+    name: Sanidad
+    code: '31'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_ProteccionDeLaSalubridadPublica:
+    kind: E
+    area: functional
+    name: Protección de la salubridad pública
+    code: '311'
+    parent_code: '31'
+    level: 3
+  IdsEconomicaIngresos_HospitalesServiciosAsistencialesYCentrosDeSalud:
+    kind: E
+    area: functional
+    name: Hospitales, servicios asistenciales y centros de salud
+    code: '312'
+    parent_code: '31'
+    level: 3
+  IdsEconomicaIngresos_Educacion:
+    kind: E
+    area: functional
+    name: Educación
+    code: '32'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_AdministracionGeneralDeEducacion:
+    kind: E
+    area: functional
+    name: Administración general de educación
+    code: '320'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_CreacionDeCentrosDocentesDeEnsenanzaPreescolarYPrimaria:
+    kind: E
+    area: functional
+    name: Creación de Centros docentes de enseñanza preescolar y primaria
+    code: '321'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_CreacionDeCentrosDocentesDeEnsenanzaSecundaria:
+    kind: E
+    area: functional
+    name: Creación de Centros docentes de enseñanza secundaria
+    code: '322'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_FuncionamientoDeCentrosDocentesDeEnsenanzaPreescolarYPrimariaYEducacionEspecial:
+    kind: E
+    area: functional
+    name: Funcionamiento de Centros docentes de enseñanza preescolar y primaria y
+      educación especial
+    code: '323'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_FuncionamientoDeCentrosDocentesDeEnsenanzaSecundaria:
+    kind: E
+    area: functional
+    name: Funcionamiento de Centros docentes de enseñanza secundaria
+    code: '324'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_VigilanciaDelCumplimientoDeLaEscolaridadObligatoria:
+    kind: E
+    area: functional
+    name: Vigilancia del cumplimiento de la escolaridad obligatoria
+    code: '325'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_ServiciosComplementariosDeEducacion:
+    kind: E
+    area: functional
+    name: Servicios complementarios de educación
+    code: '326'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_FomentoDeLaConvivenciaCiudadana:
+    kind: E
+    area: functional
+    name: Fomento de la convivencia ciudadana
+    code: '327'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_Cultura:
+    kind: E
+    area: functional
+    name: Cultura
+    code: '33'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_AdministracionGeneralDeCultura:
+    kind: E
+    area: functional
+    name: Administración General de Cultura
+    code: '330'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_BibliotecasYArchivos:
+    kind: E
+    area: functional
+    name: Bibliotecas y Archivos
+    code: '332'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_BibliotecasPublicas:
+    kind: E
+    area: functional
+    name: Bibliotecas Públicas
+    code: '3321'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_Archivos:
+    kind: E
+    area: functional
+    name: Archivos
+    code: '3322'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_EquipamientosCulturalesYMuseos:
+    kind: E
+    area: functional
+    name: Equipamientos culturales y museos
+    code: '333'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_PromocionCultural:
+    kind: E
+    area: functional
+    name: Promoción cultural
+    code: '334'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_ProteccionYGestionDelPatrimonioHistorico-artistico: NOT-FOUND
+  IdsEconomicaIngresos_InstalacionesDeOcupacionDelTiempoLibre:
+    kind: E
+    area: functional
+    name: Instalaciones de ocupación del tiempo libre
+    code: '337'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_FiestasPopularesYFestejos:
+    kind: E
+    area: functional
+    name: Fiestas populares y festejos
+    code: '338'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_Deporte:
+    kind: E
+    area: functional
+    name: Deporte
+    code: '34'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_AdministracionGeneralDeDeportes:
+    kind: E
+    area: functional
+    name: Administración General de Deportes
+    code: '340'
+    parent_code: '34'
+    level: 3
+  IdsEconomicaIngresos_PromocionYFomentoDelDeporte:
+    kind: E
+    area: functional
+    name: Promoción y fomento del deporte
+    code: '341'
+    parent_code: '34'
+    level: 3
+  IdsEconomicaIngresos_InstalacionesDeportivas:
+    kind: E
+    area: functional
+    name: Instalaciones deportivas
+    code: '342'
+    parent_code: '34'
+    level: 3
+  IdsEconomicaIngresos_ActuacionesDeCaracterEconomico:
+    kind: E
+    area: functional
+    name: Actuaciones de carácter económico
+    code: '4'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_AgriculturaGanaderiaYPesca:
+    kind: E
+    area: functional
+    name: Agricultura, Ganadería y Pesca
+    code: '41'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_AdministracionGeneralDeAgriculturaGanaderiaYPesca:
+    kind: E
+    area: functional
+    name: Administración General de Agricultura, Ganadería y Pesca
+    code: '410'
+    parent_code: '41'
+    level: 3
+  IdsEconomicaIngresos_MejoraDeLasEstructurasAgropecuariasYDeLosSistemasProductivos:
+    kind: E
+    area: functional
+    name: Mejora de las estructuras agropecuarias y de los sistemas productivos
+    code: '412'
+    parent_code: '41'
+    level: 3
+  IdsEconomicaIngresos_DesarrolloRural:
+    kind: E
+    area: functional
+    name: Desarrollo rural
+    code: '414'
+    parent_code: '41'
+    level: 3
+  IdsEconomicaIngresos_ProteccionYDesarrolloDeLosRecursosPesqueros:
+    kind: E
+    area: functional
+    name: Protección y desarrollo de los recursos pesqueros
+    code: '415'
+    parent_code: '41'
+    level: 3
+  IdsEconomicaIngresos_OtrasActuacionesEnAgriculturaGanaderiaYPesca:
+    kind: E
+    area: functional
+    name: Otras actuaciones en agricultura, ganadería y pesca
+    code: '419'
+    parent_code: '41'
+    level: 3
+  IdsEconomicaIngresos_IndustriaYEnergia:
+    kind: E
+    area: functional
+    name: Industria y energía
+    code: '42'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_AdministracionGeneralDeIndustriaYEnergia:
+    kind: E
+    area: functional
+    name: Administración General de Industria y energía
+    code: '420'
+    parent_code: '42'
+    level: 3
+  IdsEconomicaIngresos_Industria:
+    kind: E
+    area: functional
+    name: Industria
+    code: '422'
+    parent_code: '42'
+    level: 3
+  IdsEconomicaIngresos_Mineria:
+    kind: E
+    area: functional
+    name: Minería
+    code: '423'
+    parent_code: '42'
+    level: 3
+  IdsEconomicaIngresos_Energia:
+    kind: E
+    area: functional
+    name: Energía
+    code: '425'
+    parent_code: '42'
+    level: 3
+  IdsEconomicaIngresos_ComercioTurismoYPequenasYMedianasEmpresas:
+    kind: E
+    area: functional
+    name: Comercio, turismo y pequeñas y medianas empresas
+    code: '43'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_AdministracionGeneralDeComercioTurismoYPequenasYMedianasEmpresas:
+    kind: E
+    area: functional
+    name: Administración General de Comercio, turismo y pequeñas y medianas empresas
+    code: '430'
+    parent_code: '43'
+    level: 3
+  IdsEconomicaIngresos_Comercio:
+    kind: E
+    area: functional
+    name: Comercio
+    code: '431'
+    parent_code: '43'
+    level: 3
+  IdsEconomicaIngresos_Ferias:
+    kind: E
+    area: functional
+    name: Ferias
+    code: '4311'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_MercadosAbastosYLonjas:
+    kind: E
+    area: functional
+    name: Mercados, Abastos y Lonjas
+    code: '4312'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_ComercioAmbulante:
+    kind: E
+    area: functional
+    name: Comercio Ambulante
+    code: '4313'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_InformacionYPromocionTuristica:
+    kind: E
+    area: functional
+    name: Información y promoción turística
+    code: '432'
+    parent_code: '43'
+    level: 3
+  IdsEconomicaIngresos_DesarrolloEmpresarial:
+    kind: E
+    area: functional
+    name: Desarrollo empresarial
+    code: '433'
+    parent_code: '43'
+    level: 3
+  IdsEconomicaIngresos_OtrasActuacionesSectoriales:
+    kind: E
+    area: functional
+    name: Otras actuaciones sectoriales
+    code: '439'
+    parent_code: '43'
+    level: 3
+  IdsEconomicaIngresos_TransportePublico:
+    kind: E
+    area: functional
+    name: Transporte público
+    code: '44'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_AdministracionGeneralDelTransporte:
+    kind: E
+    area: functional
+    name: Administración general del transporte
+    code: '440'
+    parent_code: '44'
+    level: 3
+  IdsEconomicaIngresos_TransporteDeViajeros:
+    kind: E
+    area: functional
+    name: Transporte de viajeros
+    code: '441'
+    parent_code: '44'
+    level: 3
+  IdsEconomicaIngresos_TransporteColectivoUrbanoDeViajeros:
+    kind: E
+    area: functional
+    name: Transporte colectivo urbano de viajeros
+    code: '4411'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_OtroTransporteDeViajeros:
+    kind: E
+    area: functional
+    name: Otro transporte de viajeros
+    code: '4412'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_InfraestructurasDelTransporte:
+    kind: E
+    area: functional
+    name: Infraestructuras del transporte
+    code: '442'
+    parent_code: '44'
+    level: 3
+  IdsEconomicaIngresos_TransporteDeMercancias:
+    kind: E
+    area: functional
+    name: Transporte de mercancías
+    code: '443'
+    parent_code: '44'
+    level: 3
+  IdsEconomicaIngresos_Infraestructuras:
+    kind: E
+    area: functional
+    name: Infraestructuras
+    code: '45'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_AdministracionGeneralDeInfraestructuras:
+    kind: E
+    area: functional
+    name: Administración General de Infraestructuras
+    code: '450'
+    parent_code: '45'
+    level: 3
+  IdsEconomicaIngresos_RecursosHidraulicos:
+    kind: E
+    area: functional
+    name: Recursos Hidráulicos
+    code: '452'
+    parent_code: '45'
+    level: 3
+  IdsEconomicaIngresos_Carreteras:
+    kind: E
+    area: functional
+    name: Carreteras
+    code: '453'
+    parent_code: '45'
+    level: 3
+  IdsEconomicaIngresos_CaminosVecinales:
+    kind: E
+    area: functional
+    name: Caminos vecinales
+    code: '454'
+    parent_code: '45'
+    level: 3
+  IdsEconomicaIngresos_OtrasInfraestructuras:
+    kind: E
+    area: functional
+    name: Otras infraestructuras
+    code: '459'
+    parent_code: '45'
+    level: 3
+  IdsEconomicaIngresos_InvestigacionDesarrolloEInnovacion:
+    kind: E
+    area: functional
+    name: Investigación, desarrollo e innovación
+    code: '46'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_InvestigacionYEstudiosRelacionadosConLosServiciosPublicos:
+    kind: E
+    area: functional
+    name: Investigación y estudios relacionados con los servicios públicos
+    code: '462'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_InvestigacionCientificaTecnicaYAplicada:
+    kind: E
+    area: functional
+    name: Investigación científica, técnica y aplicada
+    code: '463'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_OtrasActuacionesDeCaracterEconomico:
+    kind: E
+    area: functional
+    name: Otras actuaciones de carácter económico
+    code: '49'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_SociedadDeLaInformacion:
+    kind: E
+    area: functional
+    name: Sociedad de la información
+    code: '491'
+    parent_code: '49'
+    level: 3
+  IdsEconomicaIngresos_GestionDelConocimiento:
+    kind: E
+    area: functional
+    name: Gestión del conocimiento
+    code: '492'
+    parent_code: '49'
+    level: 3
+  IdsEconomicaIngresos_ProteccionDeConsumidoresYUsuarios:
+    kind: E
+    area: functional
+    name: Protección de consumidores y usuarios
+    code: '493'
+    parent_code: '49'
+    level: 3
+  IdsEconomicaIngresos_ActuacionesDeCaracterGeneral:
+    kind: E
+    area: functional
+    name: Actuaciones de carácter general
+    code: '9'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_OrganosDeGobierno:
+    kind: E
+    area: functional
+    name: Órganos de gobierno
+    code: '91'
+    parent_code: '9'
+    level: 2
+  IdsEconomicaIngresos_OrganosDeGobierno_OrganosDeGobierno:
+    kind: E
+    area: functional
+    name: Órganos de gobierno
+    code: '912'
+    parent_code: '91'
+    level: 3
+  IdsEconomicaIngresos_ServiciosDeCaracterGeneral:
+    kind: E
+    area: functional
+    name: Servicios de carácter general
+    code: '92'
+    parent_code: '9'
+    level: 2
+  IdsEconomicaIngresos_AdministracionGeneral:
+    kind: E
+    area: functional
+    name: Administración General
+    code: '920'
+    parent_code: '92'
+    level: 3
+  IdsEconomicaIngresos_CoordinacionYOrganizacionInstitucionalDeLasEntidadesLocales:
+    kind: E
+    area: functional
+    name: Coordinación y organización institucional de las entidades locales
+    code: '922'
+    parent_code: '92'
+    level: 3
+  IdsEconomicaIngresos_InformacionBasicaYEstadistica:
+    kind: E
+    area: functional
+    name: Información básica y estadística
+    code: '923'
+    parent_code: '92'
+    level: 3
+  IdsEconomicaIngresos_GestionDelPadronMunicipalDeHabitantes:
+    kind: E
+    area: functional
+    name: Gestión del Padrón Municipal de Habitantes
+    code: '9231'
+    parent_code: 
+    level: 1
+  IdsEconomicaIngresos_ParticipacionCiudadana:
+    kind: E
+    area: functional
+    name: Participación ciudadana
+    code: '924'
+    parent_code: '92'
+    level: 3
+  IdsEconomicaIngresos_AtencionALosCiudadanos:
+    kind: E
+    area: functional
+    name: Atención a los ciudadanos
+    code: '925'
+    parent_code: '92'
+    level: 3
+  IdsEconomicaIngresos_ComunicacionesInternas:
+    kind: E
+    area: functional
+    name: Comunicaciones internas
+    code: '926'
+    parent_code: '92'
+    level: 3
+  IdsEconomicaIngresos_ImprevistosSituacionesTransitoriasYContingenciasDeEjecucion:
+    kind: E
+    area: functional
+    name: Imprevistos, situaciones transitorias y contingencias de ejecución
+    code: '929'
+    parent_code: '92'
+    level: 3
+  IdsEconomicaIngresos_AdministracionFinancieraYTributaria:
+    kind: E
+    area: functional
+    name: Administración financiera y tributaria
+    code: '93'
+    parent_code: '9'
+    level: 2
+  IdsEconomicaIngresos_PoliticaEconomicaYFiscal:
+    kind: E
+    area: functional
+    name: Política económica y fiscal
+    code: '931'
+    parent_code: '93'
+    level: 3
+  IdsEconomicaIngresos_GestionDelSistemaTributario:
+    kind: E
+    area: functional
+    name: Gestión del sistema tributario
+    code: '932'
+    parent_code: '93'
+    level: 3
+  IdsEconomicaIngresos_GestionDelPatrimonio:
+    kind: E
+    area: functional
+    name: Gestión del patrimonio
+    code: '933'
+    parent_code: '93'
+    level: 3
+  IdsEconomicaIngresos_GestionDeLaDeudaYDeLaTesoreria:
+    kind: E
+    area: functional
+    name: Gestión de la deuda y de la tesorería
+    code: '934'
+    parent_code: '93'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasAOtrasAdministracionesPublicas:
+    kind: E
+    area: functional
+    name: Transferencias a otras Administraciones Públicas
+    code: '94'
+    parent_code: '9'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasAComunidadesAutonomas:
+    kind: E
+    area: functional
+    name: Transferencias a Comunidades Autónomas
+    code: '941'
+    parent_code: '94'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasAEntidadesLocalesTerritoriales:
+    kind: E
+    area: functional
+    name: Transferencias a Entidades Locales territoriales
+    code: '942'
+    parent_code: '94'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasAOtrasEntidadesLocales:
+    kind: E
+    area: functional
+    name: Transferencias a otras Entidades Locales
+    code: '943'
+    parent_code: '94'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasALaAdministracionGeneralDelEstado:
+    kind: E
+    area: functional
+    name: Transferencias a la Administración General del Estado
+    code: '944'
+    parent_code: '94'
+    level: 3
+  IdsEconomicaIngresos_ImpuestosDirectos:
+    kind: I
+    area: economic
+    name: Impuestos directos
+    code: '1'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_ImpuestoSobreLaRenta:
+    kind: I
+    area: economic
+    name: Impuesto sobre la Renta
+    code: '10'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_ImpuestosSobreLaRentaDeLasPersonasFisicas:
+    kind: I
+    area: economic
+    name: Impuestos sobre la Renta de las Personas Físicas
+    code: '100'
+    parent_code: '10'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobreSociedades:
+    kind: I
+    area: economic
+    name: Impuesto sobre Sociedades
+    code: '101'
+    parent_code: '10'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobreLaRentaDeNoResidentes:
+    kind: I
+    area: economic
+    name: Impuesto sobre la Renta de No Residentes
+    code: '102'
+    parent_code: '10'
+    level: 3
+  IdsEconomicaIngresos_ImpuestosSobreElCapital:
+    kind: I
+    area: economic
+    name: Impuestos sobre el capital
+    code: '11'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_ImpuestoSobreSucesionesYDonaciones:
+    kind: I
+    area: economic
+    name: Impuesto sobre Sucesiones y Donaciones
+    code: '110'
+    parent_code: '11'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobrePatrimonio:
+    kind: I
+    area: economic
+    name: Impuesto sobre Patrimonio
+    code: '111'
+    parent_code: '11'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobreBienesInmueblesBienesInmublesDeNaturalezaRustica:
+    kind: I
+    area: economic
+    name: Impuesto sobre Bienes Inmuebles Bienes Inmubles de Naturaleza Rústica
+    code: '112'
+    parent_code: '11'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobreBienesInmueblesBienesInmueblesDeNaturalezaUrbana:
+    kind: I
+    area: economic
+    name: Impuesto sobre Bienes Inmuebles Bienes inmuebles de Naturaleza Urbana
+    code: '113'
+    parent_code: '11'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobreBienesInmueblesBienesInmueblesDeCaracteristicasEspeciales:
+    kind: I
+    area: economic
+    name: Impuesto sobre Bienes Inmuebles Bienes Inmuebles de características especiales
+    code: '114'
+    parent_code: '11'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobreVehiculosDeTraccionMecanica:
+    kind: I
+    area: economic
+    name: Impuesto sobre Vehículos de Tracción Mecánica
+    code: '115'
+    parent_code: '11'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobreIncrementoDelValorDeLosTerrenosDeNaturalezaUrbana:
+    kind: I
+    area: economic
+    name: Impuesto sobre Incremento del Valor de los Terrenos de Naturaleza Urbana
+    code: '116'
+    parent_code: '11'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobreViviendasDesocupadas:
+    kind: I
+    area: economic
+    name: Impuesto sobre viviendas desocupadas
+    code: '117'
+    parent_code: '11'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobreLasActividadesEconomicas:
+    kind: I
+    area: economic
+    name: Impuesto sobre las Actividades Económicas
+    code: '13'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_ImpuestoSobreActividadesEconomicas:
+    kind: I
+    area: economic
+    name: Impuesto sobre Actividades Económicas
+    code: '130'
+    parent_code: '13'
+    level: 3
+  IdsEconomicaIngresos_RecargosSobreImpuestosDirectosDelEstadoYDeLaComunidadAutonoma:
+    kind: I
+    area: economic
+    name: Recargos sobre impuestos directos del Estado y de la Comunidad Autónoma
+    code: '16'
+    parent_code: '1'
+    level: 2
+  ? IdsEconomicaIngresos_ImpuestosDirectos_RecargosSobreImpuestosDirectosDelEstadoYDeLaComunidadAutonoma_SobreImpuestosDelEstado
+  : kind: I
+    area: economic
+    name: Sobre impuestos del Estado
+    code: '160'
+    parent_code: '16'
+    level: 3
+  ? IdsEconomicaIngresos_ImpuestosDirectos_RecargosSobreImpuestosDirectosDelEstadoYDeLaComunidadAutonoma_SobreImpuestosDeLaComunidadAutonoma
+  : kind: I
+    area: economic
+    name: Sobre impuestos de la Comunidad Autónoma
+    code: '161'
+    parent_code: '16'
+    level: 3
+  IdsEconomicaIngresos_RecargosSobreImpuestosDirectosDeOtrosEntesLocales:
+    kind: I
+    area: economic
+    name: Recargos sobre impuestos directos de otros entes locales
+    code: '17'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_EnElImpuestoSobreBienesInmuebles:
+    kind: I
+    area: economic
+    name: En el Impuesto sobre Bienes Inmuebles
+    code: '170'
+    parent_code: '17'
+    level: 3
+  IdsEconomicaIngresos_RecargoProvincialEnElImpuestoSobreActividadesEconomicas:
+    kind: I
+    area: economic
+    name: Recargo provincial en el Impuesto sobre Actividades Económicas
+    code: '171'
+    parent_code: '17'
+    level: 3
+  IdsEconomicaIngresos_OtrosRecargosSobreImpuestosDirectosDeOtrosEntesLocales:
+    kind: I
+    area: economic
+    name: Otros recargos sobre impuestos directos de otros entes locales
+    code: '179'
+    parent_code: '17'
+    level: 3
+  IdsEconomicaIngresos_ImpuestosDirectosExtinguidos:
+    kind: I
+    area: economic
+    name: Impuestos directos extinguidos
+    code: '18'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_OtrosImpuestosDirectos:
+    kind: I
+    area: economic
+    name: Otros impuestos directos
+    code: '19'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_ImpuestosIndirectos:
+    kind: I
+    area: economic
+    name: Impuestos indirectos
+    code: '2'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_ImpuestosSobreElValorAnadido:
+    kind: I
+    area: economic
+    name: Impuestos sobre el Valor Añadido
+    code: '21'
+    parent_code: '2'
+    level: 2
+  IdsEconomicaIngresos_ImpuestoSobreElValorAnadido:
+    kind: I
+    area: economic
+    name: Impuesto sobre el Valor Añadido
+    code: '210'
+    parent_code: '21'
+    level: 3
+  IdsEconomicaIngresos_SobreConsumosEspecificos:
+    kind: I
+    area: economic
+    name: Sobre consumos específicos
+    code: '22'
+    parent_code: '2'
+    level: 2
+  IdsEconomicaIngresos_ImpuestosEspeciales:
+    kind: I
+    area: economic
+    name: Impuestos Especiales
+    code: '220'
+    parent_code: '22'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobreElAlcoholYBebidasDerivadas:
+    kind: I
+    area: economic
+    name: Impuesto sobre el alcohol y bebidas derivadas
+    code: 220-00
+    parent_code: '220'
+    level: 4
+  IdsEconomicaIngresos_ImpuestoSobreLaCerveza:
+    kind: I
+    area: economic
+    name: Impuesto sobre la cerveza
+    code: 220-01
+    parent_code: '220'
+    level: 4
+  IdsEconomicaIngresos_ImpuestoSobreElVinoYBebidasFermentadas:
+    kind: I
+    area: economic
+    name: Impuesto sobre el vino y bebidas fermentadas
+    code: 220-02
+    parent_code: '220'
+    level: 4
+  IdsEconomicaIngresos_ImpuestoSobreLasLaboresDelTabaco:
+    kind: I
+    area: economic
+    name: Impuesto sobre las labores del tabaco
+    code: 220-03
+    parent_code: '220'
+    level: 4
+  IdsEconomicaIngresos_ImpuestoSobreHidrocarburos:
+    kind: I
+    area: economic
+    name: Impuesto sobre hidrocarburos
+    code: 220-04
+    parent_code: '220'
+    level: 4
+  IdsEconomicaIngresos_ImpuestoSobreDeterminadosMediosDeTransporte:
+    kind: I
+    area: economic
+    name: Impuesto sobre determinados medios de transporte
+    code: 220-05
+    parent_code: '220'
+    level: 4
+  IdsEconomicaIngresos_ImpuestoSobreProductosIntermedios:
+    kind: I
+    area: economic
+    name: Impuesto sobre productos intermedios
+    code: 220-06
+    parent_code: '220'
+    level: 4
+  IdsEconomicaIngresos_ImpuestoSobreLaEnergia:
+    kind: I
+    area: economic
+    name: Impuesto sobre la energía
+    code: 220-07
+    parent_code: '220'
+    level: 4
+  IdsEconomicaIngresos_ImpuestoSobreVentasMinoristasDeHidrocarburos:
+    kind: I
+    area: economic
+    name: Impuesto sobre ventas minoristas de hidrocarburos
+    code: 220-08
+    parent_code: '220'
+    level: 4
+  IdsEconomicaIngresos_ExaccionSobreLaGasolina:
+    kind: I
+    area: economic
+    name: Exacción sobre la gasolina
+    code: 220-09
+    parent_code: '220'
+    level: 4
+  IdsEconomicaIngresos_RecargosSobreImpuestosIndirectosDelEstadoYDeLaComunidadAutonoma:
+    kind: I
+    area: economic
+    name: Recargos sobre impuestos indirectos del Estado y de la Comunidad Autónoma
+    code: '26'
+    parent_code: '2'
+    level: 2
+  ? IdsEconomicaIngresos_ImpuestosIndirectos_RecargosSobreImpuestosIndirectosDelEstadoYDeLaComunidadAutonoma_SobreImpuestosDelEstado
+  : kind: I
+    area: economic
+    name: Sobre impuestos del Estado
+    code: '260'
+    parent_code: '26'
+    level: 3
+  ? IdsEconomicaIngresos_ImpuestosIndirectos_RecargosSobreImpuestosIndirectosDelEstadoYDeLaComunidadAutonoma_SobreImpuestosDeLaComunidadAutonoma
+  : kind: I
+    area: economic
+    name: Sobre impuestos de la Comunidad Autónoma
+    code: '261'
+    parent_code: '26'
+    level: 3
+  IdsEconomicaIngresos_RecargosSobreImpuestosIndirectosDeOtrosEntesLocales:
+    kind: I
+    area: economic
+    name: Recargos sobre impuestos indirectos de otros entes locales
+    code: '27'
+    parent_code: '2'
+    level: 2
+  IdsEconomicaIngresos_SobreImpuestosDeOtrosEntesLocales:
+    kind: I
+    area: economic
+    name: Sobre impuestos de otros entes locales
+    code: '270'
+    parent_code: '27'
+    level: 3
+  IdsEconomicaIngresos_ImpuestosIndirectosExtinguidos:
+    kind: I
+    area: economic
+    name: Impuestos indirectos extinguidos
+    code: '28'
+    parent_code: '2'
+    level: 2
+  IdsEconomicaIngresos_OtrosImpuestosIndirectos:
+    kind: I
+    area: economic
+    name: Otros Impuestos indirectos
+    code: '299'
+    parent_code: '29'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobreConstruccionesInstalacionesYObras:
+    kind: I
+    area: economic
+    name: Impuesto sobre construcciones, instalaciones y obras
+    code: '290'
+    parent_code: '29'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobreGastosSuntuariosCotosDeCazaYPesca:
+    kind: I
+    area: economic
+    name: Impuesto sobre gastos suntuarios (Cotos de caza y pesca)
+    code: '291'
+    parent_code: '29'
+    level: 3
+  IdsEconomicaIngresos_ArbitrioSobreImportacionesYEntregasDeMercanciasEnCanariasAiem:
+    kind: I
+    area: economic
+    name: Arbitrio sobre importaciones y entregas de mercancías en Canarias (AIEM)
+    code: '292'
+    parent_code: '29'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoGeneralIndirectoCanarioIgic:
+    kind: I
+    area: economic
+    name: Impuesto general indirecto canario (IGIC)
+    code: '293'
+    parent_code: '29'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobreLaProduccionLosServiciosYLaImportacionIpsiDeCeutaYMelilla:
+    kind: I
+    area: economic
+    name: Impuesto sobre la producción, los servicios y la importación (IPSI) de Ceuta
+      y Melilla
+    code: '294'
+    parent_code: '29'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobrePrimasDeSeguros:
+    kind: I
+    area: economic
+    name: Impuesto sobre primas de seguros
+    code: '295'
+    parent_code: '29'
+    level: 3
+  IdsEconomicaIngresos_ImpuestoSobreTransmisionesPatrimonialesYActosJuridicosDocumentados:
+    kind: I
+    area: economic
+    name: Impuesto sobre transmisiones patrimoniales y actos jurídicos documentados
+    code: '296'
+    parent_code: '29'
+    level: 3
+  IdsEconomicaIngresos_OtrosImpuestosIndirectos_OtrosImpuestosIndirectos: NOT-FOUND
+  IdsEconomicaIngresos_TasasPreciosPublicosYOtrosIngresos: NOT-FOUND
+  IdsEconomicaIngresos_TasasPorLaPrestacionDeServiciosPublicosBasicos:
+    kind: I
+    area: economic
+    name: Tasas por la prestación de servicios públicos básicos
+    code: '30'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_ServicioDeAbastecimientoDeAgua:
+    kind: I
+    area: economic
+    name: Servicio de abastecimiento de agua
+    code: '300'
+    parent_code: '30'
+    level: 3
+  IdsEconomicaIngresos_ServicioDeAlcantarillado:
+    kind: I
+    area: economic
+    name: Servicio de alcantarillado
+    code: '301'
+    parent_code: '30'
+    level: 3
+  IdsEconomicaIngresos_ServicioDeRecogidaDeBasuras:
+    kind: I
+    area: economic
+    name: Servicio de recogida de basuras
+    code: '302'
+    parent_code: '30'
+    level: 3
+  IdsEconomicaIngresos_ServicioDeTratamientoDeResiduos:
+    kind: I
+    area: economic
+    name: Servicio de tratamiento de residuos
+    code: '303'
+    parent_code: '30'
+    level: 3
+  IdsEconomicaIngresos_CanonDeSaneamiento:
+    kind: I
+    area: economic
+    name: Canon de saneamiento
+    code: '304'
+    parent_code: '30'
+    level: 3
+  IdsEconomicaIngresos_OtrasTasasPorPrestacionDeServiciosBasicos:
+    kind: I
+    area: economic
+    name: Otras tasas por prestación de servicios básicos
+    code: '309'
+    parent_code: '30'
+    level: 3
+  IdsEconomicaIngresos_TasasPorLaPrestacionDeServiciosPublicosDeCaracterSocialYPreferente:
+    kind: I
+    area: economic
+    name: Tasas por la prestación de servicios públicos de carácter social y preferente
+    code: '31'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_TasasPorLaPrestacionDeServiciosPublicosDeCaracterSocialYPreferente_ServiciosHospitalarios:
+    kind: I
+    area: economic
+    name: Servicios hospitalarios
+    code: '310'
+    parent_code: '31'
+    level: 3
+  IdsEconomicaIngresos_TasasPorLaPrestacionDeServiciosPublicosDeCaracterSocialYPreferente_ServiciosAsistenciales:
+    kind: I
+    area: economic
+    name: Servicios asistenciales
+    code: '311'
+    parent_code: '31'
+    level: 3
+  IdsEconomicaIngresos_TasasPorLaPrestacionDeServiciosPublicosDeCaracterSocialYPreferente_ServiciosEducativos:
+    kind: I
+    area: economic
+    name: Servicios educativos
+    code: '312'
+    parent_code: '31'
+    level: 3
+  IdsEconomicaIngresos_TasasPorLaPrestacionDeServiciosPublicosDeCaracterSocialYPreferente_ServiciosDeportivos:
+    kind: I
+    area: economic
+    name: Servicios deportivos
+    code: '313'
+    parent_code: '31'
+    level: 3
+  IdsEconomicaIngresos_OtrasTasasPorPrestacionDeServiciosDeCaracterPreferente:
+    kind: I
+    area: economic
+    name: Otras tasas por prestación de servicios de carácter preferente
+    code: '319'
+    parent_code: '31'
+    level: 3
+  IdsEconomicaIngresos_TasasPorLaRealizacionDeActividadesDeCompetenciaLocal:
+    kind: I
+    area: economic
+    name: Tasas por la realización de actividades de competencia local
+    code: '32'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_LicenciasDeCazaYPesca:
+    kind: I
+    area: economic
+    name: Licencias de caza y pesca
+    code: '320'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_LicenciasUrbanisticas:
+    kind: I
+    area: economic
+    name: Licencias urbanísticas
+    code: '321'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_CedulasDeHabitabilidadYLicenciasDePrimeraOcupacion:
+    kind: I
+    area: economic
+    name: Cedulas de habitabilidad y licencias de primera ocupación
+    code: '322'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_TasasPorOtrosServiciosUrbanisticos:
+    kind: I
+    area: economic
+    name: Tasas por otros servicios urbanísticos
+    code: '323'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_TasasSobreElJuego:
+    kind: I
+    area: economic
+    name: Tasas sobre el juego
+    code: '324'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_TasaPorExpedicionDeDocumentos:
+    kind: I
+    area: economic
+    name: Tasa por expedición de documentos
+    code: '325'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_TasaPorRetiradaDeVehiculos:
+    kind: I
+    area: economic
+    name: Tasa por retirada de vehículos
+    code: '326'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_OtrasTasasPorLaRealizacionDeActividadesDeCompetenciaLocal:
+    kind: I
+    area: economic
+    name: Otras tasas por la realización de actividades de competencia local
+    code: '329'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_TasasPorLaUtilizacionPrivativaOElAprovechamientoEspecialDelDominioPublicoLocal:
+    kind: I
+    area: economic
+    name: Tasas por la utilización privativa o el aprovechamiento especial del dominio
+      público local
+    code: '33'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_TasaDeEstacionamientoDeVehiculos:
+    kind: I
+    area: economic
+    name: Tasa de estacionamiento de vehículos
+    code: '330'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_TasaPorEntradaDeVehiculos:
+    kind: I
+    area: economic
+    name: Tasa por entrada de vehículos
+    code: '331'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_TasaPorUtilizacionPrivativaOAprovechamientoEspecialPorEmpresasExplotadorasDeServiciosDeSuministros:
+    kind: I
+    area: economic
+    name: Tasa por utilización privativa o aprovechamiento especial por empresas explotadoras
+      de servicios de suministros
+    code: '332'
+    parent_code: '33'
+    level: 3
+  ? IdsEconomicaIngresos_TasaPorUtilizacionPrivativaOAprovechamientoEspecialPorEmpresasExplotadorasDeServiciosDeTelecomunicaciones
+  : kind: I
+    area: economic
+    name: Tasa por utilización privativa o aprovechamiento especial por empresas explotadoras
+      de servicios de telecomunicaciones
+    code: '333'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_TasaPorAperturaDeCalasYZanjas:
+    kind: I
+    area: economic
+    name: Tasa por apertura de calas y zanjas
+    code: '334'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_TasaPorOcupacionDeLaViaPublicaConTerrazas:
+    kind: I
+    area: economic
+    name: Tasa por ocupación de la vía pública con terrazas
+    code: '335'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_TasaPorOcupacionDeLaViaPublicaConSuspensionTemporalDelTraficoRodado:
+    kind: I
+    area: economic
+    name: Tasa por ocupación de la vía pública con suspensión temporal del tráfico
+      rodado
+    code: '336'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_TasasPorAprovechamientoDelVuelo:
+    kind: I
+    area: economic
+    name: Tasas por aprovechamiento del vuelo
+    code: '337'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_CompensacionDeTelefonicaDeEspanaSa:
+    kind: I
+    area: economic
+    name: Compensación de Telefónica de España SA
+    code: '338'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_OtrasTasasPorUtilizacionPrivativaDelDominioPublico:
+    kind: I
+    area: economic
+    name: Otras tasas por utilización privativa del dominio público
+    code: '339'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_PreciosPublicos:
+    kind: I
+    area: economic
+    name: Precios públicos
+    code: '34'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_PreciosPublicos_ServiciosHospitalarios:
+    kind: I
+    area: economic
+    name: Servicios hospitalarios
+    code: '340'
+    parent_code: '34'
+    level: 3
+  IdsEconomicaIngresos_PreciosPublicos_ServiciosAsistenciales:
+    kind: I
+    area: economic
+    name: Servicios asistenciales
+    code: '341'
+    parent_code: '34'
+    level: 3
+  IdsEconomicaIngresos_PreciosPublicos_ServiciosEducativos:
+    kind: I
+    area: economic
+    name: Servicios educativos
+    code: '342'
+    parent_code: '34'
+    level: 3
+  IdsEconomicaIngresos_PreciosPublicos_ServiciosDeportivos:
+    kind: I
+    area: economic
+    name: Servicios deportivos
+    code: '343'
+    parent_code: '34'
+    level: 3
+  IdsEconomicaIngresos_EntradasAMuseosExposicionesEspectaculos:
+    kind: I
+    area: economic
+    name: Entradas a museos, exposiciones, espectáculos
+    code: '344'
+    parent_code: '34'
+    level: 3
+  IdsEconomicaIngresos_ServicioDeTransportePublicoUrbano:
+    kind: I
+    area: economic
+    name: Servicio de transporte público urbano
+    code: '345'
+    parent_code: '34'
+    level: 3
+  IdsEconomicaIngresos_OtrosPreciosPublicos:
+    kind: I
+    area: economic
+    name: Otros precios públicos
+    code: '349'
+    parent_code: '34'
+    level: 3
+  IdsEconomicaIngresos_ContribucionesEspeciales:
+    kind: I
+    area: economic
+    name: Contribuciones especiales
+    code: '35'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_ParaLaEjecucionDeObras:
+    kind: I
+    area: economic
+    name: Para la ejecución de obras
+    code: '350'
+    parent_code: '35'
+    level: 3
+  IdsEconomicaIngresos_ParaElEstablecimientoOAmpliacionDeServicios:
+    kind: I
+    area: economic
+    name: Para el establecimiento o ampliación de servicios
+    code: '351'
+    parent_code: '35'
+    level: 3
+  IdsEconomicaIngresos_Ventas:
+    kind: I
+    area: economic
+    name: Ventas
+    code: '36'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_ReintegrosDeOperacionesCorrientes:
+    kind: I
+    area: economic
+    name: Reintegros de operaciones corrientes
+    code: '38'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_ReintegroDeAvales:
+    kind: I
+    area: economic
+    name: Reintegro de avales
+    code: '380'
+    parent_code: '38'
+    level: 3
+  IdsEconomicaIngresos_OtrosReintegrosDeOperacionesCorrientes:
+    kind: I
+    area: economic
+    name: Otros reintegros de operaciones corrientes
+    code: '389'
+    parent_code: '38'
+    level: 3
+  IdsEconomicaIngresos_OtrosIngresos:
+    kind: I
+    area: economic
+    name: Otros ingresos
+    code: '39'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_Multas:
+    kind: I
+    area: economic
+    name: Multas
+    code: '391'
+    parent_code: '39'
+    level: 3
+  IdsEconomicaIngresos_MultasPorInfraccionesUrbanisticas:
+    kind: I
+    area: economic
+    name: Multas por infracciones urbanísticas
+    code: 391-00
+    parent_code: '391'
+    level: 4
+  IdsEconomicaIngresos_MultasPorInfraccionesTributariasYAnalogas:
+    kind: I
+    area: economic
+    name: Multas por infracciones tributarias y análogas
+    code: 391-10
+    parent_code: '391'
+    level: 4
+  IdsEconomicaIngresos_MultasPorInfraccionesDeLaOrdenanzaDeCirculacion:
+    kind: I
+    area: economic
+    name: Multas por infracciones de la Ordenanza de circulación
+    code: 391-20
+    parent_code: '391'
+    level: 4
+  IdsEconomicaIngresos_OtrasMultasYSanciones:
+    kind: I
+    area: economic
+    name: Otras multas y sanciones
+    code: 391-90
+    parent_code: '391'
+    level: 4
+  IdsEconomicaIngresos_RecargosDelPeriodoEjecutivoYPorDeclaracionExtemporaneaSinRequerimientoPrevio:
+    kind: I
+    area: economic
+    name: Recargos del periodo ejecutivo y por declaración extemporánea sin requerimiento
+      previo
+    code: '392'
+    parent_code: '39'
+    level: 3
+  IdsEconomicaIngresos_RecargosPorDeclaracionExtemporaneaSinRequerimientoPrevio: NOT-FOUND
+  IdsEconomicaIngresos_RecargoEjecutivo:
+    kind: I
+    area: economic
+    name: Recargo ejecutivo
+    code: 392-10
+    parent_code: '392'
+    level: 4
+  IdsEconomicaIngresos_RecargoDeApremio:
+    kind: I
+    area: economic
+    name: Recargo de apremio
+    code: 392-11
+    parent_code: '392'
+    level: 4
+  IdsEconomicaIngresos_EconomicaIngresos_TasasPreciosPublicosYOtrosIngresos_OtrosIngresos_InteresesDeDemora:
+    kind: I
+    area: economic
+    name: Intereses de demora
+    code: '393'
+    parent_code: '39'
+    level: 3
+  IdsEconomicaIngresos_PrestacionPersonal:
+    kind: I
+    area: economic
+    name: Prestación personal
+    code: '394'
+    parent_code: '39'
+    level: 3
+  IdsEconomicaIngresos_PrestacionDeTransporte:
+    kind: I
+    area: economic
+    name: Prestación de transporte
+    code: '395'
+    parent_code: '39'
+    level: 3
+  IdsEconomicaIngresos_IngresosPorActuacionesDeUrbanizacion:
+    kind: I
+    area: economic
+    name: Ingresos por actuaciones de urbanización
+    code: '396'
+    parent_code: '39'
+    level: 3
+  IdsEconomicaIngresos_CanonDeUrbanizacion:
+    kind: I
+    area: economic
+    name: Canon de urbanización
+    code: 396-00
+    parent_code: '396'
+    level: 4
+  IdsEconomicaIngresos_CuotasDeUrbanizacion:
+    kind: I
+    area: economic
+    name: Cuotas de urbanización
+    code: 396-10
+    parent_code: '396'
+    level: 4
+  IdsEconomicaIngresos_AprovechamientosUrbanisticos:
+    kind: I
+    area: economic
+    name: Aprovechamientos urbanísticos
+    code: '397'
+    parent_code: '39'
+    level: 3
+  IdsEconomicaIngresos_CanonPorAprovechamientosUrbanisticos:
+    kind: I
+    area: economic
+    name: Canon por aprovechamientos urbanísticos
+    code: 397-00
+    parent_code: '397'
+    level: 4
+  IdsEconomicaIngresos_OtrosIngresosPorAprovechamientosUrbanisticos:
+    kind: I
+    area: economic
+    name: Otros ingresos por aprovechamientos urbanísticos
+    code: 397-10
+    parent_code: '397'
+    level: 4
+  IdsEconomicaIngresos_IndemnizacionesDeSegurosDeNoVida:
+    kind: I
+    area: economic
+    name: Indemnizaciones de seguros de no vida
+    code: '398'
+    parent_code: '39'
+    level: 3
+  IdsEconomicaIngresos_OtrosIngresosDiversos:
+    kind: I
+    area: economic
+    name: Otros ingresos diversos
+    code: '399'
+    parent_code: '39'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasCorrientes:
+    kind: I
+    area: economic
+    name: Transferencias corrientes
+    code: '4'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeLaAdministracionGeneralDeLaEntidadLocal:
+    kind: I
+    area: economic
+    name: De la Administración General de la Entidad Local
+    code: '40'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeOrganismosAutonomosDeLaEntidadLocal:
+    kind: I
+    area: economic
+    name: De Organismos Autónomos de la Entidad Local
+    code: '41'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeLaAdministracionDelEstado:
+    kind: I
+    area: economic
+    name: De la Administración del Estado
+    code: '42'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeLaAdministracionDelEstado_DeLaAdministracionGeneralDelEstado:
+    kind: I
+    area: economic
+    name: De la Administración General del Estado
+    code: '420'
+    parent_code: '42'
+    level: 3
+  IdsEconomicaIngresos_ParticipacionEnLosTributosDelEstado:
+    kind: I
+    area: economic
+    name: Participación en los Tributos del Estado
+    code: 420-00
+    parent_code: '420'
+    level: 4
+  IdsEconomicaIngresos_FondoComplementarioDeFinanciacion:
+    kind: I
+    area: economic
+    name: Fondo Complementario de Financiación
+    code: 420-10
+    parent_code: '420'
+    level: 4
+  IdsEconomicaIngresos_CompensacionPorBeneficiosFiscales:
+    kind: I
+    area: economic
+    name: Compensación por beneficios fiscales
+    code: 420-20
+    parent_code: '420'
+    level: 4
+  IdsEconomicaIngresos_OtrasTransferenciasCorrientesDeLaAdministracionGeneralDelEstado:
+    kind: I
+    area: economic
+    name: Otras transferencias corrientes de la Administración General del Estado
+    code: 420-90
+    parent_code: '420'
+    level: 4
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeLaAdministracionDelEstado_DeOrganismosAutonomosYAgenciasEstatales:
+    kind: I
+    area: economic
+    name: De Organismos Autónomos y agencias estatales
+    code: '421'
+    parent_code: '42'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciaCorrientes_DeLaAdministracionDelEstado_DeOrganismosAutonomosYAgenciasEstatales_DelServicioPublicoDeEmpleoEstatal
+  : kind: I
+    area: economic
+    name: Del Servicio Público de Empleo Estatal
+    code: 421-00
+    parent_code: '421'
+    level: 4
+  ? IdsEconomicaIngresos_TransferenciaCorrientes_DeLaAdministracionDelEstado_DeOrganismosAutonomosYAgenciasEstatales_DeOtrosOrganismosAutonomosYAgencias
+  : kind: I
+    area: economic
+    name: De otros Organismos Autónomos y Agencias
+    code: 421-90
+    parent_code: '421'
+    level: 4
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeLaAdministracionDelEstado_DeFundacionesEstatales:
+    kind: I
+    area: economic
+    name: De fundaciones estatales
+    code: '422'
+    parent_code: '42'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciaCorrientes_DeLaAdministracionDelEstado_DeSociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos
+  : kind: I
+    area: economic
+    name: De sociedades mercantiles estatales, entidades públicas empresariales y
+      otros organismos públicos
+    code: '423'
+    parent_code: '42'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciaCorrientes_DeLaAdministracionDelEstado_DeSociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos_DeLoteriasYApuestasDelEstado
+  : kind: I
+    area: economic
+    name: De Loterías y Apuestas del Estado
+    code: 423-00
+    parent_code: '423'
+    level: 4
+  IdsEconomicaIngresos_DeOtrasSociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOrganismosPublicos:
+    kind: I
+    area: economic
+    name: De otras sociedades mercantiles estatales, entidades públicas empresariales
+      y organismos públicos
+    code: 423-90
+    parent_code: '423'
+    level: 4
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeLaSeguridadSocial:
+    kind: I
+    area: economic
+    name: De la Seguridad Social
+    code: '43'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeEntesPublicosYSociedadesMercantilesDeLaEntidadLocal:
+    kind: I
+    area: economic
+    name: De entes públicos y sociedades mercantiles de la Entidad local
+    code: '44'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeEntesPublicosYSociedadesMercantilesDeLaEntidadLocal_DeEntesPublicos:
+    kind: I
+    area: economic
+    name: De entes públicos
+    code: '440'
+    parent_code: '44'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciaCorrientes_DeEntesPublicosYSociedadesMercantilesDeLaEntidadLocal_DeSociedadesMercantiles
+  : kind: I
+    area: economic
+    name: De sociedades mercantiles
+    code: '441'
+    parent_code: '44'
+    level: 3
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeComunidadesAutonomas:
+    kind: I
+    area: economic
+    name: De Comunidades Autónomas
+    code: '45'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeComunidadesAutonomas_DeLaAdministracionGeneralDeLasComunidadesAutonomas:
+    kind: I
+    area: economic
+    name: De la Administración General de las Comunidades Autónomas
+    code: '450'
+    parent_code: '45'
+    level: 3
+  IdsEconomicaIngresos_ParticipacionEnTributosDeLaComunidadAutonoma:
+    kind: I
+    area: economic
+    name: Participación en tributos de la Comunidad Autónoma
+    code: 450-00
+    parent_code: '450'
+    level: 4
+  IdsEconomicaIngresos_OtrasTransferenciasIncondicionadas:
+    kind: I
+    area: economic
+    name: Otras transferencias incondicionadas
+    code: 450-01
+    parent_code: '450'
+    level: 4
+  ? IdsEconomicaIngresos_TransferenciasCorrientesEnCumplimientoDeConveniosSuscritosConLaComunidadAutonomaEnMateriaDeServiciosSocialesYPoliticasDeIgualdad
+  : NOT-FOUND
+  ? IdsEconomicaIngresos_TransferenciasCorrientesEnCumplimientoDeConveniosSuscritosConLaComunidadAutonomaEnMateriaDeEducacion
+  : kind: I
+    area: economic
+    name: Transferencias corrientes en cumplimiento de convenios suscritos con la
+      Comunidad Autónoma en materia de Educación
+    code: 450-30
+    parent_code: '450'
+    level: 4
+  ? IdsEconomicaIngresos_TransferenciasCorrientesEnCumplimientoDeConveniosSuscritosConLaComunidadAutonomaEnMateriaDeEmpleoYDesarrolloLocal
+  : NOT-FOUND
+  IdsEconomicaIngresos_OtrasTransferenciasCorrientesEnCumplimientoDeConveniosSuscritosConLaComunidadAutonoma:
+    kind: I
+    area: economic
+    name: Otras transferencias corrientes en cumplimiento de convenios suscritos con
+      la Comunidad Autónoma
+    code: 450-60
+    parent_code: '450'
+    level: 4
+  IdsEconomicaIngresos_OtrasSubvencionesCorrientesDeLaAdministracionGeneralDeLaComunidadAutonoma:
+    kind: I
+    area: economic
+    name: Otras subvenciones corrientes de la Administración General de la Comunidad
+      Autónoma
+    code: 450-80
+    parent_code: '450'
+    level: 4
+  ? IdsEconomicaIngresos_TransferenciaCorrientes_DeComunidadesAutonomas_DeOrganismosAutonomosYAgenciasDeLasComunidadesAutonomas
+  : kind: I
+    area: economic
+    name: De Organismos Autónomos y agencias de las Comunidades Autónomas
+    code: '451'
+    parent_code: '45'
+    level: 3
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeComunidadesAutonomas_DeFundacionesDeLasComunidadesAutonomas:
+    kind: I
+    area: economic
+    name: De fundaciones de las Comunidades Autónomas
+    code: '452'
+    parent_code: '45'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciaCorrientes_DeComunidadesAutonomas_DeSociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas
+  : NOT-FOUND
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeEntidadesLocales:
+    kind: I
+    area: economic
+    name: De Entidades Locales
+    code: '46'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeEntidadesLocales_DeDiputacionesConsejosOCabildos:
+    kind: I
+    area: economic
+    name: De Diputaciones, Consejos o Cabildos
+    code: '461'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeEntidadesLocales_DeAyuntamientos:
+    kind: I
+    area: economic
+    name: De Ayuntamientos
+    code: '462'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeEntidadesLocales_DeMancomunidades:
+    kind: I
+    area: economic
+    name: De Mancomunidades
+    code: '463'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeEntidadesLocales_DeAreasMetropolitanas:
+    kind: I
+    area: economic
+    name: De Áreas Metropolitanas
+    code: '464'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeEntidadesLocales_DeComarcas:
+    kind: I
+    area: economic
+    name: De Comarcas
+    code: '465'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_DeEntidadesQueAgrupenMunicipios:
+    kind: I
+    area: economic
+    name: De Entidades que agrupen Municipios
+    code: '466'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeEntidadesLocales_DeConsorcios:
+    kind: I
+    area: economic
+    name: De Consorcios
+    code: '467'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeEntidadesLocales_DeEntidadesLocalesMenores:
+    kind: I
+    area: economic
+    name: De Entidades Locales Menores
+    code: '468'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeEmpresasPrivadas:
+    kind: I
+    area: economic
+    name: De Empresas Privadas
+    code: '47'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_TransferenciaCorrientes_DeFamiliasEInstitucionesSinFinesDeLucro:
+    kind: I
+    area: economic
+    name: De Familias e Instituciones sin fines de lucro
+    code: '48'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_TransferenciaCorrientes_DelExterior:
+    kind: I
+    area: economic
+    name: Del Exterior
+    code: '49'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_TransferenciaCorrientes_DelExterior_DelFondoSocialEuropeo:
+    kind: I
+    area: economic
+    name: Del Fondo Social Europeo
+    code: '490'
+    parent_code: '49'
+    level: 3
+  IdsEconomicaIngresos_TransferenciaCorrientes_DelExterior_DelFondoDeDesarrolloRegional:
+    kind: I
+    area: economic
+    name: Del Fondo de Desarrollo Regional
+    code: '491'
+    parent_code: '49'
+    level: 3
+  IdsEconomicaIngresos_TransferenciaCorrientes_DelExterior_DelFondoDeCohesion:
+    kind: I
+    area: economic
+    name: Del Fondo de Cohesión
+    code: '492'
+    parent_code: '49'
+    level: 3
+  IdsEconomicaIngresos_TransferenciaCorrientes_DelExterior_DelFondoEuropeoAgricolaDeGarantiaFeaga:
+    kind: I
+    area: economic
+    name: Del Fondo Europeo Agrícola de Garantía (FEAGA)
+    code: '493'
+    parent_code: '49'
+    level: 3
+  IdsEconomicaIngresos_TransferenciaCorrientes_DelExterior_DelFondoEuropeoAgricolaDeDesarrolloRuralFeader:
+    kind: I
+    area: economic
+    name: Del Fondo Europeo Agrícola de Desarrollo Rural (FEADER)
+    code: '494'
+    parent_code: '49'
+    level: 3
+  IdsEconomicaIngresos_TransferenciaCorrientes_DelExterior_DelFeoga-orientacion: NOT-FOUND
+  IdsEconomicaIngresos_TransferenciaCorrientes_DelExterior_DelFondoEuropeoDeLaPescaFep:
+    kind: I
+    area: economic
+    name: Del Fondo Europeo de la Pesca (FEP)
+    code: '496'
+    parent_code: '49'
+    level: 3
+  IdsEconomicaIngresos_TransferenciaCorrientes_DelExterior_OtrasTransferenciasDeLaUnionEuropea:
+    kind: I
+    area: economic
+    name: Otras transferencias de la Unión Europea
+    code: '497'
+    parent_code: '49'
+    level: 3
+  IdsEconomicaIngresos_OtrasTansferenciasDelExteriorExcluyendoLaUnionEuropea:
+    kind: I
+    area: economic
+    name: Otras tansferencias del exterior, excluyendo la Unión Europea
+    code: '499'
+    parent_code: '49'
+    level: 3
+  IdsEconomicaIngresos_IngresosPatrimoniales:
+    kind: I
+    area: economic
+    name: Ingresos patrimoniales
+    code: '5'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_InteresesDeTitulosYValores:
+    kind: I
+    area: economic
+    name: Intereses de títulos y valores
+    code: '50'
+    parent_code: '5'
+    level: 2
+  IdsEconomicaIngresos_IngresosPatrimoniales_InteresesDeTitulosYValores_DelEstado:
+    kind: I
+    area: economic
+    name: Del Estado
+    code: '500'
+    parent_code: '50'
+    level: 3
+  IdsEconomicaIngresos_InteresesDeTitulosYValores_DeOrganismosAutonomosYAgencias:
+    kind: I
+    area: economic
+    name: De Organismos Autónomos y agencias
+    code: '501'
+    parent_code: '50'
+    level: 3
+  ? IdsEconomicaIngresos_IngresosPatrimoniales_InteresesDeTitulosYValores_DeSociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos
+  : kind: I
+    area: economic
+    name: De sociedades mercantiles estatales, entidades públicas empresariales y
+      otros organismos públicos
+    code: '504'
+    parent_code: '50'
+    level: 3
+  IdsEconomicaIngresos_IngresosPatrimoniales_InteresesDeTitulosYValores_DeComunidadesAutonomas:
+    kind: I
+    area: economic
+    name: De Comunidades Autónomas
+    code: '505'
+    parent_code: '50'
+    level: 3
+  IdsEconomicaIngresos_IngresosPatrimoniales_InteresesDeTitulosYValores_DeEntidadesLocales:
+    kind: I
+    area: economic
+    name: De Entidades locales
+    code: '506'
+    parent_code: '50'
+    level: 3
+  IdsEconomicaIngresos_IngresosPatrimoniales_InteresesDeTitulosYValores_DeEmpresasPrivadas:
+    kind: I
+    area: economic
+    name: De empresas privadas
+    code: '507'
+    parent_code: '50'
+    level: 3
+  IdsEconomicaIngresos_InteresesDeAnticiposYPrestamosConcedidos:
+    kind: I
+    area: economic
+    name: Intereses de anticipos y préstamos concedidos
+    code: '51'
+    parent_code: '5'
+    level: 2
+  ? IdsEconomicaIngresos_EconomicaIngresos_IngresosPatrimoniales_InteresesDeAnticiposYPrestamosConcedidos_AOrganismosAutonomosYAgencias
+  : kind: I
+    area: economic
+    name: A Organismos Autónomos y agencias
+    code: '511'
+    parent_code: '51'
+    level: 3
+  IdsEconomicaIngresos_ASociedadesMercantilesEntidadesPublicasempresarialesYOtrosOrganismosPublicos: NOT-FOUND
+  IdsEconomicaIngresos_AFamiliasEInstitucionesSinAnimoDeLucro:
+    kind: I
+    area: economic
+    name: A familias e instituciones sin ánimo de lucro
+    code: '518'
+    parent_code: '51'
+    level: 3
+  IdsEconomicaIngresos_EconomicaIngresos_IngresosPatrimoniales_InteresesDeDepositos:
+    kind: I
+    area: economic
+    name: Intereses de depósitos
+    code: '52'
+    parent_code: '5'
+    level: 2
+  IdsEconomicaIngresos_DividendosYParticipacionBeneficios:
+    kind: I
+    area: economic
+    name: Dividendos y participación beneficios
+    code: '53'
+    parent_code: '5'
+    level: 2
+  IdsEconomicaIngresos_DividendosYParticipacionBeneficios_DeOrganismosAutonomosYAgencias:
+    kind: I
+    area: economic
+    name: De Organismos Autónomos y agencias
+    code: '531'
+    parent_code: '53'
+    level: 3
+  IdsEconomicaIngresos_DeSociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos:
+    kind: I
+    area: economic
+    name: De Sociedades mercantiles, entidades públicas empresariales y otros organismos
+      públicos
+    code: '534'
+    parent_code: '53'
+    level: 3
+  IdsEconomicaIngresos_DeSociedadesYEntidadesDependientesDeLasEntidadesLocales:
+    kind: I
+    area: economic
+    name: De sociedades y entidades dependientes de las entidades locales
+    code: 534-00
+    parent_code: '534'
+    level: 4
+  IdsEconomicaIngresos_DeSociedadesYEntidadesNoDependientesDeLasEntidadesLocales:
+    kind: I
+    area: economic
+    name: De sociedades y entidades no dependientes de las entidades locales
+    code: 534-10
+    parent_code: '534'
+    level: 4
+  IdsEconomicaIngresos_IngresosPatrimoniales_DividendosYParticipacionBeneficios_DeEmpresasPrivadas:
+    kind: I
+    area: economic
+    name: De empresas privadas
+    code: '537'
+    parent_code: '53'
+    level: 3
+  IdsEconomicaIngresos_RentasDeBienesInmuebles:
+    kind: I
+    area: economic
+    name: Rentas de bienes inmuebles
+    code: '54'
+    parent_code: '5'
+    level: 2
+  IdsEconomicaIngresos_ArrendamientosDeFincasUrbanas:
+    kind: I
+    area: economic
+    name: Arrendamientos de fincas urbanas
+    code: '541'
+    parent_code: '54'
+    level: 3
+  IdsEconomicaIngresos_ArrendamientosDeFincasRusticas:
+    kind: I
+    area: economic
+    name: Arrendamientos de fincas rústicas
+    code: '542'
+    parent_code: '54'
+    level: 3
+  IdsEconomicaIngresos_Censos:
+    kind: I
+    area: economic
+    name: Censos
+    code: '544'
+    parent_code: '54'
+    level: 3
+  IdsEconomicaIngresos_OtrasRentasDeBienesInmuebles:
+    kind: I
+    area: economic
+    name: Otras rentas de bienes inmuebles
+    code: '549'
+    parent_code: '54'
+    level: 3
+  IdsEconomicaIngresos_ProductosDeConcesionesYAprovechamientosEspeciales:
+    kind: I
+    area: economic
+    name: Productos de concesiones y aprovechamientos especiales
+    code: '55'
+    parent_code: '5'
+    level: 2
+  IdsEconomicaIngresos_DeConcesionesAdministrativasConContraprestacionPeriodica:
+    kind: I
+    area: economic
+    name: De concesiones administrativas con contraprestación periódica
+    code: '550'
+    parent_code: '55'
+    level: 3
+  IdsEconomicaIngresos_DeConcesionesAdministrativasConContraprestacionNoPeriodica:
+    kind: I
+    area: economic
+    name: De concesiones administrativas con contraprestación no periódica
+    code: '551'
+    parent_code: '55'
+    level: 3
+  IdsEconomicaIngresos_DerechoDeSuperficieConContraprestacionPeriodica:
+    kind: I
+    area: economic
+    name: Derecho de superficie con contraprestación periódica
+    code: '552'
+    parent_code: '55'
+    level: 3
+  IdsEconomicaIngresos_DerechoDeSuperficieConContraprestacionNoPeriodica:
+    kind: I
+    area: economic
+    name: Derecho de superficie con contraprestación no periódica
+    code: '553'
+    parent_code: '55'
+    level: 3
+  IdsEconomicaIngresos_AprovechamientosAgricolasYForestales:
+    kind: I
+    area: economic
+    name: Aprovechamientos agrícolas y forestales
+    code: '554'
+    parent_code: '55'
+    level: 3
+  IdsEconomicaIngresos_ProductoDeExplotacionesForestales:
+    kind: I
+    area: economic
+    name: Producto de explotaciones forestales
+    code: 554-00
+    parent_code: '554'
+    level: 4
+  IdsEconomicaIngresos_FondoDeMejoraDeMontes:
+    kind: I
+    area: economic
+    name: Fondo de mejora de montes
+    code: 554-10
+    parent_code: '554'
+    level: 4
+  IdsEconomicaIngresos_AprovechamientosEspecialesConContraprestacion:
+    kind: I
+    area: economic
+    name: Aprovechamientos especiales con contraprestación
+    code: '555'
+    parent_code: '55'
+    level: 3
+  IdsEconomicaIngresos_OtrasConcesionesYAprovechamientos:
+    kind: I
+    area: economic
+    name: Otras concesiones y aprovechamientos
+    code: '559'
+    parent_code: '55'
+    level: 3
+  IdsEconomicaIngresos_OtrosIngresosPatrimoniales:
+    kind: I
+    area: economic
+    name: Otros ingresos patrimoniales
+    code: '59'
+    parent_code: '5'
+    level: 2
+  IdsEconomicaIngresos_OtrosIngresosPatrimoniales_OtrosIngresosPatrimoniales:
+    kind: I
+    area: economic
+    name: Otros ingresos patrimoniales
+    code: '599'
+    parent_code: '59'
+    level: 3
+  IdsEconomicaIngresos_BeneficiosPorRealizacionDeInversionesFinancieras:
+    kind: I
+    area: economic
+    name: Beneficios por realización de inversiones financieras
+    code: '591'
+    parent_code: '59'
+    level: 3
+  IdsEconomicaIngresos_IngresosPorOperacionesDeIntercambioFinanciero:
+    kind: I
+    area: economic
+    name: Ingresos por operaciones de intercambio financiero
+    code: '592'
+    parent_code: '59'
+    level: 3
+  IdsEconomicaIngresos_EnajenacionDeInversionesReales:
+    kind: I
+    area: economic
+    name: Enajenación de inversiones reales
+    code: '6'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_DeTerrenos:
+    kind: I
+    area: economic
+    name: De Terrenos
+    code: '60'
+    parent_code: '6'
+    level: 2
+  IdsEconomicaIngresos_VentaDeSolares:
+    kind: I
+    area: economic
+    name: Venta de solares
+    code: '600'
+    parent_code: '60'
+    level: 3
+  IdsEconomicaIngresos_VentaDeFincasRusticas:
+    kind: I
+    area: economic
+    name: Venta de fincas rústicas
+    code: '601'
+    parent_code: '60'
+    level: 3
+  IdsEconomicaIngresos_ParcelasSobrantesDeLaViaPublica:
+    kind: I
+    area: economic
+    name: Parcelas sobrantes de la vía pública
+    code: '602'
+    parent_code: '60'
+    level: 3
+  IdsEconomicaIngresos_PatrimonioPublicoDelSuelo:
+    kind: I
+    area: economic
+    name: Patrimonio público del suelo
+    code: '603'
+    parent_code: '60'
+    level: 3
+  IdsEconomicaIngresos_OtrosTerrenos:
+    kind: I
+    area: economic
+    name: Otros terrenos
+    code: '609'
+    parent_code: '60'
+    level: 3
+  IdsEconomicaIngresos_DeLasDemasInversionesReales:
+    kind: I
+    area: economic
+    name: De las demás Inversiones reales
+    code: '61'
+    parent_code: '6'
+    level: 2
+  IdsEconomicaIngresos_DeInversionesDeCaracterInmaterial:
+    kind: I
+    area: economic
+    name: De inversiones de carácter inmaterial
+    code: '611'
+    parent_code: '61'
+    level: 3
+  IdsEconomicaIngresos_DeObjetosValiosos:
+    kind: I
+    area: economic
+    name: De objetos valiosos
+    code: '612'
+    parent_code: '61'
+    level: 3
+  IdsEconomicaIngresos_DeOtrasInversionesReales:
+    kind: I
+    area: economic
+    name: De otras inversiones reales
+    code: '619'
+    parent_code: '61'
+    level: 3
+  IdsEconomicaIngresos_ReintegrosPorOperacionesDeCapital:
+    kind: I
+    area: economic
+    name: Reintegros por operaciones de capital
+    code: '68'
+    parent_code: '6'
+    level: 2
+  IdsEconomicaIngresos_DeEjerciciosCerrados:
+    kind: I
+    area: economic
+    name: De ejercicios cerrados
+    code: '680'
+    parent_code: '68'
+    level: 3
+  IdsEconomicaIngresos_EconomicaIngresos_TransferenciasDeCapital:
+    kind: I
+    area: economic
+    name: Transferencias de capital
+    code: '7'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeLaAdministracionGeneralDeLaEntidadLocal:
+    kind: I
+    area: economic
+    name: De la Administración General de la Entidad Local
+    code: '70'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeOrganismosAutonomosDeLaEntidadLocal:
+    kind: I
+    area: economic
+    name: De Organismos Autónomos de la Entidad Local
+    code: '71'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeLaAdministracionDelEstado:
+    kind: I
+    area: economic
+    name: De la Administración del Estado
+    code: '72'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeLaAdministracionDelEstado_DeLaAdministracionGeneralDelEstado:
+    kind: I
+    area: economic
+    name: De la Administración General del Estado
+    code: '720'
+    parent_code: '72'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeLaAdministracionDelEstado_DeOrganismosAutonomosYAgenciasEstatales:
+    kind: I
+    area: economic
+    name: De Organismos Autónomos y agencias estatales
+    code: '721'
+    parent_code: '72'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciasDeCapital_DeLaAdministracionDelEstado_DeOrganismosAutonomosYAgenciasEstatales_DelServicioPublicoDeEmpleoEstatal
+  : NOT-FOUND
+  ? IdsEconomicaIngresos_TransferenciasDeCapital_DeLaAdministracionDelEstado_DeOrganismosAutonomosYAgenciasEstatales_DeOtrosOrganismosAutonomosYAgencias
+  : kind: I
+    area: economic
+    name: De otros Organismos Autónomos y agencias
+    code: 721-90
+    parent_code: '721'
+    level: 4
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeLaAdministracionDelEstado_DeFundacionesEstatales:
+    kind: I
+    area: economic
+    name: De fundaciones estatales
+    code: '722'
+    parent_code: '72'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciasDeCapital_DeLaAdministracionDelEstado_DeSociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos
+  : kind: I
+    area: economic
+    name: De sociedades mercantiles estatales, entidades públicas empresariales y
+      otros organismos públicos
+    code: '723'
+    parent_code: '72'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciasDeCapital_DeLaAdministracionDelEstado_DeSociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos_DeLoteriasYApuestasDelEstado
+  : kind: I
+    area: economic
+    name: De Loterías y Apuestas del Estado
+    code: 723-00
+    parent_code: '723'
+    level: 4
+  IdsEconomicaIngresos_DeOtrasSociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos:
+    kind: I
+    area: economic
+    name: De otras sociedades mercantiles estatales, entidades públicas empresariales
+      y otros organismos públicos
+    code: 723-90
+    parent_code: '723'
+    level: 4
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeLaSeguridadSocial:
+    kind: I
+    area: economic
+    name: De la Seguridad Social
+    code: '73'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeEntesPublicosYSociedadesMercantilesDeLaEntidadLocal:
+    kind: I
+    area: economic
+    name: De entes públicos y sociedades mercantiles de la Entidad local
+    code: '74'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeEntesPublicosYSociedadesMercantilesDeLaEntidadLocal_DeEntesPublicos:
+    kind: I
+    area: economic
+    name: De entes públicos
+    code: '740'
+    parent_code: '74'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciasDeCapital_DeEntesPublicosYSociedadesMercantilesDeLaEntidadLocal_DeSociedadesMercantiles
+  : kind: I
+    area: economic
+    name: De sociedades mercantiles
+    code: '741'
+    parent_code: '74'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeComunidadesAutonomas:
+    kind: I
+    area: economic
+    name: De Comunidades Autónomas
+    code: '75'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeComunidadesAutonomas_DeLaAdministracionGeneralDeLasComunidadesAutonomas:
+    kind: I
+    area: economic
+    name: De la Administración General de las Comunidades Autónomas
+    code: '750'
+    parent_code: '75'
+    level: 3
+  IdsEconomicaIngresos_SubvencionesAfectasALaAmortizacionDePrestamosYOperacionesFinancieras:
+    kind: I
+    area: economic
+    name: Subvenciones afectas a la amortización de préstamos y operaciones financieras
+    code: 750-00
+    parent_code: '750'
+    level: 4
+  ? IdsEconomicaIngresos_TransferenciasDeCapitalEnCumplimientoDeConveniosSuscritosConLaComunidadAutonomaEnMateriaDeServiciosSocialesYPoliticasDeIgualdad
+  : NOT-FOUND
+  IdsEconomicaIngresos_TransferenciasDeCapitalEnCumplimientoDeConveniosSuscritosConLaComunidadAutonomaEnMateriaDeEducacion:
+    kind: I
+    area: economic
+    name: Transferencias de capital en cumplimiento de convenios suscritos con la
+      Comunidad Autónoma en materia de Educación
+    code: 750-30
+    parent_code: '750'
+    level: 4
+  ? IdsEconomicaIngresos_TransferenciasDeCapitalEnCumplimientoDeConveniosSuscritosConLaComunidadAutonomaEnMateriaDeEmpleoYDesarrolloLocal
+  : NOT-FOUND
+  IdsEconomicaIngresos_OtrasTransferenciasDeCapitalEnCumplimientoDeConveniosSuscritosConLaComunidadAutonoma:
+    kind: I
+    area: economic
+    name: Otras transferencias de capital en cumplimiento de convenios suscritos con
+      la Comunidad Autónoma
+    code: 750-60
+    parent_code: '750'
+    level: 4
+  IdsEconomicaIngresos_OtrasTransferenciasDeCapitalDeLaAdministracionGeneralDeLaComunidadAutonoma:
+    kind: I
+    area: economic
+    name: Otras transferencias de capital de la Administración General de la Comunidad
+      Autónoma
+    code: 750-80
+    parent_code: '750'
+    level: 4
+  ? IdsEconomicaIngresos_TransferenciasDeCapital_DeComunidadesAutonomas_DeOrganismosAutonomosYAgenciasDeLasComunidadesAutonomas
+  : kind: I
+    area: economic
+    name: De Organismos Autónomos y agencias de las Comunidades Autónomas
+    code: '751'
+    parent_code: '75'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeComunidadesAutonomas_DeFundacionesDeLasComunidadesAutonomas:
+    kind: I
+    area: economic
+    name: De fundaciones de las Comunidades Autónomas
+    code: '752'
+    parent_code: '75'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciasDeCapital_DeComunidadesAutonomas_DeSociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas
+  : NOT-FOUND
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeEntidadesLocales:
+    kind: I
+    area: economic
+    name: De Entidades Locales
+    code: '76'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeEntidadesLocales_DeDiputacionesConsejosOCabildos:
+    kind: I
+    area: economic
+    name: De Diputaciones, Consejos o Cabildos
+    code: '761'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeEntidadesLocales_DeAyuntamientos:
+    kind: I
+    area: economic
+    name: De Ayuntamientos
+    code: '762'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeEntidadesLocales_DeMancomunidades:
+    kind: I
+    area: economic
+    name: De Mancomunidades
+    code: '763'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeEntidadesLocales_DeAreasMetropolitanas:
+    kind: I
+    area: economic
+    name: De Áreas Metropolitanas
+    code: '764'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeEntidadesLocales_DeComarcas:
+    kind: I
+    area: economic
+    name: De Comarcas
+    code: '765'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_DeOtrasEntidadesQueAgrupenMunicipios:
+    kind: I
+    area: economic
+    name: De otras Entidades que agrupen Municipios
+    code: '766'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeEntidadesLocales_DeConsorcios:
+    kind: I
+    area: economic
+    name: De Consorcios
+    code: '767'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeEntidadesLocales_DeEntidadesLocalesMenores:
+    kind: I
+    area: economic
+    name: De Entidades Locales Menores
+    code: '768'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeEmpresasPrivadas:
+    kind: I
+    area: economic
+    name: De Empresas Privadas
+    code: '77'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_DeFamiliasEInstitucionesSinFinesDeLucro:
+    kind: I
+    area: economic
+    name: De Familias e Instituciones sin fines de lucro
+    code: '78'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_DelExterior:
+    kind: I
+    area: economic
+    name: Del Exterior
+    code: '79'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_DelExterior_DelFondoSocialEuropeo:
+    kind: I
+    area: economic
+    name: Del Fondo Social Europeo
+    code: '790'
+    parent_code: '79'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DelExterior_DelFondoDeDesarrolloRegional:
+    kind: I
+    area: economic
+    name: Del Fondo de Desarrollo Regional
+    code: '791'
+    parent_code: '79'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DelExterior_DelFondoDeCohesion:
+    kind: I
+    area: economic
+    name: Del Fondo de Cohesión
+    code: '792'
+    parent_code: '79'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DelExterior_DelFondoEuropeoAgricolaDeGarantiaFeaga:
+    kind: I
+    area: economic
+    name: Del Fondo Europeo Agrícola de Garantía (FEAGA)
+    code: '793'
+    parent_code: '79'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DelExterior_DelFondoEuropeoAgricolaDeDesarrolloRuralFeader:
+    kind: I
+    area: economic
+    name: Del Fondo Europeo Agrícola de Desarrollo Rural (FEADER)
+    code: '794'
+    parent_code: '79'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DelExterior_DelFeoga-orientacion: NOT-FOUND
+  IdsEconomicaIngresos_TransferenciasDeCapital_DelExterior_DelFondoEuropeoDeLaPescaFep:
+    kind: I
+    area: economic
+    name: Del Fondo Europeo de la Pesca (FEP)
+    code: '796'
+    parent_code: '79'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_DelExterior_OtrasTransferenciasDeLaUnionEuropea:
+    kind: I
+    area: economic
+    name: Otras transferencias de la Unión Europea
+    code: '797'
+    parent_code: '79'
+    level: 3
+  IdsEconomicaIngresos_OtrasTransferenciasDelExteriorExcluyendoLaUnionEuropea:
+    kind: I
+    area: economic
+    name: Otras transferencias del exterior, excluyendo la Unión Europea
+    code: '799'
+    parent_code: '79'
+    level: 3
+  IdsEconomicaIngresos_EconomicaIngresos_ActivosFinancieros:
+    kind: I
+    area: economic
+    name: Activos financieros
+    code: '8'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_EnajenacionDeDeudaDelSectorPublico:
+    kind: I
+    area: economic
+    name: Enajenación de Deuda del Sector Público
+    code: '80'
+    parent_code: '8'
+    level: 2
+  IdsEconomicaIngresos_EnajenacionDeDeudaDelSectorPublicoACortoPlazo:
+    kind: I
+    area: economic
+    name: Enajenación de deuda del sector público a corto plazo
+    code: '800'
+    parent_code: '80'
+    level: 3
+  ? IdsEconomicaIngresos_ActivosFinancieros_EnajenacionDeDeudaDelSectorPublico_EnajenacionDeDeudaDelSectorPublicoACortoPlazo_DelEstado
+  : kind: I
+    area: economic
+    name: Del Estado
+    code: 800-00
+    parent_code: '800'
+    level: 4
+  ? IdsEconomicaIngresos_ActivosFinancieros_EnajenacionDeDeudaDelSectorPublico_EnajenacionDeDeudaDelSectorPublicoACortoPlazo_DeComunidadesAutonomas
+  : kind: I
+    area: economic
+    name: De Comunidades Autónomas
+    code: 800-10
+    parent_code: '800'
+    level: 4
+  ? IdsEconomicaIngresos_ActivosFinancieros_EnajenacionDeDeudaDelSectorPublico_EnajenacionDeDeudaDelSectorPublicoACortoPlazo_DeEntidadesLocales
+  : kind: I
+    area: economic
+    name: De Entidades locales
+    code: 800-20
+    parent_code: '800'
+    level: 4
+  IdsEconomicaIngresos_EnajenacionDeDeudaDelSectorPublicoALargoPlazo:
+    kind: I
+    area: economic
+    name: Enajenación de deuda del sector público a largo plazo
+    code: '801'
+    parent_code: '80'
+    level: 3
+  ? IdsEconomicaIngresos_ActivosFinancieros_EnajenacionDeDeudaDelSectorPublico_EnajenacionDeDeudaDelSectorPublicoALargoPlazo_DelEstado
+  : kind: I
+    area: economic
+    name: Del Estado
+    code: 801-00
+    parent_code: '801'
+    level: 4
+  ? IdsEconomicaIngresos_ActivosFinancieros_EnajenacionDeDeudaDelSectorPublico_EnajenacionDeDeudaDelSectorPublicoALargoPlazo_DeComunidadesAutonomas
+  : kind: I
+    area: economic
+    name: De Comunidades Autónomas
+    code: 801-10
+    parent_code: '801'
+    level: 4
+  ? IdsEconomicaIngresos_ActivosFinancieros_EnajenacionDeDeudaDelSectorPublico_EnajenacionDeDeudaDelSectorPublicoALargoPlazo_DeEntidadesLocales
+  : kind: I
+    area: economic
+    name: De Entidades locales
+    code: 801-20
+    parent_code: '801'
+    level: 4
+  IdsEconomicaIngresos_EnajenacionDeObligacionesYBonosFueraDelSectorPublico:
+    kind: I
+    area: economic
+    name: Enajenación de obligaciones y bonos fuera del sector público
+    code: '81'
+    parent_code: '8'
+    level: 2
+  IdsEconomicaIngresos_EnajenacionDeObligacionesYBonosFueraDelSectorPublicoACortoPlazo:
+    kind: I
+    area: economic
+    name: Enajenación de obligaciones y bonos fuera del sector público a corto plazo
+    code: '810'
+    parent_code: '81'
+    level: 3
+  IdsEconomicaIngresos_EnajenacionDeObligacionesYBonosFueraDelSectorPublicoALargoPlazo:
+    kind: I
+    area: economic
+    name: Enajenación de obligaciones y bonos fuera del sector público a largo plazo
+    code: '811'
+    parent_code: '81'
+    level: 3
+  IdsEconomicaIngresos_ReintegroDePrestamosYAnticiposConcedidosAlSectorPublico:
+    kind: I
+    area: economic
+    name: Reintegro de préstamos y anticipos concedidos al sector público
+    code: '82'
+    parent_code: '8'
+    level: 2
+  IdsEconomicaIngresos_ReintegroDePrestamosYAnticiposConcedidosAlSectorPublicoACortoPlazo:
+    kind: I
+    area: economic
+    name: Reintegro de préstamos y anticipos concedidos al sector público a corto
+      plazo
+    code: '820'
+    parent_code: '82'
+    level: 3
+  ? IdsEconomicaIngresos_ActivosFinancieros_ReintegroDePrestamosYAnticiposConcedidosAlSectorPublico_ReintegroDePrestamosYAnticiposConcedidosAlSectorPublicoACortoPlazo_DelEstado
+  : kind: I
+    area: economic
+    name: Del Estado
+    code: 820-00
+    parent_code: '820'
+    level: 4
+  ? IdsEconomicaIngresos_ActivosFinancieros_ReintegroDePrestamosYAnticiposConcedidosAlSectorPublico_ReintegroDePrestamosYAnticiposConcedidosAlSectorPublicoACortoPlazo_DeComunidadesAutonomas
+  : kind: I
+    area: economic
+    name: De Comunidades Autónomas
+    code: 820-10
+    parent_code: '820'
+    level: 4
+  ? IdsEconomicaIngresos_ActivosFinancieros_ReintegroDePrestamosYAnticiposConcedidosAlSectorPublico_ReintegroDePrestamosYAnticiposConcedidosAlSectorPublicoACortoPlazo_DeEntidadesLocales
+  : kind: I
+    area: economic
+    name: De Entidades locales
+    code: 820-20
+    parent_code: '820'
+    level: 4
+  IdsEconomicaIngresos_ReintegroDePrestamosYAnticiposConcedidosAlSectorPublicoALargoPlazo:
+    kind: I
+    area: economic
+    name: Reintegro de préstamos y anticipos concedidos al sector público a largo
+      plazo
+    code: '821'
+    parent_code: '82'
+    level: 3
+  ? IdsEconomicaIngresos_ActivosFinancieros_ReintegroDePrestamosYAnticiposConcedidosAlSectorPublico_ReintegroDePrestamosYAnticiposConcedidosAlSectorPublicoALargoPlazo_DelEstado
+  : kind: I
+    area: economic
+    name: Del Estado
+    code: 821-00
+    parent_code: '821'
+    level: 4
+  ? IdsEconomicaIngresos_ActivosFinancieros_ReintegroDePrestamosYAnticiposConcedidosAlSectorPublico_ReintegroDePrestamosYAnticiposConcedidosAlSectorPublicoALargoPlazo_DeComunidadesAutonomas
+  : kind: I
+    area: economic
+    name: De Comunidades Autónomas
+    code: 821-10
+    parent_code: '821'
+    level: 4
+  ? IdsEconomicaIngresos_ActivosFinancieros_ReintegroDePrestamosYAnticiposConcedidosAlSectorPublico_ReintegroDePrestamosYAnticiposConcedidosAlSectorPublicoALargoPlazo_DeEntidadesLocales
+  : kind: I
+    area: economic
+    name: De entidades locales
+    code: 821-02
+    parent_code: '821'
+    level: 4
+  IdsEconomicaIngresos_ReintegrosDePrestamosDeFueraDelSectorPublico:
+    kind: I
+    area: economic
+    name: Reintegros de préstamos de fuera del sector público
+    code: '83'
+    parent_code: '8'
+    level: 2
+  IdsEconomicaIngresos_ReintegrosDePrestamosDeFueraDelSectorPublicoACortoPlazo:
+    kind: I
+    area: economic
+    name: Reintegros de préstamos de fuera del sector público a corto plazo
+    code: '830'
+    parent_code: '83'
+    level: 3
+  IdsEconomicaIngresos_ReintegrosDePrestamosDeFueraDelSectorPublicoALargoPlazo:
+    kind: I
+    area: economic
+    name: Reintegros de préstamos de fuera del sector público a largo plazo
+    code: '831'
+    parent_code: '83'
+    level: 3
+  IdsEconomicaIngresos_DevolucionDeDepositosYFianzasConstituidos:
+    kind: I
+    area: economic
+    name: Devolución de depósitos y fianzas constituidos
+    code: '84'
+    parent_code: '8'
+    level: 2
+  ? IdsEconomicaIngresos_EconomicaIngresos_ActivosFinancieros_DevolucionDeDepositosYFianzasConstituidos_DevolucionDeDepositos
+  : kind: I
+    area: economic
+    name: Devolución de depósitos
+    code: '840'
+    parent_code: '84'
+    level: 3
+  IdsEconomicaIngresos_EconomicaIngresos_ActivosFinancieros_DevolucionDeDepositosYFianzasConstituidos_DevolucionDeFianzas:
+    kind: I
+    area: economic
+    name: Devolución de fianzas
+    code: '841'
+    parent_code: '84'
+    level: 3
+  IdsEconomicaIngresos_EnajenacionDeAccionesYParticipacionesDelSectorPublico:
+    kind: I
+    area: economic
+    name: Enajenación de acciones y participaciones del sector público
+    code: '85'
+    parent_code: '8'
+    level: 2
+  IdsEconomicaIngresos_EnajenacionDeAccionesYParticipacionesFueraDelSectorPublico:
+    kind: I
+    area: economic
+    name: Enajenación de acciones y participaciones fuera del sector público
+    code: '86'
+    parent_code: '8'
+    level: 2
+  IdsEconomicaIngresos_RemanenteDeTesoreria:
+    kind: I
+    area: economic
+    name: Remanente de tesorería
+    code: '870'
+    parent_code: '87'
+    level: 3
+  IdsEconomicaIngresos_RemanenteDeTesoreria_RemanenteDeTesoreria: NOT-FOUND
+  IdsEconomicaIngresos_ParaGastosGenerales:
+    kind: I
+    area: economic
+    name: Para gastos generales
+    code: 870-00
+    parent_code: '870'
+    level: 4
+  IdsEconomicaIngresos_ParaGastosConFinanciacionAfectada:
+    kind: I
+    area: economic
+    name: Para gastos con financiación afectada
+    code: 870-10
+    parent_code: '870'
+    level: 4
+  IdsEconomicaIngresos_EconomicaIngresos_PasivosFinancieros:
+    kind: I
+    area: economic
+    name: Pasivos financieros
+    code: '9'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_EmisionDeDeudaPublicaEnEuros:
+    kind: I
+    area: economic
+    name: Emisión de Deuda Pública en euros
+    code: '90'
+    parent_code: '9'
+    level: 2
+  IdsEconomicaIngresos_EmisionDeDeudaPublicaEnEurosACortoPlazo:
+    kind: I
+    area: economic
+    name: Emisión de Deuda Pública en euros a corto plazo
+    code: '900'
+    parent_code: '90'
+    level: 3
+  IdsEconomicaIngresos_EmisionDeDeudaPublicaEnEurosALargoPlazo:
+    kind: I
+    area: economic
+    name: Emisión de Deuda Pública en euros a largo plazo
+    code: '901'
+    parent_code: '90'
+    level: 3
+  IdsEconomicaIngresos_PrestamosRecibidosEnEuros:
+    kind: I
+    area: economic
+    name: Préstamos recibidos en euros
+    code: '91'
+    parent_code: '9'
+    level: 2
+  IdsEconomicaIngresos_PrestamosRecibidosACortoPlazoDeEntesDelSectorPublico:
+    kind: I
+    area: economic
+    name: Préstamos recibidos a corto plazo de entes del sector público
+    code: '910'
+    parent_code: '91'
+    level: 3
+  IdsEconomicaIngresos_PrestamosRecibidosALargoPlazoDeEntesDelSectorPublico:
+    kind: I
+    area: economic
+    name: Préstamos recibidos a largo plazo de entes del sector público
+    code: '911'
+    parent_code: '91'
+    level: 3
+  IdsEconomicaIngresos_PrestamosRecibidosACortoPlazoDeEntesDeFueraDelSectorPublico:
+    kind: I
+    area: economic
+    name: Préstamos recibidos a corto plazo de entes de fuera del sector público
+    code: '912'
+    parent_code: '91'
+    level: 3
+  IdsEconomicaIngresos_PrestamosRecibidosALargoPlazoDeEntesDeFueraDelSectorPublico:
+    kind: I
+    area: economic
+    name: Préstamos recibidos a largo plazo de entes de fuera del sector público
+    code: '913'
+    parent_code: '91'
+    level: 3
+  IdsEconomicaIngresos_EmisionDeDeudaPublicaEnMonedaDistintaDelEuro:
+    kind: I
+    area: economic
+    name: Emisión de Deuda Pública en moneda distinta del euro
+    code: '92'
+    parent_code: '9'
+    level: 2
+  IdsEconomicaIngresos_EmisionDeDeudaPublicaEnMonedaDistintaDelEuroACortoPlazo:
+    kind: I
+    area: economic
+    name: Emisión de Deuda Pública en moneda distinta del euro a corto plazo
+    code: '920'
+    parent_code: '92'
+    level: 3
+  IdsEconomicaIngresos_EmisionDeDeudaPublicaEnMonedaDistintaDelEuroALargoPlazo:
+    kind: I
+    area: economic
+    name: Emisión de Deuda Pública en moneda distinta del euro a largo plazo
+    code: '921'
+    parent_code: '92'
+    level: 3
+  IdsEconomicaIngresos_PrestamosRecibidosEnMonedaDistintaDelEuro:
+    kind: I
+    area: economic
+    name: Préstamos recibidos en moneda distinta del euro
+    code: '93'
+    parent_code: '9'
+    level: 2
+  IdsEconomicaIngresos_PrestamosRecibidosEnMonedaDistintaDelEuroACortoPlazo:
+    kind: I
+    area: economic
+    name: Préstamos recibidos en moneda distinta del euro a corto plazo
+    code: '930'
+    parent_code: '93'
+    level: 3
+  IdsEconomicaIngresos_PrestamosRecibidosEnMonedaDistintaDelEuroALargoPlazo:
+    kind: I
+    area: economic
+    name: Préstamos recibidos en moneda distinta del euro a largo plazo
+    code: '931'
+    parent_code: '93'
+    level: 3
+  IdsEconomicaIngresos_DepositosYFianzasRecibidos:
+    kind: I
+    area: economic
+    name: Depósitos y fianzas recibidos
+    code: '94'
+    parent_code: '9'
+    level: 2
+  IdsEconomicaIngresos_DepositosRecibidos:
+    kind: I
+    area: economic
+    name: Depósitos recibidos
+    code: '940'
+    parent_code: '94'
+    level: 3
+  IdsEconomicaIngresos_FianzasRecibidas:
+    kind: I
+    area: economic
+    name: Fianzas recibidas
+    code: '941'
+    parent_code: '94'
+    level: 3
+  IdsEconomicaIngresos_GastosDePersonal:
+    kind: E
+    area: economic
+    name: Gastos de personal
+    code: '1'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_OrganosDeGobiernoYPersonalDirectivo:
+    kind: E
+    area: economic
+    name: Órganos de gobierno y personal directivo
+    code: '10'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_RetribucionesBasicasYOtrasRemuneracionesDeLosMiembrosDeLosOrganosDeGobierno:
+    kind: E
+    area: economic
+    name: Retribuciones básicas y otras remuneraciones de los miembros de los órganos
+      de gobierno
+    code: '100'
+    parent_code: '10'
+    level: 3
+  ? IdsEconomicaIngresos_OrganosDeGobiernoYPersonalDirectivo_RetribucionesBasicasYOtrasRemuneracionesDeLosMiembrosDeLosOrganosDeGobierno_RetribucionesBasicas
+  : kind: E
+    area: economic
+    name: Retribuciones básicas
+    code: 100-00
+    parent_code: '100'
+    level: 4
+  ? IdsEconomicaIngresos_OrganosDeGobiernoYPersonalDirectivo_RetribucionesBasicasYOtrasRemuneracionesDeLosMiembrosDeLosOrganosDeGobierno_OtrasRemuneraciones
+  : kind: E
+    area: economic
+    name: Otras remuneraciones
+    code: 100-01
+    parent_code: '100'
+    level: 4
+  IdsEconomicaIngresos_RetribucionesBasicasYOtrasRemuneracionesDelPersonalDirectivo:
+    kind: E
+    area: economic
+    name: Retribuciones básicas y otras remuneraciones del personal directivo
+    code: '101'
+    parent_code: '10'
+    level: 3
+  ? IdsEconomicaIngresos_OrganosDeGobiernoYPersonalDirectivo_RetribucionesBasicasYOtrasRemuneracionesDelPersonalDirectivo_RetribucionesBasicas
+  : kind: E
+    area: economic
+    name: Retribuciones básicas
+    code: 101-00
+    parent_code: '101'
+    level: 4
+  ? IdsEconomicaIngresos_OrganosDeGobiernoYPersonalDirectivo_RetribucionesBasicasYOtrasRemuneracionesDelPersonalDirectivo_OtrasRemuneraciones
+  : kind: E
+    area: economic
+    name: Otras remuneraciones
+    code: 101-01
+    parent_code: '101'
+    level: 4
+  IdsEconomicaIngresos_OrganosDeGobiernoYPersonalDirectivo_ContribucionesAPlanesYFondosDePensiones:
+    kind: E
+    area: economic
+    name: Contribuciones a planes y fondos de pensiones
+    code: '107'
+    parent_code: '10'
+    level: 3
+  ? IdsEconomicaIngresos_GastosDePersonal_OrganosDeGobiernoYPersonalDirectivo_ContribucionesAPlanesYFondosDePensiones_DeLosMiembrosDeLosOrganosDeGobierno
+  : kind: E
+    area: economic
+    name: De los miembros de los órganos de gobierno
+    code: 107-00
+    parent_code: '107'
+    level: 4
+  ? IdsEconomicaIngresos_GastosDePersonal_OrganosDeGobiernoYPersonalDirectivo_ContribucionesAPlanesYFondosDePensiones_DelPersonalDirectivo
+  : kind: E
+    area: economic
+    name: Del personal directivo
+    code: 107-01
+    parent_code: '107'
+    level: 4
+  IdsEconomicaIngresos_PersonalEventual:
+    kind: E
+    area: economic
+    name: Personal eventual
+    code: '11'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_RetribucionesBasicasYOtrasRemuneracionesDePersonalEventual:
+    kind: E
+    area: economic
+    name: Retribuciones básicas y otras remuneraciones de personal eventual
+    code: '110'
+    parent_code: '11'
+    level: 3
+  IdsEconomicaIngresos_PersonalEventual_RetribucionesBasicasYOtrasRemuneracionesDePersonalEventual_RetribucionesBasicas:
+    kind: E
+    area: economic
+    name: Retribuciones básicas
+    code: 110-00
+    parent_code: '110'
+    level: 4
+  ? IdsEconomicaIngresos_PersonalEventual_RetribucionesBasicasYOtrasRemuneracionesDePersonalEventual_RetribucionesComplementarias
+  : kind: E
+    area: economic
+    name: Retribuciones complementarias
+    code: 110-01
+    parent_code: '110'
+    level: 4
+  IdsEconomicaIngresos_PersonalEventual_RetribucionesBasicasYOtrasRemuneracionesDePersonalEventual_OtrasRemuneraciones:
+    kind: E
+    area: economic
+    name: Otras remuneraciones
+    code: 110-02
+    parent_code: '110'
+    level: 4
+  IdsEconomicaIngresos_PersonalEventual_ContribucionesAPlanesYFondosDePensiones:
+    kind: E
+    area: economic
+    name: Contribuciones a planes y fondos de pensiones
+    code: '117'
+    parent_code: '11'
+    level: 3
+  IdsEconomicaIngresos_PersonalFuncionario:
+    kind: E
+    area: economic
+    name: Personal Funcionario
+    code: '12'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_PersonalFuncionario_RetribucionesBasicas: NOT-FOUND
+  IdsEconomicaIngresos_PersonalFuncionario_SueldosDelGrupoA1:
+    kind: E
+    area: economic
+    name: Sueldos del Grupo A1
+    code: 120-00
+    parent_code: '120'
+    level: 4
+  IdsEconomicaIngresos_PersonalFuncionario_SueldosDelGrupoA2:
+    kind: E
+    area: economic
+    name: Sueldos del Grupo A2
+    code: 120-01
+    parent_code: '120'
+    level: 4
+  IdsEconomicaIngresos_PersonalFuncionario_SueldosDelGrupoB:
+    kind: E
+    area: economic
+    name: Sueldos del Grupo B
+    code: 120-02
+    parent_code: '120'
+    level: 4
+  IdsEconomicaIngresos_PersonalFuncionario_SueldosDelGrupoC1:
+    kind: E
+    area: economic
+    name: Sueldos del Grupo C1
+    code: 120-03
+    parent_code: '120'
+    level: 4
+  IdsEconomicaIngresos_PersonalFuncionario_SueldosDelGrupoC2:
+    kind: E
+    area: economic
+    name: Sueldos del Grupo C2
+    code: 120-04
+    parent_code: '120'
+    level: 4
+  IdsEconomicaIngresos_PersonalFuncionario_SueldosDelGrupoE:
+    kind: E
+    area: economic
+    name: Sueldos del Grupo E
+    code: 120-05
+    parent_code: '120'
+    level: 4
+  IdsEconomicaIngresos_PersonalFuncionario_Trienios:
+    kind: E
+    area: economic
+    name: Trienios
+    code: 120-06
+    parent_code: '120'
+    level: 4
+  IdsEconomicaIngresos_OtrasRetribucionesBasicas:
+    kind: E
+    area: economic
+    name: Otras retribuciones básicas
+    code: 124-09
+    parent_code: '124'
+    level: 4
+  IdsEconomicaIngresos_PersonalFuncionario_RetribucionesComplementarias:
+    kind: E
+    area: economic
+    name: Retribuciones complementarias
+    code: '121'
+    parent_code: '12'
+    level: 3
+  IdsEconomicaIngresos_ComplementoDeDestino:
+    kind: E
+    area: economic
+    name: Complemento de destino
+    code: 121-00
+    parent_code: '121'
+    level: 4
+  IdsEconomicaIngresos_ComplementoEspecifico:
+    kind: E
+    area: economic
+    name: Complemento específico
+    code: 121-01
+    parent_code: '121'
+    level: 4
+  IdsEconomicaIngresos_OtrosComplementos:
+    kind: E
+    area: economic
+    name: Otros complementos
+    code: 121-03
+    parent_code: '121'
+    level: 4
+  IdsEconomicaIngresos_PersonalFuncionario_RetribucionesEnEspecie:
+    kind: E
+    area: economic
+    name: Retribuciones en especie
+    code: '122'
+    parent_code: '12'
+    level: 3
+  IdsEconomicaIngresos_RetribucionesDeFuncionariosEnPracticas:
+    kind: E
+    area: economic
+    name: Retribuciones de funcionarios en prácticas
+    code: '124'
+    parent_code: '12'
+    level: 3
+  IdsEconomicaIngresos_PersonalFuncionarioEnPracticas_SueldosDelGrupoA1: NOT-FOUND
+  IdsEconomicaIngresos_PersonalFuncionarioEnPracticas_SueldosDelGrupoA2:
+    kind: E
+    area: economic
+    name: Sueldos del Grupo A2
+    code: 124-01
+    parent_code: '124'
+    level: 4
+  IdsEconomicaIngresos_PersonalFuncionarioEnPracticas_SueldosDelGrupoB:
+    kind: E
+    area: economic
+    name: Sueldos del Grupo B
+    code: 124-02
+    parent_code: '124'
+    level: 4
+  IdsEconomicaIngresos_PersonalFuncionarioEnPracticas_SueldosDelGrupoC1:
+    kind: E
+    area: economic
+    name: Sueldos del Grupo C1
+    code: 124-03
+    parent_code: '124'
+    level: 4
+  IdsEconomicaIngresos_PersonalFuncionarioEnPracticas_SueldosDelGrupoC2:
+    kind: E
+    area: economic
+    name: Sueldos del Grupo C2
+    code: 124-04
+    parent_code: '124'
+    level: 4
+  IdsEconomicaIngresos_PersonalFuncionarioEnPracticas_SueldosDelGrupoE:
+    kind: E
+    area: economic
+    name: Sueldos del Grupo E
+    code: 124-05
+    parent_code: '124'
+    level: 4
+  IdsEconomicaIngresos_PersonalFuncionarioEnPracticas_Trienios:
+    kind: E
+    area: economic
+    name: Trienios
+    code: 124-06
+    parent_code: '124'
+    level: 4
+  IdsEconomicaIngresos_PersonalFuncionarioEnPracticas_OtrasRetribucionesBasicas: NOT-FOUND
+  IdsEconomicaIngresos_PersonalFuncionario_ContribucionesAPlanesYFondosDePensiones:
+    kind: E
+    area: economic
+    name: Contribuciones a planes y fondos de pensiones
+    code: '127'
+    parent_code: '12'
+    level: 3
+  IdsEconomicaIngresos_PersonalLaboral:
+    kind: E
+    area: economic
+    name: Personal Laboral
+    code: '13'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_LaboralFijo:
+    kind: E
+    area: economic
+    name: Laboral Fijo
+    code: '130'
+    parent_code: '13'
+    level: 3
+  IdsEconomicaIngresos_PersonalLaboral_LaboralFijo_RetribucionesBasicas:
+    kind: E
+    area: economic
+    name: Retribuciones básicas
+    code: 130-00
+    parent_code: '130'
+    level: 4
+  IdsEconomicaIngresos_HorasExtraordinarias:
+    kind: E
+    area: economic
+    name: Horas extraordinarias
+    code: 130-01
+    parent_code: '130'
+    level: 4
+  IdsEconomicaIngresos_PersonalLaboral_LaboralFijo_OtrasRemuneraciones:
+    kind: E
+    area: economic
+    name: Otras remuneraciones
+    code: 130-02
+    parent_code: '130'
+    level: 4
+  IdsEconomicaIngresos_LaboralTemporal:
+    kind: E
+    area: economic
+    name: Laboral temporal
+    code: '131'
+    parent_code: '13'
+    level: 3
+  IdsEconomicaIngresos_PersonalLaboral_RetribucionesEnEspecie:
+    kind: E
+    area: economic
+    name: Retribuciones en especie
+    code: '132'
+    parent_code: '13'
+    level: 3
+  IdsEconomicaIngresos_PersonalLaboral_ContribucionesAPlanesYFondosDePensiones:
+    kind: E
+    area: economic
+    name: Contribuciones a planes y fondos de pensiones
+    code: '137'
+    parent_code: '13'
+    level: 3
+  IdsEconomicaIngresos_OtroPersonal:
+    kind: E
+    area: economic
+    name: Otro personal
+    code: '143'
+    parent_code: '14'
+    level: 3
+  IdsEconomicaIngresos_OtroPersonal_OtroPersonal: NOT-FOUND
+  IdsEconomicaIngresos_OtroPersonal_ContribucionesAPlanesYFondosDePensiones:
+    kind: E
+    area: economic
+    name: Contribuciones a planes y fondos de pensiones
+    code: '147'
+    parent_code: '14'
+    level: 3
+  IdsEconomicaIngresos_IncentivosAlRendimiento:
+    kind: E
+    area: economic
+    name: Incentivos al rendimiento
+    code: '15'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_Productividad:
+    kind: E
+    area: economic
+    name: Productividad
+    code: '150'
+    parent_code: '15'
+    level: 3
+  IdsEconomicaIngresos_Gratificaciones:
+    kind: E
+    area: economic
+    name: Gratificaciones
+    code: '151'
+    parent_code: '15'
+    level: 3
+  IdsEconomicaIngresos_OtrosIncentivosAlRendimiento:
+    kind: E
+    area: economic
+    name: Otros incentivos al rendimiento
+    code: '152'
+    parent_code: '15'
+    level: 3
+  IdsEconomicaIngresos_ComplementoDeDedicacionEspecial:
+    kind: E
+    area: economic
+    name: Complemento de dedicación especial
+    code: '153'
+    parent_code: '15'
+    level: 3
+  IdsEconomicaIngresos_CuotasPrestacionesYGastosSocialesACargoDelEmpleador:
+    kind: E
+    area: economic
+    name: Cuotas, prestaciones y gastos sociales a cargo del empleador
+    code: '16'
+    parent_code: '1'
+    level: 2
+  IdsEconomicaIngresos_CuotasSociales:
+    kind: E
+    area: economic
+    name: Cuotas sociales
+    code: '160'
+    parent_code: '16'
+    level: 3
+  IdsEconomicaIngresos_SeguridadSocial:
+    kind: E
+    area: economic
+    name: Seguridad Social
+    code: 160-00
+    parent_code: '160'
+    level: 4
+  IdsEconomicaIngresos_AsistenciaMedico-farmaceutica: NOT-FOUND
+  IdsEconomicaIngresos_OtrasCuotas:
+    kind: E
+    area: economic
+    name: Otras cuotas
+    code: 160-09
+    parent_code: '160'
+    level: 4
+  IdsEconomicaIngresos_PrestacionesSociales:
+    kind: E
+    area: economic
+    name: Prestaciones sociales
+    code: '161'
+    parent_code: '16'
+    level: 3
+  IdsEconomicaIngresos_PensionesExcepcionales:
+    kind: E
+    area: economic
+    name: Pensiones excepcionales
+    code: 161-03
+    parent_code: '161'
+    level: 4
+  IdsEconomicaIngresos_IndemnizacionesAlPersonalLaboralPorJubilacionesAnticipadas:
+    kind: E
+    area: economic
+    name: Indemnizaciones al personal laboral por jubilaciones anticipadas
+    code: 161-04
+    parent_code: '161'
+    level: 4
+  IdsEconomicaIngresos_PensionesACargoDeLaEntidadLocal:
+    kind: E
+    area: economic
+    name: Pensiones a cargo de la Entidad local
+    code: 161-05
+    parent_code: '161'
+    level: 4
+  IdsEconomicaIngresos_AsistenciaMedico-farmaceuticaAPensionistas: NOT-FOUND
+  IdsEconomicaIngresos_GastosSocialesDelPersonal:
+    kind: E
+    area: economic
+    name: Gastos sociales del personal
+    code: '162'
+    parent_code: '16'
+    level: 3
+  IdsEconomicaIngresos_FormacionYPerfeccionamientoDelPersonal:
+    kind: E
+    area: economic
+    name: Formación y perfeccionamiento del personal
+    code: 162-00
+    parent_code: '162'
+    level: 4
+  IdsEconomicaIngresos_EconomatosYComedores:
+    kind: E
+    area: economic
+    name: Economatos y comedores
+    code: 162-01
+    parent_code: '162'
+    level: 4
+  IdsEconomicaIngresos_TransporteDePersonal:
+    kind: E
+    area: economic
+    name: Transporte de personal
+    code: 162-02
+    parent_code: '162'
+    level: 4
+  ? IdsEconomicaIngresos_EconomicaIngresos_GastosDePersonal_CuotasPrestacionesYGastosSocialesACargoDelEmpleador_GastosSocialesDelPersonal_AccionSocial
+  : kind: E
+    area: economic
+    name: Acción social
+    code: 162-04
+    parent_code: '162'
+    level: 4
+  IdsEconomicaIngresos_Seguros:
+    kind: E
+    area: economic
+    name: Seguros
+    code: 162-05
+    parent_code: '162'
+    level: 4
+  IdsEconomicaIngresos_OtrosGastosSociales:
+    kind: E
+    area: economic
+    name: Otros gastos sociales
+    code: 162-09
+    parent_code: '162'
+    level: 4
+  IdsEconomicaIngresos_ComplementoFamiliar:
+    kind: E
+    area: economic
+    name: Complemento familiar
+    code: '164'
+    parent_code: '16'
+    level: 3
+  IdsEconomicaIngresos_GastosCorrientesEnBienesYServicios:
+    kind: E
+    area: economic
+    name: Gastos en Bienes y Servicios
+    code: '2'
+    parent_code: nil
+    level: 1
+  IdsEconomicaIngresos_ArrendamientosYCanones:
+    kind: E
+    area: economic
+    name: Arrendamientos y cánones
+    code: '20'
+    parent_code: '2'
+    level: 2
+  IdsEconomicaIngresos_ArrendamientosDeTerrenosYBienesNaturales:
+    kind: E
+    area: economic
+    name: Arrendamientos de terrenos y bienes naturales
+    code: '200'
+    parent_code: '20'
+    level: 3
+  IdsEconomicaIngresos_ArrendamientosDeEdificiosYOtrasConstrucciones:
+    kind: E
+    area: economic
+    name: Arrendamientos de edificios y otras construcciones
+    code: '202'
+    parent_code: '20'
+    level: 3
+  IdsEconomicaIngresos_ArrendamientosDeMaquinariaInstalacionesYUtillaje:
+    kind: E
+    area: economic
+    name: Arrendamientos de maquinaria, instalaciones y utillaje
+    code: '203'
+    parent_code: '20'
+    level: 3
+  IdsEconomicaIngresos_ArrendamientosDeMaterialDeTransporte:
+    kind: E
+    area: economic
+    name: Arrendamientos de material de transporte
+    code: '204'
+    parent_code: '20'
+    level: 3
+  IdsEconomicaIngresos_ArrendamientosDeMobiliarioYEnseres:
+    kind: E
+    area: economic
+    name: Arrendamientos de mobiliario y enseres
+    code: '205'
+    parent_code: '20'
+    level: 3
+  IdsEconomicaIngresos_ArrendamientosDeEquiposParaProcesosDeInformacion:
+    kind: E
+    area: economic
+    name: Arrendamientos de equipos para procesos de información
+    code: '206'
+    parent_code: '20'
+    level: 3
+  IdsEconomicaIngresos_ArrendamientosDeOtroInmovilizadoMaterial:
+    kind: E
+    area: economic
+    name: Arrendamientos de otro inmovilizado material
+    code: '208'
+    parent_code: '20'
+    level: 3
+  IdsEconomicaIngresos_Canones:
+    kind: E
+    area: economic
+    name: Cánones
+    code: '209'
+    parent_code: '20'
+    level: 3
+  IdsEconomicaIngresos_ReparacionesMantenimientoYConservacion:
+    kind: E
+    area: economic
+    name: Reparaciones, mantenimiento y conservación
+    code: '21'
+    parent_code: '2'
+    level: 2
+  IdsEconomicaIngresos_InfraestructurasYBienesNaturales:
+    kind: E
+    area: economic
+    name: Infraestructuras y bienes naturales
+    code: '210'
+    parent_code: '21'
+    level: 3
+  ? IdsEconomicaIngresos_GastosCorrientesEnBienesYServicios_ReparacionesMantenimientoYConservacion_EdificiosYOtrasConstrucciones
+  : kind: E
+    area: economic
+    name: Edificios y otras construcciones
+    code: '212'
+    parent_code: '21'
+    level: 3
+  ? IdsEconomicaIngresos_GastosCorrientesEnBienesYServicios_ReparacionesMantenimientoYConservacion_MaquinariaInstalacionesTecnicasYUtillaje
+  : kind: E
+    area: economic
+    name: Maquinaria, instalaciones técnicas y utillaje
+    code: '213'
+    parent_code: '21'
+    level: 3
+  IdsEconomicaIngresos_GastosCorrientesEnBienesYServicios_ReparacionesMantenimientoYConservacion_ElementosDeTransporte:
+    kind: E
+    area: economic
+    name: Elementos de transporte
+    code: '214'
+    parent_code: '21'
+    level: 3
+  IdsEconomicaIngresos_GastosCorrientesEnBienesYServicios_ReparacionesMantenimientoYConservacion_Mobiliario:
+    kind: E
+    area: economic
+    name: Mobiliario
+    code: '215'
+    parent_code: '21'
+    level: 3
+  ? IdsEconomicaIngresos_GastosCorrientesEnBienesYServicios_ReparacionesMantenimientoYConservacion_EquiposParaProcesosDeInformacion
+  : kind: E
+    area: economic
+    name: Equipos para procesos de información
+    code: '216'
+    parent_code: '21'
+    level: 3
+  IdsEconomicaIngresos_OtroInmovilizadoMaterial:
+    kind: E
+    area: economic
+    name: Otro inmovilizado material
+    code: '219'
+    parent_code: '21'
+    level: 3
+  IdsEconomicaIngresos_MaterialSuministrosYOtros:
+    kind: E
+    area: economic
+    name: Material, suministros y otros
+    code: '22'
+    parent_code: '2'
+    level: 2
+  IdsEconomicaIngresos_MaterialDeOficina:
+    kind: E
+    area: economic
+    name: Material de oficina
+    code: '220'
+    parent_code: '22'
+    level: 3
+  IdsEconomicaIngresos_OrdinarioNoInventariable:
+    kind: E
+    area: economic
+    name: Ordinario no inventariable
+    code: 220-00
+    parent_code: '220'
+    level: 4
+  IdsEconomicaIngresos_PrensaRevistasLibrosYOtrasPublicaciones:
+    kind: E
+    area: economic
+    name: Prensa, revistas, libros y otras publicaciones
+    code: 220-01
+    parent_code: '220'
+    level: 4
+  IdsEconomicaIngresos_MaterialInformaticoNoInventariable:
+    kind: E
+    area: economic
+    name: Material informático no inventariable
+    code: 220-02
+    parent_code: '220'
+    level: 4
+  IdsEconomicaIngresos_Suministros:
+    kind: E
+    area: economic
+    name: Suministros
+    code: '221'
+    parent_code: '22'
+    level: 3
+  IdsEconomicaIngresos_EnergiaElectrica:
+    kind: E
+    area: economic
+    name: Energía eléctrica
+    code: 221-00
+    parent_code: '221'
+    level: 4
+  IdsEconomicaIngresos_Agua:
+    kind: E
+    area: economic
+    name: Agua
+    code: 221-01
+    parent_code: '221'
+    level: 4
+  IdsEconomicaIngresos_Gas:
+    kind: E
+    area: economic
+    name: Gas
+    code: 221-02
+    parent_code: '221'
+    level: 4
+  IdsEconomicaIngresos_CombustiblesYCarburantes:
+    kind: E
+    area: economic
+    name: Combustibles y carburantes
+    code: 221-03
+    parent_code: '221'
+    level: 4
+  IdsEconomicaIngresos_Vestuario:
+    kind: E
+    area: economic
+    name: Vestuario
+    code: 221-04
+    parent_code: '221'
+    level: 4
+  IdsEconomicaIngresos_ProductosAlimenticios:
+    kind: E
+    area: economic
+    name: Productos alimenticios
+    code: 221-05
+    parent_code: '221'
+    level: 4
+  IdsEconomicaIngresos_ProductosFarmaceuticosYMaterialSanitario:
+    kind: E
+    area: economic
+    name: Productos farmacéuticos y material sanitario
+    code: 221-06
+    parent_code: '221'
+    level: 4
+  IdsEconomicaIngresos_ProductosDeLimpiezaYAseo:
+    kind: E
+    area: economic
+    name: Productos de limpieza y aseo
+    code: 221-10
+    parent_code: '221'
+    level: 4
+  IdsEconomicaIngresos_SuministrosDeRepuestosDeMaquinariaUtillajeYElementosDeTransporte:
+    kind: E
+    area: economic
+    name: Suministros de repuestos de maquinaria, utillaje y elementos de transporte
+    code: 221-11
+    parent_code: '221'
+    level: 4
+  IdsEconomicaIngresos_SuministrosDeMaterialElectronicoElectricoYDeTelecomunicaciones:
+    kind: E
+    area: economic
+    name: Suministros de material electrónico, eléctrico y de telecomunicaciones
+    code: 221-12
+    parent_code: '221'
+    level: 4
+  IdsEconomicaIngresos_ManutencionDeAnimales:
+    kind: E
+    area: economic
+    name: Manutención de animales
+    code: 221-13
+    parent_code: '221'
+    level: 4
+  IdsEconomicaIngresos_OtrosSuministros:
+    kind: E
+    area: economic
+    name: Otros suministros
+    code: 221-99
+    parent_code: '221'
+    level: 4
+  IdsEconomicaIngresos_Comunicaciones:
+    kind: E
+    area: economic
+    name: Comunicaciones
+    code: '222'
+    parent_code: '22'
+    level: 3
+  IdsEconomicaIngresos_ServiciosDeTelecomunicaciones:
+    kind: E
+    area: economic
+    name: Servicios de Telecomunicaciones
+    code: 222-00
+    parent_code: '222'
+    level: 4
+  IdsEconomicaIngresos_Postales:
+    kind: E
+    area: economic
+    name: Postales
+    code: 222-01
+    parent_code: '222'
+    level: 4
+  IdsEconomicaIngresos_Telegraficas:
+    kind: E
+    area: economic
+    name: Telegráficas
+    code: 222-02
+    parent_code: '222'
+    level: 4
+  IdsEconomicaIngresos_Informaticas:
+    kind: E
+    area: economic
+    name: Informáticas
+    code: 222-03
+    parent_code: '222'
+    level: 4
+  IdsEconomicaIngresos_OtrosGastosEnComunicaciones:
+    kind: E
+    area: economic
+    name: Otros gastos en comunicaciones
+    code: 222-99
+    parent_code: '222'
+    level: 4
+  IdsEconomicaIngresos_Transportes:
+    kind: E
+    area: economic
+    name: Transportes
+    code: '223'
+    parent_code: '22'
+    level: 3
+  IdsEconomicaIngresos_PrimasDeSeguros:
+    kind: E
+    area: economic
+    name: Primas de seguros
+    code: '224'
+    parent_code: '22'
+    level: 3
+  IdsEconomicaIngresos_Tributos:
+    kind: E
+    area: economic
+    name: Tributos
+    code: '225'
+    parent_code: '22'
+    level: 3
+  IdsEconomicaIngresos_TributosEstatales:
+    kind: E
+    area: economic
+    name: Tributos estatales
+    code: 225-00
+    parent_code: '225'
+    level: 4
+  IdsEconomicaIngresos_TributosDeLasComunidadesAutonomas:
+    kind: E
+    area: economic
+    name: Tributos de las Comunidades Autónomas
+    code: 225-01
+    parent_code: '225'
+    level: 4
+  IdsEconomicaIngresos_TributosDeLasEntidadesLocales:
+    kind: E
+    area: economic
+    name: Tributos de las Entidades locales
+    code: 225-02
+    parent_code: '225'
+    level: 4
+  IdsEconomicaIngresos_GastosDiversos:
+    kind: E
+    area: economic
+    name: Gastos diversos
+    code: '226'
+    parent_code: '22'
+    level: 3
+  IdsEconomicaIngresos_AtencionesProtocolariasYRepresentativas:
+    kind: E
+    area: economic
+    name: Atenciones protocolarias y representativas
+    code: 226-01
+    parent_code: '226'
+    level: 4
+  IdsEconomicaIngresos_PublicidadYPropaganda:
+    kind: E
+    area: economic
+    name: Publicidad y propaganda
+    code: 226-02
+    parent_code: '226'
+    level: 4
+  IdsEconomicaIngresos_PublicacionEnDiariosOficiales:
+    kind: E
+    area: economic
+    name: Publicación en Diarios Oficiales
+    code: 226-03
+    parent_code: '226'
+    level: 4
+  IdsEconomicaIngresos_JuridicosContenciosos:
+    kind: E
+    area: economic
+    name: Jurídicos, contenciosos
+    code: 226-04
+    parent_code: '226'
+    level: 4
+  IdsEconomicaIngresos_ReunionesConferenciasYCursos:
+    kind: E
+    area: economic
+    name: Reuniones, conferencias y cursos
+    code: 226-06
+    parent_code: '226'
+    level: 4
+  IdsEconomicaIngresos_OposicionesYPruebasSelectivas:
+    kind: E
+    area: economic
+    name: Oposiciones y pruebas selectivas
+    code: 226-07
+    parent_code: '226'
+    level: 4
+  IdsEconomicaIngresos_ActividadesCulturalesYDeportivas:
+    kind: E
+    area: economic
+    name: Actividades culturales y deportivas
+    code: 226-09
+    parent_code: '226'
+    level: 4
+  IdsEconomicaIngresos_OtrosGastosDiversos:
+    kind: E
+    area: economic
+    name: Otros gastos diversos
+    code: 226-99
+    parent_code: '226'
+    level: 4
+  IdsEconomicaIngresos_TrabajosRealizadosPorOtrasEmpresasYProfesionales:
+    kind: E
+    area: economic
+    name: Trabajos realizados por otras empresas y profesionales
+    code: '227'
+    parent_code: '22'
+    level: 3
+  IdsEconomicaIngresos_LimpiezaYAseo:
+    kind: E
+    area: economic
+    name: Limpieza y aseo
+    code: 227-00
+    parent_code: '227'
+    level: 4
+  IdsEconomicaIngresos_Seguridad:
+    kind: E
+    area: economic
+    name: Seguridad
+    code: 227-01
+    parent_code: '227'
+    level: 4
+  IdsEconomicaIngresos_ValoracionesYPeritajes:
+    kind: E
+    area: economic
+    name: Valoraciones y peritajes
+    code: 227-02
+    parent_code: '227'
+    level: 4
+  IdsEconomicaIngresos_CustodiaDepositoYAlmacenaje:
+    kind: E
+    area: economic
+    name: Custodia, depósito y almacenaje
+    code: 227-04
+    parent_code: '227'
+    level: 4
+  IdsEconomicaIngresos_ProcesosElectorales:
+    kind: E
+    area: economic
+    name: Procesos electorales
+    code: 227-05
+    parent_code: '227'
+    level: 4
+  IdsEconomicaIngresos_EstudiosYTrabajosTecnicos:
+    kind: E
+    area: economic
+    name: Estudios y trabajos técnicos
+    code: 227-06
+    parent_code: '227'
+    level: 4
+  IdsEconomicaIngresos_ServiciosDeRecaudacionAFavorDeLaEntidad:
+    kind: E
+    area: economic
+    name: Servicios de recaudación a favor de la entidad
+    code: 227-08
+    parent_code: '227'
+    level: 4
+  IdsEconomicaIngresos_OtrosTrabajosRealizadosPorOtrasEmpresasYProfesionales:
+    kind: E
+    area: economic
+    name: Otros trabajos realizados por otras empresas y profesionales
+    code: 227-99
+    parent_code: '227'
+    level: 4
+  IdsEconomicaIngresos_IndemnizacionesPorRazonDelServicio:
+    kind: E
+    area: economic
+    name: Indemnizaciones por razón del servicio
+    code: '23'
+    parent_code: '2'
+    level: 2
+  IdsEconomicaIngresos_Dietas:
+    kind: E
+    area: economic
+    name: Dietas
+    code: '230'
+    parent_code: '23'
+    level: 3
+  ? IdsEconomicaIngresos_GastosCorrientesEnBienesYServicios_IndemnizacionesPorRazonDelServicio_Dietas_DeLosMiembrosDeLosOrganosDeGobierno
+  : kind: E
+    area: economic
+    name: De los miembros de los órganos de gobierno
+    code: 230-00
+    parent_code: '230'
+    level: 4
+  IdsEconomicaIngresos_GastosCorrientesEnBienesYServicios_IndemnizacionesPorRazonDelServicio_Dietas_DelPersonalDirectivo:
+    kind: E
+    area: economic
+    name: Del personal directivo
+    code: 230-10
+    parent_code: '230'
+    level: 4
+  IdsEconomicaIngresos_Dietas_DelPersonalNoDirectivo: NOT-FOUND
+  IdsEconomicaIngresos_Locomocion:
+    kind: E
+    area: economic
+    name: Locomoción
+    code: '231'
+    parent_code: '23'
+    level: 3
+  ? IdsEconomicaIngresos_GastosCorrientesEnBienesYServicios_IndemnizacionesPorRazonDelServicio_Locomocion_DeLosMiembrosDeLosOrganosDeGobierno
+  : kind: E
+    area: economic
+    name: De los miembros de los órganos de gobierno
+    code: 231-00
+    parent_code: '231'
+    level: 4
+  IdsEconomicaIngresos_GastosCorrientesEnBienesYServicios_IndemnizacionesPorRazonDelServicio_Locomocion_DelPersonalDirectivo:
+    kind: E
+    area: economic
+    name: Del personal directivo
+    code: 231-10
+    parent_code: '231'
+    level: 4
+  IdsEconomicaIngresos_Locomocion_DelPersonalNoDirectivo: NOT-FOUND
+  IdsEconomicaIngresos_OtrasIndemnizaciones:
+    kind: E
+    area: economic
+    name: Otras indemnizaciones
+    code: '233'
+    parent_code: '23'
+    level: 3
+  IdsEconomicaIngresos_GastosDePublicaciones:
+    kind: E
+    area: economic
+    name: Gastos de publicaciones
+    code: '24'
+    parent_code: '2'
+    level: 2
+  IdsEconomicaIngresos_GastosDeEdicionYDistribucion:
+    kind: E
+    area: economic
+    name: Gastos de edición y distribución
+    code: '240'
+    parent_code: '24'
+    level: 3
+  IdsEconomicaIngresos_TrabajosRealizadosPorAdministracionesPublicasYOtrasEntidadesPublicas:
+    kind: E
+    area: economic
+    name: Trabajos realizados por administraciones públicas y otras entidades públicas
+    code: '25'
+    parent_code: '2'
+    level: 2
+  IdsEconomicaIngresos_TrabajosRealizadosPorInstitucionesSinFinesDeLucro:
+    kind: E
+    area: economic
+    name: Trabajos realizados por Instituciones sin fines de lucro
+    code: '26'
+    parent_code: '2'
+    level: 2
+  IdsEconomicaIngresos_GastosFinancieros:
+    kind: E
+    area: economic
+    name: Gastos financieros
+    code: '3'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_DeDeudaPublicaEnEuros:
+    kind: E
+    area: economic
+    name: De Deuda Pública en euros
+    code: '30'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_DeDeudaPublicaEnEuros_Intereses:
+    kind: E
+    area: economic
+    name: Intereses
+    code: '300'
+    parent_code: '30'
+    level: 3
+  IdsEconomicaIngresos_DeDeudaPublicaEnEuros_GastosDeEmisionModificacionYCancelacion:
+    kind: E
+    area: economic
+    name: Gastos de emisión, modificación y cancelación
+    code: '301'
+    parent_code: '30'
+    level: 3
+  IdsEconomicaIngresos_OtrosGastosFinancierosDeDeudaPublicaEnEuros:
+    kind: E
+    area: economic
+    name: Otros gastos financieros de Deuda Pública en euros
+    code: '309'
+    parent_code: '30'
+    level: 3
+  IdsEconomicaIngresos_DePrestamosYOtrasOperacionesFinancierasEnEuros:
+    kind: E
+    area: economic
+    name: De préstamos y otras operaciones financieras en euros
+    code: '31'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_DePrestamosYOtrasOperacionesFinancierasEnEuros_Intereses:
+    kind: E
+    area: economic
+    name: Intereses
+    code: '310'
+    parent_code: '31'
+    level: 3
+  IdsEconomicaIngresos_DePrestamosYOtrasOperacionesFinancierasEnEuros_GastosDeFormalizacionModificacionYCancelacion:
+    kind: E
+    area: economic
+    name: Gastos de formalización, modificación y cancelación
+    code: '311'
+    parent_code: '31'
+    level: 3
+  IdsEconomicaIngresos_OtrosGastosFinancierosDePrestamosYOtrasOperacionesFinancierasEnEuros:
+    kind: E
+    area: economic
+    name: Otros gastos financieros de préstamos y otras operaciones financieras en
+      euros
+    code: '319'
+    parent_code: '31'
+    level: 3
+  IdsEconomicaIngresos_DeDeudaPublicaEnMonedaDistintaDelEuro:
+    kind: E
+    area: economic
+    name: De Deuda Pública en moneda distinta del euro
+    code: '32'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_DeDeudaPublicaEnMonedaDistintaDelEuro_Intereses:
+    kind: E
+    area: economic
+    name: Intereses
+    code: '320'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_DeDeudaPublicaEnMonedaDistintaDelEuro_GastosDeEmisionModificacionYCancelacion:
+    kind: E
+    area: economic
+    name: Gastos de emisión, modificación y cancelación
+    code: '321'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_DeDeudaPublicaEnMonedaDistintaDelEuro_DiferenciasDeCambio:
+    kind: E
+    area: economic
+    name: Diferencias de cambio
+    code: '322'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_OtrosGastosFinancierosDeDeudaPublicaEnMonedaDistintaDelEuro:
+    kind: E
+    area: economic
+    name: Otros gastos financieros de Deuda Pública en moneda distinta del euro
+    code: '329'
+    parent_code: '32'
+    level: 3
+  IdsEconomicaIngresos_DePrestamosYOtrasOperacionesFinancierasEnMonedaDistintaDelEuro:
+    kind: E
+    area: economic
+    name: De préstamos y otras operaciones financieras en moneda distinta del euro
+    code: '33'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_DePrestamosYOtrasOperacionesFinancierasEnMonedaDistintaDelEuro_Intereses:
+    kind: E
+    area: economic
+    name: Intereses
+    code: '330'
+    parent_code: '33'
+    level: 3
+  ? IdsEconomicaIngresos_DePrestamosYOtrasOperacionesFinancierasEnMonedaDistintaDelEuro_GastosDeFormalizacionModificacionYCancelacion
+  : kind: E
+    area: economic
+    name: Gastos de formalización, modificación y cancelación
+    code: '331'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_DePrestamosYOtrasOperacionesFinancierasEnMonedaDistintaDelEuro_DiferenciasDeCambio:
+    kind: E
+    area: economic
+    name: Diferencias de cambio
+    code: '332'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_OtrosGastosFinancierosDePrestamosYOtrasOperacionesFinancierasEnMonedaDistintaDelEuro:
+    kind: E
+    area: economic
+    name: Otros gastos financieros de préstamos y otras operaciones financieras en
+      moneda distinta del euro
+    code: '339'
+    parent_code: '33'
+    level: 3
+  IdsEconomicaIngresos_DeDepositosFianzasYOtros:
+    kind: E
+    area: economic
+    name: De depósitos, fianzas y otros
+    code: '34'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_EconomicaIngresos_GastosFinancieros_DeDepositosFianzasYOtros_InteresesDeDepositos:
+    kind: E
+    area: economic
+    name: Intereses de depósitos
+    code: '340'
+    parent_code: '34'
+    level: 3
+  IdsEconomicaIngresos_InteresesDeFianzas:
+    kind: E
+    area: economic
+    name: Intereses de fianzas
+    code: '341'
+    parent_code: '34'
+    level: 3
+  IdsEconomicaIngresos_InteresesDeDemoraYOtrosGastosFinancieros:
+    kind: E
+    area: economic
+    name: Intereses de demora y otros gastos financieros
+    code: '35'
+    parent_code: '3'
+    level: 2
+  IdsEconomicaIngresos_EconomicaIngresos_GastosFinancieros_InteresesDeDemoraYOtrosGastosFinancieros_InteresesDeDemora:
+    kind: E
+    area: economic
+    name: Intereses de demora
+    code: '352'
+    parent_code: '35'
+    level: 3
+  IdsEconomicaIngresos_OperacionesDeIntercambioFinanciero:
+    kind: E
+    area: economic
+    name: Operaciones de intercambio financiero
+    code: '353'
+    parent_code: '35'
+    level: 3
+  IdsEconomicaIngresos_EjecucionDeAvales:
+    kind: E
+    area: economic
+    name: Ejecución de avales
+    code: '357'
+    parent_code: '35'
+    level: 3
+  IdsEconomicaIngresos_InteresesPorOperacionesDeArrendamientoFinancieroLeasing:
+    kind: E
+    area: economic
+    name: "Intereses por operaciones de arrendamiento financiero (\x93leasing\x94)"
+    code: '358'
+    parent_code: '35'
+    level: 3
+  IdsEconomicaIngresos_OtrosGastosFinancieros:
+    kind: E
+    area: economic
+    name: Otros gastos financieros
+    code: '359'
+    parent_code: '35'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasCorrientes:
+    kind: E
+    area: economic
+    name: Transferencias corrientes
+    code: '4'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_TransferenciasCorrientes_ALaAdministracionGeneralDeLaEntidadLocal: NOT-FOUND
+  IdsEconomicaIngresos_TransferenciasCorrientes_AOrganismosAutonomosDeLaEntidadLocal:
+    kind: E
+    area: economic
+    name: A Organismos Autónomos de la Entidad Local
+    code: '41'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasCorrientes_ALaAdministracionDelEstado:
+    kind: E
+    area: economic
+    name: A la Administración del Estado
+    code: '42'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasCorrientes_ALaAdministracionDelEstado_ALaAdministracionGeneralDelEstado:
+    kind: E
+    area: economic
+    name: A la Administración General del Estado
+    code: '420'
+    parent_code: '42'
+    level: 3
+  IdsEconomicaIngresos_AOrganismosAutonomosYAgenciasDelEstado:
+    kind: E
+    area: economic
+    name: A Organismos Autónomos y agencias del Estado
+    code: '421'
+    parent_code: '42'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciasCorrientes_ALaAdministracionDelEstado_AOrganismosAutonomosYAgenciasDelEstado_AlServicioPublicoDeEmpleoEstatal
+  : kind: E
+    area: economic
+    name: Al Servicio Público de Empleo Estatal
+    code: 421-00
+    parent_code: '421'
+    level: 4
+  ? IdsEconomicaIngresos_TransferenciasCorrientes_ALaAdministracionDelEstado_AOrganismosAutonomosYAgenciasDelEstado_AOtrosOrganismosAutonomos
+  : kind: E
+    area: economic
+    name: A otros organismos autónomos
+    code: 421-10
+    parent_code: '421'
+    level: 4
+  IdsEconomicaIngresos_TransferenciasCorrientes_ALaAdministracionDelEstado_AFundacionesEstatales:
+    kind: E
+    area: economic
+    name: A Fundaciones estatales
+    code: '422'
+    parent_code: '42'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciasCorrientes_ALaAdministracionDelEstado_ASociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos
+  : kind: E
+    area: economic
+    name: A sociedades mercantiles estatales, entidades públicas empresariales y otros
+      organismos públicos
+    code: '423'
+    parent_code: '42'
+    level: 3
+  ? IdsEconomicaIngresos_ALaAdministracionDelEstado_ASociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos_SubvencionesParaFomentoDelEmpleo
+  : NOT-FOUND
+  ? IdsEconomicaIngresos_ALaAdministracionDelEstado_ASociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos_SubvencionesParaBonificacionDeInteresesYPrimasDeSeguros
+  : kind: E
+    area: economic
+    name: Subvenciones para bonificación de intereses y primas de seguros
+    code: 423-10
+    parent_code: '423'
+    level: 4
+  ? IdsEconomicaIngresos_ALaAdministracionDelEstado_ASociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos_SubvencionesParaReducirElPrecioAPagarPorLosConsumidores
+  : kind: E
+    area: economic
+    name: Subvenciones para reducir el precio a pagar por los consumidores
+    code: 423-20
+    parent_code: '423'
+    level: 4
+  ? IdsEconomicaIngresos_OtrasSubvencionesASociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos
+  : kind: E
+    area: economic
+    name: Otras subvenciones a sociedades mercantiles estatales, entidades públicas
+      empresariales y otros organismos públicos
+    code: 423-90
+    parent_code: '423'
+    level: 4
+  IdsEconomicaIngresos_TransferenciasCorrientes_ALaSeguridadSocial:
+    kind: E
+    area: economic
+    name: A la Seguridad Social
+    code: '43'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasCorrientes_AEntesPublicosYSociedadesMercantilesDeLaEntidadLocal:
+    kind: E
+    area: economic
+    name: A entes públicos y sociedades mercantiles de la Entidad Local
+    code: '44'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_AEntesPublicosYSociedadesMercantilesDeLaEntidadLocal_SubvencionesParaFomentoDelEmpleo: NOT-FOUND
+  ? IdsEconomicaIngresos_AEntesPublicosYSociedadesMercantilesDeLaEntidadLocal_SubvencionesParaBonificacionDeInteresesYPrimasDeSeguros
+  : NOT-FOUND
+  ? IdsEconomicaIngresos_AEntesPublicosYSociedadesMercantilesDeLaEntidadLocal_SubvencionesParaReducirElPrecioAPagarPorLosConsumidores
+  : NOT-FOUND
+  IdsEconomicaIngresos_OtrasSubvencionesAEntesPublicosYSociedadesMercantilesDeLaEntidadLocal:
+    kind: E
+    area: economic
+    name: Otras subvenciones a entes públicos y sociedades mercantiles de la Entidad
+      Local
+    code: '449'
+    parent_code: '44'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasCorrientes_AComunidadesAutonomas:
+    kind: E
+    area: economic
+    name: A Comunidades Autónomas
+    code: '45'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasCorrientes_AComunidadesAutonomas_ALaAdministracionGeneralDeLasComunidadesAutonomas:
+    kind: E
+    area: economic
+    name: A la Administración General de las Comunidades Autónomas
+    code: '450'
+    parent_code: '45'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasCorrientes_AComunidadesAutonomas_AOrganismosAutonomosYAgenciasDeLasComunidadesAutonomas:
+    kind: E
+    area: economic
+    name: A Organismos Autónomos y agencias de las Comunidades Autónomas
+    code: '451'
+    parent_code: '45'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasCorrientes_AComunidadesAutonomas_AFundacionesDeLasComunidadesAutonomas:
+    kind: E
+    area: economic
+    name: A fundaciones de las Comunidades Autónomas
+    code: '452'
+    parent_code: '45'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciasCorrientes_AComunidadesAutonomas_ASociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas
+  : NOT-FOUND
+  ? IdsEconomicaIngresos_AComunidadesAutonomas_ASociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas_SubvencionesParaFomentoDelEmpleo
+  : NOT-FOUND
+  ? IdsEconomicaIngresos_AComunidadesAutonomas_ASociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas_SubvencionesParaBonificacionDeInteresesYPrimasDeSeguros
+  : NOT-FOUND
+  ? IdsEconomicaIngresos_AComunidadesAutonomas_ASociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas_SubvencionesParaReducirElPrecioAPagarPorLosConsumidores
+  : NOT-FOUND
+  ? IdsEconomicaIngresos_OtrasSubvencionesASociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas
+  : NOT-FOUND
+  IdsEconomicaIngresos_TransferenciasCorrientes_AEntidadesLocales:
+    kind: E
+    area: economic
+    name: A Entidades Locales
+    code: '46'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_ADiputacionesConsejosOCabildosInsulares:
+    kind: E
+    area: economic
+    name: A Diputaciones, Consejos o Cabildos insulares
+    code: '461'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasCorrientes_AEntidadesLocales_AAyuntamientos:
+    kind: E
+    area: economic
+    name: A Ayuntamientos
+    code: '462'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasCorrientes_AEntidadesLocales_AMancomunidades:
+    kind: E
+    area: economic
+    name: A Mancomunidades
+    code: '463'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasCorrientes_AEntidadesLocales_AAreasMetropolitanas:
+    kind: E
+    area: economic
+    name: A Áreas Metropolitanas
+    code: '464'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasCorrientes_AEntidadesLocales_AComarcas:
+    kind: E
+    area: economic
+    name: A Comarcas
+    code: '465'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_AOtrasEntidadesQueAgrupenMunicipios:
+    kind: E
+    area: economic
+    name: A otras Entidades que agrupen municipios
+    code: '466'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasCorrientes_AEntidadesLocales_AConsorcios:
+    kind: E
+    area: economic
+    name: A Consorcios
+    code: '467'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasCorrientes_AEntidadesLocales_AEntidadesLocalesMenores:
+    kind: E
+    area: economic
+    name: A Entidades Locales Menores
+    code: '468'
+    parent_code: '46'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasCorrientes_AEmpresasPrivadas:
+    kind: E
+    area: economic
+    name: A Empresas privadas
+    code: '47'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_AEmpresasPrivadas_SubvencionesParaFomentoDelEmpleo:
+    kind: E
+    area: economic
+    name: Subvenciones para fomento del empleo
+    code: '470'
+    parent_code: '47'
+    level: 3
+  IdsEconomicaIngresos_AEmpresasPrivadas_SubvencionesParaBonificacionDeInteresesYPrimasDeSeguros:
+    kind: E
+    area: economic
+    name: Subvenciones para bonificación de intereses y primas de seguros
+    code: '471'
+    parent_code: '47'
+    level: 3
+  IdsEconomicaIngresos_AEmpresasPrivadas_SubvencionesParaReducirElPrecioAPagarPorLosConsumidores:
+    kind: E
+    area: economic
+    name: Subvenciones para reducir el precio a pagar por los consumidores
+    code: '472'
+    parent_code: '47'
+    level: 3
+  IdsEconomicaIngresos_OtrasSubvencionesAEmpresasPrivadas:
+    kind: E
+    area: economic
+    name: Otras subvenciones a Empresas privadas
+    code: '479'
+    parent_code: '47'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasCorrientes_AFamiliasEInstitucionesSinFinesDeLucro:
+    kind: E
+    area: economic
+    name: A Familias e Instituciones sin fines de lucro
+    code: '48'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasCorrientes_AlExterior:
+    kind: E
+    area: economic
+    name: Al Exterior
+    code: '49'
+    parent_code: '4'
+    level: 2
+  IdsEconomicaIngresos_FondoDeContingenciaYOtrosImprevistos:
+    kind: E
+    area: economic
+    name: Fondo de contingencia y otros imprevistos
+    code: '5'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_DotacionAlFondoDeContingenciaDeEjecucionPresupuestaria: NOT-FOUND
+  IdsEconomicaIngresos_FondoDeContingenciaArt31DeLaLeyOrganica2_2012DeEstabilidadPresupuestariaYSostenibilidadFinanciera: NOT-FOUND
+  IdsEconomicaIngresos_OtrosImprevistos:
+    kind: E
+    area: economic
+    name: Otros imprevistos
+    code: '501'
+    parent_code: '50'
+    level: 3
+  IdsEconomicaIngresos_InversionesReales:
+    kind: E
+    area: economic
+    name: Inversiones reales
+    code: '6'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_InversionNuevaEnInfraestructurasYBienesDestinadosAlUsoGeneral: NOT-FOUND
+  IdsEconomicaIngresos_InversionNuevaEnInfraestructurasYBienesDestinadosAlUsoGeneral_InversionesEnTerrenos: NOT-FOUND
+  IdsEconomicaIngresos_OtrasInversionesNuevasEnInfraestructurasYBienesDestinadosAlUsoGeneral:
+    kind: E
+    area: economic
+    name: Otras inversiones nuevas en infraestructuras y bienes destinados al uso
+      general
+    code: '609'
+    parent_code: '60'
+    level: 3
+  IdsEconomicaIngresos_InversionesDeReposicionDeInfraestructurasYBienesDestinadosAlUsoGeneral: NOT-FOUND
+  IdsEconomicaIngresos_InversionesDeReposicionDeInfraestructurasYBienesDestinadosAlUsoGeneral_InversionesEnTerrenos: NOT-FOUND
+  IdsEconomicaIngresos_OtrasInversionesDeReposicionEnInfraestructurasYBienesDestinadosAlUsoGeneral:
+    kind: E
+    area: economic
+    name: Otras inversiones de reposición en infraestructuras y bienes destinados
+      al uso general
+    code: '619'
+    parent_code: '61'
+    level: 3
+  IdsEconomicaIngresos_InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios:
+    kind: E
+    area: economic
+    name: Inversión nueva asociada al funcionamiento operativo de los servicios
+    code: '62'
+    parent_code: '6'
+    level: 2
+  IdsEconomicaIngresos_InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios_TerrenosYBienesNaturales:
+    kind: E
+    area: economic
+    name: Terrenos y bienes naturales
+    code: '621'
+    parent_code: '62'
+    level: 3
+  ? IdsEconomicaIngresos_InversionesReales_InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios_EdificiosYOtrasConstrucciones
+  : kind: E
+    area: economic
+    name: Edificios y otras construcciones
+    code: '622'
+    parent_code: '62'
+    level: 3
+  ? IdsEconomicaIngresos_InversionesReales_InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios_MaquinariaInstalacionesTecnicasYUtillaje
+  : kind: E
+    area: economic
+    name: Maquinaria, instalaciones técnicas y utillaje
+    code: '623'
+    parent_code: '62'
+    level: 3
+  IdsEconomicaIngresos_InversionesReales_InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios_ElementosDeTransporte:
+    kind: E
+    area: economic
+    name: Elementos de transporte
+    code: '624'
+    parent_code: '62'
+    level: 3
+  IdsEconomicaIngresos_InversionesReales_InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios_Mobiliario:
+    kind: E
+    area: economic
+    name: Mobiliario
+    code: '625'
+    parent_code: '62'
+    level: 3
+  ? IdsEconomicaIngresos_InversionesReales_InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios_EquiposParaProcesosDeInformacion
+  : kind: E
+    area: economic
+    name: Equipos para procesos de información
+    code: '626'
+    parent_code: '62'
+    level: 3
+  IdsEconomicaIngresos_InversionNuevaAsociadaAlFuncionamientoOperativoDeLosServicios_ProyectosComplejos:
+    kind: E
+    area: economic
+    name: Proyectos complejos
+    code: '627'
+    parent_code: '62'
+    level: 3
+  IdsEconomicaIngresos_OtrasInversionesNuevasAsociadasAlFuncionamientoOperativoDeLosServicios:
+    kind: E
+    area: economic
+    name: Otras inversiones nuevas asociadas al funcionamiento operativo de los servicios
+    code: '629'
+    parent_code: '62'
+    level: 3
+  IdsEconomicaIngresos_InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios:
+    kind: E
+    area: economic
+    name: Inversión de reposición asociada al funcionamiento operativo de los servicios
+    code: '63'
+    parent_code: '6'
+    level: 2
+  IdsEconomicaIngresos_InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios_TerrenosYBienesNaturales:
+    kind: E
+    area: economic
+    name: Terrenos y bienes naturales
+    code: '631'
+    parent_code: '63'
+    level: 3
+  ? IdsEconomicaIngresos_InversionesReales_InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios_EdificiosYOtrasConstrucciones
+  : kind: E
+    area: economic
+    name: Edificios y otras construcciones
+    code: '632'
+    parent_code: '63'
+    level: 3
+  ? IdsEconomicaIngresos_InversionesReales_InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios_MaquinariaInstalacionesTecnicasYUtillaje
+  : kind: E
+    area: economic
+    name: Maquinaria, instalaciones técnicas y utillaje
+    code: '633'
+    parent_code: '63'
+    level: 3
+  ? IdsEconomicaIngresos_InversionesReales_InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios_ElementosDeTransporte
+  : kind: E
+    area: economic
+    name: Elementos de transporte
+    code: '634'
+    parent_code: '63'
+    level: 3
+  IdsEconomicaIngresos_InversionesReales_InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios_Mobiliario:
+    kind: E
+    area: economic
+    name: Mobiliario
+    code: '635'
+    parent_code: '63'
+    level: 3
+  ? IdsEconomicaIngresos_InversionesReales_InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios_EquiposParaProcesosDeInformacion
+  : kind: E
+    area: economic
+    name: Equipos para procesos de información
+    code: '636'
+    parent_code: '63'
+    level: 3
+  IdsEconomicaIngresos_InversionDeReposicionAsociadaAlFuncionamientoOperativoDeLosServicios_ProyectosComplejos:
+    kind: E
+    area: economic
+    name: Proyectos complejos
+    code: '637'
+    parent_code: '63'
+    level: 3
+  IdsEconomicaIngresos_OtrasInversionesDeReposicionAsociadasAlFuncionamientoOperativoDeLosServicios:
+    kind: E
+    area: economic
+    name: Otras inversiones de reposición asociadas al funcionamiento operativo de
+      los servicios
+    code: '639'
+    parent_code: '63'
+    level: 3
+  IdsEconomicaIngresos_GastosEnInversionesDeCaracterInmaterial:
+    kind: E
+    area: economic
+    name: Gastos en inversiones de carácter inmaterial
+    code: '640'
+    parent_code: '64'
+    level: 3
+  IdsEconomicaIngresos_GastosEnInversionesDeCaracterInmaterial_GastosEnInversionesDeCaracterInmaterial: NOT-FOUND
+  IdsEconomicaIngresos_GastosEnAplicacionesInformaticas:
+    kind: E
+    area: economic
+    name: Gastos en aplicaciones informáticas
+    code: '641'
+    parent_code: '64'
+    level: 3
+  IdsEconomicaIngresos_CuotasNetasDeInteresesPorOperacionesDeArrendamientoFinancieroLeasing:
+    kind: E
+    area: economic
+    name: "Cuotas netas de intereses por operaciones de arrendamiento financiero (\x93leasing\x94)"
+    code: '648'
+    parent_code: '64'
+    level: 3
+  IdsEconomicaIngresos_InversionesGestionadasParaOtrosEntesPublicos:
+    kind: E
+    area: economic
+    name: Inversiones gestionadas para otros entes públicos
+    code: '65'
+    parent_code: '6'
+    level: 2
+  IdsEconomicaIngresos_GastosEnInversionesGestionadasParaOtrosEntesPublicos:
+    kind: E
+    area: economic
+    name: Gastos en inversiones gestionadas para otros entes públicos
+    code: '650'
+    parent_code: '65'
+    level: 3
+  IdsEconomicaIngresos_GastosEnInversionesDeBienesPatrimoniales:
+    kind: E
+    area: economic
+    name: Gastos en inversiones de bienes patrimoniales
+    code: '68'
+    parent_code: '6'
+    level: 2
+  IdsEconomicaIngresos_GastosEnInversionesDeBienesPatrimoniales_TerrenosYBienesNaturales:
+    kind: E
+    area: economic
+    name: Terrenos y bienes naturales
+    code: '681'
+    parent_code: '68'
+    level: 3
+  IdsEconomicaIngresos_InversionesReales_GastosEnInversionesDeBienesPatrimoniales_EdificiosYOtrasConstrucciones:
+    kind: E
+    area: economic
+    name: Edificios y otras construcciones
+    code: '682'
+    parent_code: '68'
+    level: 3
+  IdsEconomicaIngresos_OtrosGastosEnInversionesDeBienesPatrimoniales:
+    kind: E
+    area: economic
+    name: Otros gastos en inversiones de bienes patrimoniales
+    code: '689'
+    parent_code: '68'
+    level: 3
+  IdsEconomicaIngresos_InversionesEnBienesComunales:
+    kind: E
+    area: economic
+    name: Inversiones en bienes comunales
+    code: '69'
+    parent_code: '6'
+    level: 2
+  IdsEconomicaIngresos_InversionesEnBienesComunales_TerrenosYBienesNaturales:
+    kind: E
+    area: economic
+    name: Terrenos y bienes naturales
+    code: '690'
+    parent_code: '69'
+    level: 3
+  IdsEconomicaIngresos_InversionEnInfraestructuras:
+    kind: E
+    area: economic
+    name: Inversión en infraestructuras
+    code: '692'
+    parent_code: '69'
+    level: 3
+  IdsEconomicaIngresos_EconomicaIngresos_TransferenciasDeCapital:
+    kind: E
+    area: economic
+    name: Transferencias de capital
+    code: '7'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_TransferenciasDeCapital_ALaAdministracionGeneralDeLaEntidadLocal:
+    kind: E
+    area: economic
+    name: A la Administración General de la Entidad Local
+    code: '70'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_AOrganismosAutonomosDeLaEntidadLocal:
+    kind: E
+    area: economic
+    name: A Organismos Autónomos de la Entidad Local
+    code: '71'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_ALaAdministracionDelEstado:
+    kind: E
+    area: economic
+    name: A la Administración del Estado
+    code: '72'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_ALaAdministracionDelEstado_ALaAdministracionGeneralDelEstado:
+    kind: E
+    area: economic
+    name: A la Administración General del Estado
+    code: '720'
+    parent_code: '72'
+    level: 3
+  IdsEconomicaIngresos_EconomicaIngresos_TransferenciasDeCapital_ALaAdministracionDelEstado_AOrganismosAutonomosYAgencias:
+    kind: E
+    area: economic
+    name: A Organismos Autónomos y agencias
+    code: '721'
+    parent_code: '72'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciasDeCapital_ALaAdministracionDelEstado_AOrganismosAutonomosYAgencias_AlServicioPublicoDeEmpleoEstatal
+  : NOT-FOUND
+  ? IdsEconomicaIngresos_TransferenciasDeCapital_ALaAdministracionDelEstado_AOrganismosAutonomosYAgencias_AOtrosOrganismosAutonomos
+  : kind: E
+    area: economic
+    name: A otros organismos autónomos
+    code: 721-09
+    parent_code: '721'
+    level: 4
+  IdsEconomicaIngresos_TransferenciasDeCapital_ALaAdministracionDelEstado_AFundacionesEstatales:
+    kind: E
+    area: economic
+    name: A fundaciones estatales
+    code: '722'
+    parent_code: '72'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciasDeCapital_ALaAdministracionDelEstado_ASociedadesMercantilesEstatalesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicos
+  : kind: E
+    area: economic
+    name: A sociedades mercantiles estatales, entidades públicas empresariales y otros
+      organismos públicos
+    code: '723'
+    parent_code: '72'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_ALaSeguridadSocial:
+    kind: E
+    area: economic
+    name: A la Seguridad Social
+    code: '73'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_AEntesPublicosYSociedadesMercantilesDeLaEntidadLocal:
+    kind: E
+    area: economic
+    name: A entes públicos y sociedades mercantiles de la Entidad local
+    code: '74'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_AComunidadesAutonomas:
+    kind: E
+    area: economic
+    name: A Comunidades Autónomas
+    code: '75'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_AComunidadesAutonomas_ALaAdministracionGeneralDeLasComunidadesAutonomas:
+    kind: E
+    area: economic
+    name: A la Administración General de las Comunidades Autónomas
+    code: '750'
+    parent_code: '75'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_AComunidadesAutonomas_AOrganismosAutonomosYAgenciasDeLasComunidadesAutonomas:
+    kind: E
+    area: economic
+    name: A Organismos Autónomos y agencias de las Comunidades Autónomas
+    code: '751'
+    parent_code: '75'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_AComunidadesAutonomas_AFundacionesDeLasComunidadesAutonomas:
+    kind: E
+    area: economic
+    name: A fundaciones de las Comunidades Autónomas
+    code: '752'
+    parent_code: '75'
+    level: 3
+  ? IdsEconomicaIngresos_TransferenciasDeCapital_AComunidadesAutonomas_ASociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas
+  : NOT-FOUND
+  IdsEconomicaIngresos_TransferenciasDeCapital_AEntidadesLocales:
+    kind: E
+    area: economic
+    name: A Entidades Locales
+    code: '76'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_ADiputacionesConsejosOCabildos:
+    kind: E
+    area: economic
+    name: A Diputaciones, Consejos o Cabildos
+    code: '761'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_AEntidadesLocales_AAyuntamientos:
+    kind: E
+    area: economic
+    name: A Ayuntamientos
+    code: '762'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_AEntidadesLocales_AMancomunidades:
+    kind: E
+    area: economic
+    name: A Mancomunidades
+    code: '763'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_AEntidadesLocales_AAreasMetropolitanas:
+    kind: E
+    area: economic
+    name: A Áreas Metropolitanas
+    code: '764'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_AEntidadesLocales_AComarcas:
+    kind: E
+    area: economic
+    name: A Comarcas
+    code: '765'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_AEntidadesQueAgrupenMunicipios:
+    kind: E
+    area: economic
+    name: A Entidades que agrupen Municipios
+    code: '766'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_AEntidadesLocales_AConsorcios:
+    kind: E
+    area: economic
+    name: A Consorcios
+    code: '767'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_AEntidadesLocales_AEntidadesLocalesMenores:
+    kind: E
+    area: economic
+    name: A Entidades Locales Menores
+    code: '768'
+    parent_code: '76'
+    level: 3
+  IdsEconomicaIngresos_TransferenciasDeCapital_AEmpresasPrivadas:
+    kind: E
+    area: economic
+    name: A Empresas privadas
+    code: '77'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_AFamiliasEInstitucionesSinFinesDeLucro:
+    kind: E
+    area: economic
+    name: A Familias e Instituciones  sin fines de lucro
+    code: '78'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasDeCapital_AlExterior:
+    kind: E
+    area: economic
+    name: Al Exterior
+    code: '79'
+    parent_code: '7'
+    level: 2
+  IdsEconomicaIngresos_EconomicaGastos_ActivosFinancieros:
+    kind: E
+    area: economic
+    name: Activos financieros
+    code: '8'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_AdquisicionDeDeudaDelSectorPublico:
+    kind: E
+    area: economic
+    name: Adquisición de Deuda del Sector Público
+    code: '80'
+    parent_code: '8'
+    level: 2
+  IdsEconomicaIngresos_AdquisicionDeDeudaDelSectorPublicoACortoPlazo:
+    kind: E
+    area: economic
+    name: Adquisición de deuda del sector público a corto plazo
+    code: '800'
+    parent_code: '80'
+    level: 3
+  IdsEconomicaIngresos_AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoACortoPlazo_AlEstado:
+    kind: E
+    area: economic
+    name: Al Estado
+    code: 800-00
+    parent_code: '800'
+    level: 4
+  ? IdsEconomicaIngresos_ActivosFinancieros_AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoACortoPlazo_AComunidadesAutonomas
+  : kind: E
+    area: economic
+    name: A Comunidades Autónomas
+    code: 800-10
+    parent_code: '800'
+    level: 4
+  ? IdsEconomicaIngresos_ActivosFinancieros_AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoACortoPlazo_AEntidadesLocales
+  : kind: E
+    area: economic
+    name: A entidades locales
+    code: 800-02
+    parent_code: '800'
+    level: 4
+  IdsEconomicaIngresos_AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoACortoPlazo_AOtrosSubsectores:
+    kind: E
+    area: economic
+    name: A otros subsectores
+    code: 800-90
+    parent_code: '800'
+    level: 4
+  IdsEconomicaIngresos_AdquisicionDeDeudaDelSectorPublicoALargoPlazo:
+    kind: E
+    area: economic
+    name: Adquisición de deuda del sector público a largo plazo
+    code: '801'
+    parent_code: '80'
+    level: 3
+  IdsEconomicaIngresos_AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoALargoPlazo_AlEstado:
+    kind: E
+    area: economic
+    name: Al Estado
+    code: 801-00
+    parent_code: '801'
+    level: 4
+  ? IdsEconomicaIngresos_ActivosFinancieros_AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoALargoPlazo_AComunidadesAutonomas
+  : kind: E
+    area: economic
+    name: A Comunidades Autónomas
+    code: 801-10
+    parent_code: '801'
+    level: 4
+  ? IdsEconomicaIngresos_ActivosFinancieros_AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoALargoPlazo_AEntidadesLocales
+  : kind: E
+    area: economic
+    name: A Entidades locales
+    code: 801-20
+    parent_code: '801'
+    level: 4
+  IdsEconomicaIngresos_AdquisicionDeDeudaDelSectorPublico_AdquisicionDeDeudaDelSectorPublicoALargoPlazo_AOtrosSubsectores:
+    kind: E
+    area: economic
+    name: A otros subsectores
+    code: 801-90
+    parent_code: '801'
+    level: 4
+  IdsEconomicaIngresos_AdquisicionDeObligacionesYBonosFueraDelSectorPublico:
+    kind: E
+    area: economic
+    name: Adquisición de Obligaciones y Bonos fuera del sector público
+    code: '81'
+    parent_code: '8'
+    level: 2
+  IdsEconomicaIngresos_AdquisicionDeObligacionesYBonosFueraDelSectorPublicoACortoPlazoDesarrolloPorSectores:
+    kind: E
+    area: economic
+    name: Adquisición de obligaciones y bonos fuera del sector público a corto plazo
+      Desarrollo por sectores
+    code: '810'
+    parent_code: '81'
+    level: 3
+  IdsEconomicaIngresos_AdquisicionDeObligacionesYBonosFueraDelSectorPublicoALargoPlazoDesarrolloPorSectores:
+    kind: E
+    area: economic
+    name: Adquisición de obligaciones y bonos fuera del sector público a largo plazo
+      Desarrollo por sectores
+    code: '811'
+    parent_code: '81'
+    level: 3
+  IdsEconomicaIngresos_ConcesionDePrestamosAlSectorPublico: NOT-FOUND
+  IdsEconomicaIngresos_PrestamosACortoPlazo:
+    kind: E
+    area: economic
+    name: Préstamos a corto plazo
+    code: '820'
+    parent_code: '82'
+    level: 3
+  IdsEconomicaIngresos_ConcesionPrestamosAlSectorPublico_PrestamosACortoPlazo_AlEstado:
+    kind: E
+    area: economic
+    name: Al Estado
+    code: 820-00
+    parent_code: '820'
+    level: 4
+  IdsEconomicaIngresos_ActivosFinancieros_ConcesionPrestamosAlSectorPublico_PrestamosACortoPlazo_AComunidadesAutonomas:
+    kind: E
+    area: economic
+    name: A Comunidades Autónomas
+    code: 820-10
+    parent_code: '820'
+    level: 4
+  IdsEconomicaIngresos_ActivosFinancieros_ConcesionPrestamosAlSectorPublico_PrestamosACortoPlazo_AEntidadesLocales:
+    kind: E
+    area: economic
+    name: A entidades locales
+    code: 820-02
+    parent_code: '820'
+    level: 4
+  IdsEconomicaIngresos_ConcesionPrestamosAlSectorPublico_PrestamosACortoPlazo_AOtrosSubsectores:
+    kind: E
+    area: economic
+    name: A otros subsectores
+    code: 820-09
+    parent_code: '820'
+    level: 4
+  IdsEconomicaIngresos_PrestamosALargoPlazo:
+    kind: E
+    area: economic
+    name: Préstamos a largo plazo
+    code: '821'
+    parent_code: '82'
+    level: 3
+  IdsEconomicaIngresos_ConcesionPrestamosAlSectorPublico_PrestamosALargoPlazo_AlEstado:
+    kind: E
+    area: economic
+    name: Al Estado
+    code: 821-00
+    parent_code: '821'
+    level: 4
+  IdsEconomicaIngresos_ActivosFinancieros_ConcesionPrestamosAlSectorPublico_PrestamosALargoPlazo_AComunidadesAutonomas:
+    kind: E
+    area: economic
+    name: A Comunidades Autónomas
+    code: 821-10
+    parent_code: '821'
+    level: 4
+  IdsEconomicaIngresos_ActivosFinancieros_ConcesionPrestamosAlSectorPublico_PrestamosALargoPlazo_AEntidadesLocales:
+    kind: E
+    area: economic
+    name: A Entidades locales
+    code: 820-20
+    parent_code: '820'
+    level: 4
+  IdsEconomicaIngresos_ConcesionPrestamosAlSectorPublico_PrestamosALargoPlazo_AOtrosSubsectores:
+    kind: E
+    area: economic
+    name: A otros subsectores
+    code: 820-90
+    parent_code: '820'
+    level: 4
+  IdsEconomicaIngresos_ConcesionDePrestamosFueraDelSectorPublico:
+    kind: E
+    area: economic
+    name: Concesión de préstamos fuera del sector público
+    code: '83'
+    parent_code: '8'
+    level: 2
+  IdsEconomicaIngresos_PrestamosACortoPlazoDesarrolloPorSectores:
+    kind: E
+    area: economic
+    name: Préstamos a corto plazo Desarrollo por sectores
+    code: '830'
+    parent_code: '83'
+    level: 3
+  IdsEconomicaIngresos_PrestamosALargoPlazoDesarrolloPorSectores:
+    kind: E
+    area: economic
+    name: Préstamos a largo plazo Desarrollo por sectores
+    code: '831'
+    parent_code: '83'
+    level: 3
+  IdsEconomicaIngresos_ConstitucionDeDepositosYFianzas:
+    kind: E
+    area: economic
+    name: Constitución de depósitos y fianzas
+    code: '84'
+    parent_code: '8'
+    level: 2
+  IdsEconomicaIngresos_Depositos:
+    kind: E
+    area: economic
+    name: Depósitos
+    code: '840'
+    parent_code: '84'
+    level: 3
+  IdsEconomicaIngresos_Depositos_ACortoPlazo: NOT-FOUND
+  IdsEconomicaIngresos_Depositos_ALargoPlazo: NOT-FOUND
+  IdsEconomicaIngresos_Fianzas:
+    kind: E
+    area: economic
+    name: Fianzas
+    code: '841'
+    parent_code: '84'
+    level: 3
+  IdsEconomicaIngresos_Fianzas_ACortoPlazo: NOT-FOUND
+  IdsEconomicaIngresos_Fianzas_ALargoPlazo: NOT-FOUND
+  IdsEconomicaIngresos_AdquisicionDeAccionesYParticipacionesDelSectorPublico:
+    kind: E
+    area: economic
+    name: Adquisición de acciones y participaciones del sector público
+    code: '850'
+    parent_code: '85'
+    level: 3
+  ? IdsEconomicaIngresos_AdquisicionDeAccionesYParticipacionesDelSectorPublico_AdquisicionDeAccionesYParticipacionesDelSectorPublico
+  : NOT-FOUND
+  IdsEconomicaIngresos_AdquisicionDeAccionesYParticipacionesParaCompensarPerdidas:
+    kind: E
+    area: economic
+    name: Adquisición de acciones y participaciones para compensar pérdidas
+    code: 850-10
+    parent_code: '850'
+    level: 4
+  IdsEconomicaIngresos_AdquisicionDeAccionesYParticipacionesParaFinanciarInversionesNoRentables:
+    kind: E
+    area: economic
+    name: Adquisición de acciones y participaciones para financiar inversiones no
+      rentables
+    code: 850-20
+    parent_code: '850'
+    level: 4
+  IdsEconomicaIngresos_RestoDeAdquisicionesDeAccionesDentroDelSectorPublico:
+    kind: E
+    area: economic
+    name: Resto de adquisiciones de acciones dentro del sector público
+    code: 850-90
+    parent_code: '850'
+    level: 4
+  IdsEconomicaIngresos_AdquisicionDeAccionesYParticipacionesFueraDelSectorPublico:
+    kind: E
+    area: economic
+    name: Adquisición de acciones y participaciones fuera del sector público
+    code: '860'
+    parent_code: '86'
+    level: 3
+  ? IdsEconomicaIngresos_AdquisicionDeAccionesYParticipacionesFueraDelSectorPublico_AdquisicionDeAccionesYParticipacionesFueraDelSectorPublico
+  : NOT-FOUND
+  IdsEconomicaIngresos_DeEmpresasNacionales:
+    kind: E
+    area: economic
+    name: De empresas nacionales
+    code: 860-10
+    parent_code: '860'
+    level: 4
+  IdsEconomicaIngresos_DeEmpresasDeLaUnionEuropea:
+    kind: E
+    area: economic
+    name: De empresas de la Unión Europea
+    code: 860-20
+    parent_code: '860'
+    level: 4
+  IdsEconomicaIngresos_DeOtrasEmpresas:
+    kind: E
+    area: economic
+    name: De otras empresas
+    code: 860-90
+    parent_code: '860'
+    level: 4
+  IdsEconomicaIngresos_AportacionesPatrimoniales:
+    kind: E
+    area: economic
+    name: Aportaciones patrimoniales
+    code: '87'
+    parent_code: '8'
+    level: 2
+  IdsEconomicaIngresos_AportacionesAFundaciones:
+    kind: E
+    area: economic
+    name: Aportaciones a fundaciones
+    code: '870'
+    parent_code: '87'
+    level: 3
+  IdsEconomicaIngresos_AportacionesAConsorcios:
+    kind: E
+    area: economic
+    name: Aportaciones a consorcios
+    code: '871'
+    parent_code: '87'
+    level: 3
+  IdsEconomicaIngresos_AportacionesAOtrosEntes:
+    kind: E
+    area: economic
+    name: Aportaciones a otros entes
+    code: '872'
+    parent_code: '87'
+    level: 3
+  IdsEconomicaIngresos_AportacionesParaCompensarPerdidas:
+    kind: E
+    area: economic
+    name: Aportaciones para compensar pérdidas
+    code: 872-10
+    parent_code: '872'
+    level: 4
+  IdsEconomicaIngresos_AportacionesParaFinanciarInversionesNoRentables:
+    kind: E
+    area: economic
+    name: Aportaciones para financiar inversiones no rentables
+    code: 872-20
+    parent_code: '872'
+    level: 4
+  IdsEconomicaIngresos_RestoDeAportaciones:
+    kind: E
+    area: economic
+    name: Resto de aportaciones
+    code: 872-90
+    parent_code: '872'
+    level: 4
+  IdsEconomicaIngresos_EconomicaIngresos_PasivosFinancieros:
+    kind: E
+    area: economic
+    name: Pasivos financieros
+    code: '9'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_AmortizacionDeDeudaPublicaEnEuros:
+    kind: E
+    area: economic
+    name: Amortización de Deuda Pública en euros
+    code: '90'
+    parent_code: '9'
+    level: 2
+  IdsEconomicaIngresos_AmortizacionDeDeudaPublicaEnEurosACortoPlazo:
+    kind: E
+    area: economic
+    name: Amortización de Deuda Pública en euros a corto plazo
+    code: '900'
+    parent_code: '90'
+    level: 3
+  IdsEconomicaIngresos_AmortizacionDeDeudaPublicaEnEurosALargoPlazo:
+    kind: E
+    area: economic
+    name: Amortización de Deuda Pública en euros a largo plazo
+    code: '901'
+    parent_code: '90'
+    level: 3
+  IdsEconomicaIngresos_AmortizacionDePrestamosYDeOperacionesEnEuros:
+    kind: E
+    area: economic
+    name: Amortización de préstamos y de operaciones en euros
+    code: '91'
+    parent_code: '9'
+    level: 2
+  IdsEconomicaIngresos_AmortizacionDePrestamosACortoPlazoDeEntesDelSectorPublico:
+    kind: E
+    area: economic
+    name: Amortización de préstamos a corto plazo de entes del sector público
+    code: '910'
+    parent_code: '91'
+    level: 3
+  IdsEconomicaIngresos_AmortizacionDePrestamosALargoPlazoDeEntesDelSectorPublico:
+    kind: E
+    area: economic
+    name: Amortización de préstamos a largo plazo de entes del sector público
+    code: '911'
+    parent_code: '91'
+    level: 3
+  IdsEconomicaIngresos_AmortizacionDePrestamosACortoPlazoDeEntesDeFueraDelSectorPublico:
+    kind: E
+    area: economic
+    name: Amortización de préstamos a corto plazo de entes de fuera del sector público
+    code: '912'
+    parent_code: '91'
+    level: 3
+  IdsEconomicaIngresos_AmortizacionDePrestamosALargoPlazoDeEntesDeFueraDelSectorPublico:
+    kind: E
+    area: economic
+    name: Amortización de préstamos a largo plazo de entes de fuera del sector público
+    code: '913'
+    parent_code: '91'
+    level: 3
+  IdsEconomicaIngresos_AmortizacionDeDeudaPublicaEnMonedaDistintaDelEuro:
+    kind: E
+    area: economic
+    name: Amortización de Deuda Pública en moneda distinta del euro
+    code: '92'
+    parent_code: '9'
+    level: 2
+  IdsEconomicaIngresos_AmortizacionDeDeudaPublicaEnMonedaDistintaDelEuroACortoPlazo:
+    kind: E
+    area: economic
+    name: Amortización de Deuda Pública en moneda distinta del euro a corto plazo
+    code: '920'
+    parent_code: '92'
+    level: 3
+  IdsEconomicaIngresos_AmortizacionDeDeudaPublicaEnMonedaDistintaDelEuroALargoPlazo:
+    kind: E
+    area: economic
+    name: Amortización de Deuda Pública en moneda distinta del euro a largo plazo
+    code: '921'
+    parent_code: '92'
+    level: 3
+  IdsEconomicaIngresos_AmortizacionDePrestamosEnMonedaDistintaDelEuro:
+    kind: E
+    area: economic
+    name: Amortización de préstamos en moneda distinta del euro
+    code: '93'
+    parent_code: '9'
+    level: 2
+  IdsEconomicaIngresos_AmortizacionDePrestamosEnMonedaDistintaDelEuroACortoPlazo:
+    kind: E
+    area: economic
+    name: Amortización de préstamos en moneda distinta del euro a corto plazo
+    code: '930'
+    parent_code: '93'
+    level: 3
+  IdsEconomicaIngresos_AmortizacionDePrestamosEnMonedaDistintaDelEuroALargoPlazo:
+    kind: E
+    area: economic
+    name: Amortización de préstamos en moneda distinta del euro a largo plazo
+    code: '931'
+    parent_code: '93'
+    level: 3
+  IdsEconomicaIngresos_DevolucionDeDepositosYFianzas:
+    kind: E
+    area: economic
+    name: Devolución de depósitos y fianzas
+    code: '94'
+    parent_code: '9'
+    level: 2
+  IdsEconomicaIngresos_EconomicaIngresos_PasivosFinancieros_DevolucionDeDepositosYFianzas_DevolucionDeDepositos:
+    kind: E
+    area: economic
+    name: Devolución de depósitos
+    code: '940'
+    parent_code: '94'
+    level: 3
+  IdsEconomicaIngresos_EconomicaIngresos_PasivosFinancieros_DevolucionDeDepositosYFianzas_DevolucionDeFianzas:
+    kind: E
+    area: economic
+    name: Devolución de fianzas
+    code: '941'
+    parent_code: '94'
+    level: 3
+  ##############################################################################
+  # ESTA PARTE DEL DICCIONARIO HA SIDO AÑADIDA MANUALMENTE
+  ##############################################################################
+  IdsEconomicaIngresos_TasasPreciosPublicosYOtrosIngresos:
+    kind: I
+    area: economic
+    name: Tasas, precios públicos y otros ingresos
+    code: '3'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_RecargosPorDeclaracionExtemporaneaSinRequerimientoPrevio:
+    kind: I
+    area: economic
+    name: Recargos por declaración extemporánea sin requerimiento previo
+    # La 392 si que está detectada correctamente, así que es ésta
+    code: '392-00'
+    parent_code: '293'
+    level: 4
+  IdsEconomicaIngresos_TransferenciasCorrientesEnCumplimientoDeConveniosSuscritosConLaComunidadAutonomaEnMateriaDeServiciosSocialesYPoliticasDeIgualdad:
+    kind: I
+    area: economic
+    # PDF keyword: suscritos
+    name: Transferencias corrientes en cumplimiento de convenios suscritos con la Comunidad Autónoma en materia de Servicios Sociales y Políticas de Igualdad
+    code: '450-02'
+    parent_code: '450'
+    level: 4
+  IdsEconomicaIngresos_TransferenciasCorrientesEnCumplimientoDeConveniosSuscritosConLaComunidadAutonomaEnMateriaDeEmpleoYDesarrolloLocal:
+    kind: I
+    area: economic
+    # PDF keyword: suscritos
+    name: Transferencias corrientes en cumplimiento de convenios suscritos con la Comunidad Autónoma en materia de Empleo y Desarrollo local
+    code: '450-50'
+    parent_code: '450'
+    level: 4
+  IdsEconomicaIngresos_OtrosIngresosPatrimoniales_OtrosIngresosPatrimoniales:
+    kind: I
+    area: economic
+    name: Otros ingresos patrimoniales
+    code: '599'
+    parent_code: '59'
+    level: 3
+  IdsEconomicaIngresos_RemanenteDeTesoreria_RemanenteDeTesoreria:
+    kind: I
+    area: economic
+    # PDF keyword: remanente
+    name: Remanente de tesorería
+    code: '870'
+    parent_code: '87'
+    level: 3
+  IdsEconomicaIngresos_PersonalFuncionario_RetribucionesBasicas:
+    kind: E
+    area: economic
+    name: Retribuciones básicas
+    code: '120'
+    parent_code: '12'
+    level: 2
+  IdsEconomicaIngresos_OtroPersonal_OtroPersonal:
+    kind: E
+    area: economic
+    name: Otro personal
+    code: '143'
+    parent_code:
+    level: 3
+  IdsEconomicaIngresos_GastosCorrientesEnBienesYServicios:
+    kind: E
+    area: economic
+    name: Gastos corrientes en bienes y servicios
+    code: '2'
+    parent_code:
+    level: 1
+  IdsEconomicaIngresos_Dietas_DelPersonalNoDirectivo:
+    kind: E
+    area: economic
+    name: Del personal no directivo
+    code: '230-20'
+    parent_code: '23'
+    level: 2
+  IdsEconomicaIngresos_TransferenciasCorrientes_AComunidadesAutonomas_ASociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas:
+    kind: E
+    area: economic
+    name: A sociedades mercantiles, entidades públicas empresariales y otros organismos públicos dependientes de las Comunidades Autónomas
+    code: '453'
+    parent_code: '45'
+    level: 3
+  IdsEconomicaIngresos_OtrasSubvencionesASociedadesMercantilesEntidadesPublicasEmpresarialesYOtrosOrganismosPublicosDependientesDeLasComunidadesAutonomas:
+    kind: E
+    area: economic
+    name: Otras subvenciones a sociedades mercantiles, entidades públicas empresariales y otros organismos públicos dependientes de las Comunidades Autónomas
+    code: '453-90'
+    parent_code: '453'
+    level: 4
+  IdsEconomicaIngresos_InversionNuevaEnInfraestructurasYBienesDestinadosAlUsoGeneral:
+    kind: E
+    area: economic
+    name: Inversión nueva en infraestructuras y bienes destinados al uso general
+    code: '60'
+    parent_code: '6'
+    level: 2
+  IdsEconomicaIngresos_InversionesDeReposicionDeInfraestructurasYBienesDestinadosAlUsoGeneral:
+    kind: E
+    area: economic
+    name: Inversiones de reposición de infraestructuras y bienes destinados al uso general
+    code: '61'
+    parent_code: '6'
+    level: 2
+  IdsEconomicaIngresos_InversionesDeReposicionDeInfraestructurasYBienesDestinadosAlUsoGeneral_InversionesEnTerrenos:
+    kind: E
+    area: economic
+    name: Inversiones en terrenos
+    code: '610'
+    parent_code: '61'
+    level: 2

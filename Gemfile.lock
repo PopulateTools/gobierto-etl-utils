@@ -1,0 +1,103 @@
+GIT
+  remote: https://github.com/PopulateTools/gobierto_data.git
+  revision: eb2fae85541142ed45d4e7628f79e4fb9de84d8f
+  specs:
+    gobierto_data (0.0.1)
+      actionpack (>= 5.0.0.1)
+      activesupport (>= 5.0.0)
+      aws-sdk (~> 2.11, >= 2.11.45)
+      elasticsearch (~> 6.0, >= 6.0.2)
+      elasticsearch-extensions (~> 0.0.27)
+      ine-places (~> 0.2.0)
+      oj (~> 3.5, >= 3.5.0)
+      sequel (~> 5.8, >= 5.8.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    actionpack (5.2.0)
+      actionview (= 5.2.0)
+      activesupport (= 5.2.0)
+      rack (~> 2.0)
+      rack-test (>= 0.6.3)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    actionview (5.2.0)
+      activesupport (= 5.2.0)
+      builder (~> 3.1)
+      erubi (~> 1.4)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    activesupport (5.2.0)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    ansi (1.5.0)
+    aws-sdk (2.11.65)
+      aws-sdk-resources (= 2.11.65)
+    aws-sdk-core (2.11.65)
+      aws-sigv4 (~> 1.0)
+      jmespath (~> 1.0)
+    aws-sdk-resources (2.11.65)
+      aws-sdk-core (= 2.11.65)
+    aws-sigv4 (1.0.2)
+    builder (3.2.3)
+    concurrent-ruby (1.0.5)
+    crass (1.0.4)
+    elasticsearch (6.0.2)
+      elasticsearch-api (= 6.0.2)
+      elasticsearch-transport (= 6.0.2)
+    elasticsearch-api (6.0.2)
+      multi_json
+    elasticsearch-extensions (0.0.27)
+      ansi
+      elasticsearch
+      oj
+      patron
+      ruby-prof
+    elasticsearch-transport (6.0.2)
+      faraday
+      multi_json
+    erubi (1.7.1)
+    faraday (0.15.2)
+      multipart-post (>= 1.2, < 3)
+    i18n (1.0.1)
+      concurrent-ruby (~> 1.0)
+    ine-places (0.2.0)
+      activesupport (>= 4.2)
+    jmespath (1.4.0)
+    loofah (2.2.2)
+      crass (~> 1.0.2)
+      nokogiri (>= 1.5.9)
+    mini_portile2 (2.3.0)
+    minitest (5.11.3)
+    multi_json (1.13.1)
+    multipart-post (2.0.0)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
+    oj (3.6.2)
+    patron (0.13.1)
+    rack (2.0.5)
+    rack-test (1.0.0)
+      rack (>= 1.0, < 3)
+    rails-dom-testing (2.0.3)
+      activesupport (>= 4.2.0)
+      nokogiri (>= 1.6)
+    rails-html-sanitizer (1.0.4)
+      loofah (~> 2.2, >= 2.2.2)
+    ruby-prof (0.17.0)
+    sequel (5.9.0)
+    thread_safe (0.3.6)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gobierto_data!
+  nokogiri
+
+BUNDLED WITH
+   1.16.2
