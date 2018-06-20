@@ -36,6 +36,18 @@ Output:
 
 - Files in the output folder
 
+#### Upload S3
+
+Uploads a file to S3 gobierto-data bucket
+
+Usage:
+
+`/path/to/project/operations/upload-s3/run.rb /tmp/foo/execution_status.yml gobierto-etl-gencat/status/last_execution.yml`
+
+Output:
+
+- Path to the uploaded file
+
 #### Check-json
 
 Checks if a JSON file is valid JSON
