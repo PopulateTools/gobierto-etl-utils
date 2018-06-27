@@ -22,7 +22,7 @@ Parameters:
 
 Example:
 
-$DEV_DIR/gobierto-etl-utils/gobierto_budgets/xbrl/transform-planned/run.rb dictionary.yml data.xbrl <organization_id> <year> output.json
+$DEV_DIR/gobierto-etl-utils/gobierto_budgets/xbrl/trimloc/transform-planned/run.rb dictionary.yml data.xbrl <organization_id> <year> output.json
 
 =end
 
@@ -31,7 +31,7 @@ $DEV_DIR/gobierto-etl-utils/gobierto_budgets/xbrl/transform-planned/run.rb dicti
 # ------------------------------------------------------------------------------
 
 if ARGV.length != 5
-  puts "$DEV_DIR/gobierto-etl-utils/gobierto_budgets/xbrl/transform-planned/run.rb dictionary.yml data.xbrl <organization_id> <year> output.json"
+  puts "$DEV_DIR/gobierto-etl-utils/gobierto_budgets/xbrl/trimloc/transform-planned/run.rb dictionary.yml data.xbrl <organization_id> <year> output.json"
   raise "Missing argumnets"
 end
 
@@ -66,7 +66,7 @@ else
 end
 
 xbrl_dictionary = YAML.load_file(xbrl_dictionary_path)
-xbrl_file       = File.open(xbrl_file_path) { |f| Nokogiri::XML(f) }
+xbrl_file       = open(xbrl_file_path) { |f| Nokogiri::XML(f) }
 
 xbrl_budget_line_ids = xbrl_file.xpath('//@contextRef').map{ |xml_node| xml_node.value }.select{ |budget_line_id| budget_line_id[/^Ids?(Contextos)?Economica.*/] }.uniq
 

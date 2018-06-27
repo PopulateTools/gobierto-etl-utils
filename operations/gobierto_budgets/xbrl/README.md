@@ -30,37 +30,31 @@ needed to match some categories.
 Although `TRIMLOC` should be used just to inform about the execution, we have implemented scripts to
 load budgets, budgets updated and execution.
 
-- `import_budget_lines_budgeted.rb`: imports budget information
-- `import_budget_lines_execution.rb`: imports execution information
-- `import_budget_lines_budget_updated.rb`: imports budget updated information
+- `trimloc/transform-planned/run.rb`: imports budget information
+- `trimloc/transform-execution/run.rb`: imports execution information
+- `trimloc/transform-planned-updated/run.rb`: imports planned updated information
 
 ### Call a script
 
-The arguments are:
-
-- `bin/rails runner`
-- `script name`
-- `XBRL TRIMLOC dictionary file`
-- `XBRL data file`
-- `Gobierto site domain`
-- `Year`
+Scripts are transformation scripts that should use later the importer scripts.
 
 Example:
 
 ```bash
-bin/rails runner /var/www/populate-data-indicators/private_data/gobierto/xbrl/trimloc/import_budget_lines_budgeted.rb \
-/var/www/populate-data-indicators/private_data/gobierto/xbrl/trimloc/xbrl_trimloc_dictionary.yml \
-/var/www/populate-data-indicators/data_sources/private/gobierto/getafe/budgets/XX-TrimLoc-2018.xbrl \
-gobiernoabierto.getafe.es \
-2018
+$DEV_DIR/gobierto-etl-utils/gobierto_budgets/xbrl/transform-execution/run.rb \
+$DEV_DIR/gobierto-etl-utils/gobierto_budgets/xbrl/dictionaries/xbrl_trimloc_dictionary.yml \
+data.xbrl \
+28079 \
+2018 \
+/tmp/madrid/output-execution-2018.json
 ```
 
-### Extra script
-
-The script `import_budgets_execution_series.rb` is an outdated script to load a series of data in a
-special ElasticSearch index.
+After that, use `$DEV_DIR/gobierto-etl-utils/gobierto_budgets/import-execution-budgets/run.rb` to load
+the data from `/tmp/madrid/output-execution-2018.json`
 
 ## PENLOC scripts
+
+__TODO__: this script is still pending to be migrated to a tranformation
 
 `PENLOC` format is used to report about budgeted information. There's just a single script that loads:
 
