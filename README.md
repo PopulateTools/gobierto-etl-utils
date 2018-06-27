@@ -10,9 +10,7 @@ This gem relies heavily in [gobierto_data](https://github.com/PopulateTools/gobi
 
 ## Available operations
 
-### Common
-
-#### Download
+### common/download
 
 Downloads a file from an external URL
 
@@ -24,7 +22,7 @@ Output:
 
 - File with the content of input URL
 
-#### Download S3
+### commond/download S3
 
 Downloads the files from S3 folder
 
@@ -36,7 +34,7 @@ Output:
 
 - Files in the output folder
 
-#### Upload S3
+### common/upload S3
 
 Uploads a file to S3 gobierto-data bucket
 
@@ -48,7 +46,7 @@ Output:
 
 - Path to the uploaded file
 
-#### Check-json
+### common/check-json
 
 Checks if a JSON file is valid JSON
 
@@ -61,7 +59,7 @@ Output:
 - Returns exit code 0 if valid file
 - Returns exit -1 if invalid file
 
-#### Check-csv
+### common/check-csv
 
 Checks if a CSV file is valid CSV
 
@@ -74,7 +72,7 @@ Output:
 - Returns exit code 0 if valid file
 - Returns exit -1 if invalid file
 
-#### Convert to UTF-8
+### common/convert to UTF-8
 
 Converts a file into UTF-8. By default it expects the encoding to be ISO-8859-1
 
@@ -86,9 +84,7 @@ Output:
 
 - The input file in UTF-8 encoding
 
-### GobiertoBudgets
-
-#### Annual data
+### gobierto-budgets/annual data
 
 Calculates the CSV and JSON files for the open data section of the given sites with the organization ID provided.
 
@@ -107,7 +103,7 @@ Output:
 
 - Files are generated in Gobierto
 
-#### Bubbles
+### gobierto-budgets/bubbles
 
 Calculates the bubbles JSON file for a set of organization IDs.
 
@@ -123,7 +119,7 @@ Output:
 
 - JSON files with bubbles required data uploaded to S3.
 
-#### Clear budgets
+### gobierto-budgets/clear budgets
 
 Clear all the budgets data from an organization
 
@@ -139,7 +135,7 @@ Output:
 
 - No output is expected. Data is removed from Elasticsearch
 
-#### Delete total budgets
+### gobierto-budgets/delete total budgets
 
 Deletes total budgets data for a given set of years and a list of organizations.
 
@@ -156,7 +152,7 @@ Output:
 
 - No output is expected. Data is removed from Elasticsearch
 
-#### Calculate total budget
+### gobierto-budgets/calculate total budget
 
 Calculates total budgets data for a given set of years and a list of organizations.
 
@@ -173,7 +169,7 @@ Output:
 
 - No output is expected. Data is created/updated in Elasticsearch
 
-#### Clear previous providers
+### gobierto-budgets/clear previous providers
 
 Deletes from Populate Data the providers of an organization / location
 
@@ -189,7 +185,7 @@ Output:
 
 - No output is expected. Data is removed from Elasticsearch
 
-#### Import planned budgets
+### gobierto-budgets/import planned budgets
 
 Imports planned budgets from JSON file
 
@@ -206,7 +202,7 @@ Output:
 
 - No output is expected. Data is created/updated in Elasticsearch
 
-#### Import planned budgets updated
+### gobierto-budgets/import planned budgets updated
 
 Imports planned budgets updated from JSON file
 
@@ -223,7 +219,7 @@ Output:
 
 - No output is expected. Data is created/updated in Elasticsearch
 
-#### Import executed budgets
+### gobierto-budgets/mport executed budgets
 
 Imports executed budgets from JSON file
 
@@ -240,9 +236,7 @@ Output:
 
 - No output is expected. Data is created/updated in Elasticsearch
 
-### Gobierto
-
-#### Publish activity
+### gobierto/publish activity
 
 Publishes an activity in the sites configured with the organization ID.
 
@@ -261,7 +255,7 @@ Output:
 
 - Activity is published in Gobierto
 
-#### Clear cache
+### gobierto/clear cache
 
 Clears rails cache.
 
