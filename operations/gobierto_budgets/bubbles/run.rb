@@ -13,7 +13,7 @@ Bundler.require
 #
 # Samples:
 #
-#   /path/to/project/operations/gobierto_budgets/bubles/run.rb "2010 2012 2017" updated_organizations_ids.txt
+#   /path/to/project/operations/gobierto_budgets/bubbles/run.rb updated_organizations_ids.txt
 #
 
 if ARGV.length != 1
