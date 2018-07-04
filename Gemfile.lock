@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/gobierto_data.git
-  revision: eb2fae85541142ed45d4e7628f79e4fb9de84d8f
+  revision: 8ea4d5c7e91132adaaacfd2987ff748973c744b5
   specs:
     gobierto_data (0.0.1)
       actionpack (>= 5.0.0.1)
@@ -34,29 +34,27 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     ansi (1.5.0)
-    aws-sdk (2.11.65)
-      aws-sdk-resources (= 2.11.65)
-    aws-sdk-core (2.11.65)
+    aws-sdk (2.11.81)
+      aws-sdk-resources (= 2.11.81)
+    aws-sdk-core (2.11.81)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.65)
-      aws-sdk-core (= 2.11.65)
-    aws-sigv4 (1.0.2)
+    aws-sdk-resources (2.11.81)
+      aws-sdk-core (= 2.11.81)
+    aws-sigv4 (1.0.3)
     builder (3.2.3)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
-    elasticsearch (6.0.2)
-      elasticsearch-api (= 6.0.2)
-      elasticsearch-transport (= 6.0.2)
-    elasticsearch-api (6.0.2)
+    elasticsearch (6.1.0)
+      elasticsearch-api (= 6.1.0)
+      elasticsearch-transport (= 6.1.0)
+    elasticsearch-api (6.1.0)
       multi_json
-    elasticsearch-extensions (0.0.27)
+    elasticsearch-extensions (0.0.29)
       ansi
       elasticsearch
-      oj
-      patron
       ruby-prof
-    elasticsearch-transport (6.0.2)
+    elasticsearch-transport (6.1.0)
       faraday
       multi_json
     erubi (1.7.1)
@@ -76,8 +74,7 @@ GEM
     multipart-post (2.0.0)
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
-    oj (3.6.2)
-    patron (0.13.1)
+    oj (3.6.3)
     rack (2.0.5)
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
@@ -87,7 +84,7 @@ GEM
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
     ruby-prof (0.17.0)
-    sequel (5.9.0)
+    sequel (5.10.0)
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
