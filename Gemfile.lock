@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/gobierto_data.git
-  revision: 8ea4d5c7e91132adaaacfd2987ff748973c744b5
+  revision: fb643592c6d775528431b3e0c3ef4c658339aa38
   specs:
     gobierto_data (0.0.1)
       actionpack (>= 5.0.0.1)
@@ -8,39 +8,38 @@ GIT
       aws-sdk (~> 2.11, >= 2.11.45)
       elasticsearch (~> 6.0, >= 6.0.2)
       elasticsearch-extensions (~> 0.0.27)
-      ine-places (~> 0.2.0)
+      ine-places (~> 0.3.0)
       oj (~> 3.5, >= 3.5.0)
-      sequel (~> 5.8, >= 5.8.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    actionpack (5.2.0)
-      actionview (= 5.2.0)
-      activesupport (= 5.2.0)
+    actionpack (5.2.1)
+      actionview (= 5.2.1)
+      activesupport (= 5.2.1)
       rack (~> 2.0)
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionview (5.2.0)
-      activesupport (= 5.2.0)
+    actionview (5.2.1)
+      activesupport (= 5.2.1)
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
-    activesupport (5.2.0)
+    activesupport (5.2.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     ansi (1.5.0)
-    aws-sdk (2.11.81)
-      aws-sdk-resources (= 2.11.81)
-    aws-sdk-core (2.11.81)
+    aws-sdk (2.11.150)
+      aws-sdk-resources (= 2.11.150)
+    aws-sdk-core (2.11.150)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.81)
-      aws-sdk-core (= 2.11.81)
+    aws-sdk-resources (2.11.150)
+      aws-sdk-core (= 2.11.150)
     aws-sigv4 (1.0.3)
     builder (3.2.3)
     concurrent-ruby (1.0.5)
@@ -50,19 +49,18 @@ GEM
       elasticsearch-transport (= 6.1.0)
     elasticsearch-api (6.1.0)
       multi_json
-    elasticsearch-extensions (0.0.29)
+    elasticsearch-extensions (0.0.30)
       ansi
       elasticsearch
-      ruby-prof
     elasticsearch-transport (6.1.0)
       faraday
       multi_json
     erubi (1.7.1)
-    faraday (0.15.2)
+    faraday (0.15.3)
       multipart-post (>= 1.2, < 3)
-    i18n (1.0.1)
+    i18n (1.1.1)
       concurrent-ruby (~> 1.0)
-    ine-places (0.2.0)
+    ine-places (0.3.0)
       activesupport (>= 4.2)
     jmespath (1.4.0)
     loofah (2.2.2)
@@ -74,17 +72,15 @@ GEM
     multipart-post (2.0.0)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
-    oj (3.6.3)
+    oj (3.6.11)
     rack (2.0.5)
-    rack-test (1.0.0)
+    rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
-    ruby-prof (0.17.0)
-    sequel (5.10.0)
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
@@ -97,4 +93,4 @@ DEPENDENCIES
   nokogiri
 
 BUNDLED WITH
-   1.16.2
+   1.16.4
