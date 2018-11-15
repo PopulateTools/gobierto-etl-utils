@@ -29,9 +29,25 @@ unless File.file?(input_file)
   raise "File #{input_file} doesn't exist"
 end
 
+error = false
+
 begin
+  error = false
   CSV.read(input_file)
 rescue
+  error = true
+end
+
+if error
+  begin
+    error = false
+    CSV.read(input_file, col_sep: ';')
+  rescue
+    error = true
+  end
+end
+
+if error
   puts "[ERROR] Invalid CSV format"
   exit(-1)
 end
