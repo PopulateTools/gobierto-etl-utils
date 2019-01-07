@@ -13,7 +13,7 @@ Bundler.require
 #
 # Samples:
 #
-#   /path/to/project/operations/gobierto_budgets/clear-cache/run.rb
+#   /path/to/project/operations/gobierto/clear-cache/run.rb
 #
 
 puts "[START] clear-cache/run.rb"
