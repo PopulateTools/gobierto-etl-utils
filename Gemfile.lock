@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/gobierto_data.git
-  revision: 42cd8cdf877e360484849d1bf54c1552a8a57a6c
+  revision: e7fa11c0948df5e130b3b63d500571ebbfd95586
   specs:
     gobierto_data (0.0.1)
       actionpack (>= 5.0.0.1)
@@ -58,7 +58,7 @@ GEM
     erubi (1.8.0)
     faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
-    i18n (1.4.0)
+    i18n (1.5.1)
       concurrent-ruby (~> 1.0)
     ine-places (0.3.0)
       activesupport (>= 4.2)
