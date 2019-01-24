@@ -33,7 +33,7 @@ error = false
 
 begin
   error = false
-  CSV.read(input_file)
+  CSV.read(input_file, encoding: 'utf-8')
 rescue
   error = true
 end
@@ -41,7 +41,7 @@ end
 if error
   begin
     error = false
-    CSV.read(input_file, col_sep: ';')
+    CSV.read(input_file, col_sep: ';', encoding: 'utf-8')
   rescue
     error = true
   end
