@@ -79,7 +79,7 @@ organizations_ids.each do |organization_id|
           count += 1
           { delete: h.slice("_index", "_type", "_id") }
         end
-        GobiertoData::GobiertoBudgets::SearchEngine.client.bulk index: index, type: type, body: delete_request_body
+        GobiertoData::GobiertoBudgets::SearchEngineWriting.client.bulk index: index, type: type, body: delete_request_body
         response = GobiertoData::GobiertoBudgets::SearchEngine.client.search index: index, type: type, body: query
       end
     end
