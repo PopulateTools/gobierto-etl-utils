@@ -19,8 +19,8 @@ if ARGV.length != 1
   raise "At least one argument is required"
 end
 
-index = GobiertoData::GobiertoBudgets::ES_INDEX_POPULATE_DATA_PROVIDERS
-type =  GobiertoData::GobiertoBudgets::POPULATE_DATA_PROVIDERS_TYPE
+index = GobiertoData::GobiertoBudgets::ES_INDEX_INVOICES
+type =  GobiertoData::GobiertoBudgets::INVOICE_TYPE
 organization_id = ARGV[0].to_s
 
 puts "[START] clear-previous-providers/run.rb organization_id=#{organization_id}"
