@@ -62,6 +62,14 @@ else
   }
 end
 
+def extract_amount(xbrl_file, budget_line_id, budget_terms)
+  forecast_node = xbrl_file.xpath("//*[@contextRef='#{budget_line_id}']").find do |forecast_node|
+    budget_terms.include?(forecast_node.name)
+  end
+
+  forecast_node.children.text.to_f.round(2)
+end
+
 xbrl_dictionary = YAML.load_file(xbrl_dictionary_path)
 xbrl_file       = open(xbrl_file_path) { |f| Nokogiri::XML(f) }
 
@@ -73,13 +81,10 @@ puts '[DEBUG] Parsing budgets execution data...'
 
 xbrl_budget_line_ids.each do |budget_line_id|
 
-  forecast_node = xbrl_file.xpath("//*[@contextRef='#{budget_line_id}']").select do |forecast_node|
-    (forecast_node.name == 'EstimacionDerechosReconocidosNetosA31Del12') || (forecast_node.name == 'EstimacionObligacionesReconocidasNetasA31Del12')
-  end.first
+  amount = extract_amount(xbrl_file, budget_line_id, %w(EstimacionDerechosReconocidosNetosA31Del12 EstimacionObligacionesReconocidasNetasA31Del12))
+  amount = extract_amount(xbrl_file, budget_line_id, %w(ObligacionesReconocidasDelEjercicioCorriente DerechosReconocidosDelEjercicioCorriente)) if amount.zero?
 
-  amount = forecast_node.children.text.to_f.round(2)
-
-  next if amount == 0 || (budget_line_info = xbrl_dictionary['dictionary'][budget_line_id]).nil?
+  next if amount.zero? || (budget_line_info = xbrl_dictionary['dictionary'][budget_line_id]).nil?
 
   next if budget_line_info['code'].nil?
 
