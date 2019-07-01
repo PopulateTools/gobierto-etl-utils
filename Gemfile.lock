@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/gobierto_data.git
-  revision: 5ee03dcdae25f2d82fd5391c4b77c03534345300
+  revision: 3ae03df6f1a268d9ea0e24e290100df719995ad2
   specs:
     gobierto_data (0.1.0)
       actionpack (>= 5.0.0.1)
@@ -34,29 +34,29 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     ansi (1.5.0)
-    aws-eventstream (1.0.2)
-    aws-sdk (2.11.260)
-      aws-sdk-resources (= 2.11.260)
-    aws-sdk-core (2.11.260)
+    aws-eventstream (1.0.3)
+    aws-sdk (2.11.306)
+      aws-sdk-resources (= 2.11.306)
+    aws-sdk-core (2.11.306)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.260)
-      aws-sdk-core (= 2.11.260)
+    aws-sdk-resources (2.11.306)
+      aws-sdk-core (= 2.11.306)
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     builder (3.2.3)
     byebug (11.0.1)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
-    elasticsearch (6.3.0)
-      elasticsearch-api (= 6.3.0)
-      elasticsearch-transport (= 6.3.0)
-    elasticsearch-api (6.3.0)
+    elasticsearch (6.8.0)
+      elasticsearch-api (= 6.8.0)
+      elasticsearch-transport (= 6.8.0)
+    elasticsearch-api (6.8.0)
       multi_json
     elasticsearch-extensions (0.0.31)
       ansi
       elasticsearch
-    elasticsearch-transport (6.3.0)
+    elasticsearch-transport (6.8.0)
       faraday
       multi_json
     erubi (1.8.0)
@@ -73,7 +73,7 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     multi_json (1.13.1)
-    multipart-post (2.0.0)
+    multipart-post (2.1.1)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
     oj (3.7.12)
@@ -99,4 +99,4 @@ DEPENDENCIES
   nokogiri
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
