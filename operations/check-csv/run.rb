@@ -41,8 +41,9 @@ end
 if error
   begin
     error = false
-    CSV.read(input_file, col_sep: ';', encoding: 'utf-8')
-  rescue
+    CSV.read(input_file, col_sep: ";", encoding: "utf-8")
+  rescue StandardError => e
+    puts "Error: #{e.message}"
     error = true
   end
 end
