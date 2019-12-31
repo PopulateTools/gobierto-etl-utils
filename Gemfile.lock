@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/gobierto_data.git
-  revision: 79fbaf6fef7659f449a45e942eae5327f191d5dd
+  revision: 8f71e3bea5fc3930340b9bd63a6764ca01437296
   specs:
     gobierto_data (0.1.0)
       actionpack (>= 5.0.0.1)
@@ -15,20 +15,20 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actionpack (6.0.1)
-      actionview (= 6.0.1)
-      activesupport (= 6.0.1)
-      rack (~> 2.0)
+    actionpack (6.0.2.1)
+      actionview (= 6.0.2.1)
+      activesupport (= 6.0.2.1)
+      rack (~> 2.0, >= 2.0.8)
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.2.0)
-    actionview (6.0.1)
-      activesupport (= 6.0.1)
+    actionview (6.0.2.1)
+      activesupport (= 6.0.2.1)
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    activesupport (6.0.1)
+    activesupport (6.0.2.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -36,16 +36,16 @@ GEM
       zeitwerk (~> 2.2)
     ansi (1.5.0)
     aws-eventstream (1.0.3)
-    aws-sdk (2.11.396)
-      aws-sdk-resources (= 2.11.396)
-    aws-sdk-core (2.11.396)
+    aws-sdk (2.11.421)
+      aws-sdk-resources (= 2.11.421)
+    aws-sdk-core (2.11.421)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.396)
-      aws-sdk-core (= 2.11.396)
+    aws-sdk-resources (2.11.421)
+      aws-sdk-core (= 2.11.421)
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
-    builder (3.2.3)
+    builder (3.2.4)
     byebug (11.0.1)
     concurrent-ruby (1.1.5)
     crass (1.0.5)
@@ -61,14 +61,14 @@ GEM
       faraday
       multi_json
     erubi (1.9.0)
-    faraday (0.17.0)
+    faraday (0.17.1)
       multipart-post (>= 1.2, < 3)
     i18n (1.7.0)
       concurrent-ruby (~> 1.0)
     ine-places (0.3.0)
       activesupport (>= 4.2)
     jmespath (1.4.0)
-    loofah (2.3.1)
+    loofah (2.4.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mini_portile2 (2.4.0)
@@ -77,7 +77,7 @@ GEM
     multipart-post (2.1.1)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
-    oj (3.9.2)
+    oj (3.10.0)
     rack (2.0.8)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -88,9 +88,9 @@ GEM
       loofah (~> 2.3)
     rake (12.3.3)
     thread_safe (0.3.6)
-    tzinfo (1.2.5)
+    tzinfo (1.2.6)
       thread_safe (~> 0.1)
-    zeitwerk (2.2.1)
+    zeitwerk (2.2.2)
 
 PLATFORMS
   ruby
