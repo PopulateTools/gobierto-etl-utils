@@ -84,6 +84,14 @@ Output:
 
 - The input file in UTF-8 encoding
 
+### common/prepare working directory
+
+Prepares a directory to be used during the ETL. Removes it and creates it.
+
+Usage:
+
+`/path/to/project/operations/prepare-working-directory/run.rb /tmp/foo
+
 ### gobierto-budgets/annual data
 
 Calculates the CSV and JSON files for the open data section of the given sites with the organization ID provided.
