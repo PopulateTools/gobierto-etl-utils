@@ -23,21 +23,19 @@ module GobiertoData
 
     def create_dataset(params = {})
       if params[:file_path]
-        response = multipart_connection.post(
-          "api/v1/data/datasets",
-          {
-            dataset: {
-              data_file: Faraday::UploadIO.new(params[:file_path], "text/csv"),
-              name: params[:name],
-              table_name: params[:table_name],
-              slug: params[:slug],
-              visibility_level: params[:visibility_level],
-              csv_separator: params[:csv_separator] || ",",
-              append: params[:append] || false
-            }
-          },
-          "Authorization" => auth_header
-        )
+        dataset_params = {
+          data_file: Faraday::UploadIO.new(params[:file_path], "text/csv"),
+          name: params[:name],
+          table_name: params[:table_name],
+          slug: params[:slug],
+          visibility_level: params[:visibility_level],
+          csv_separator: params[:csv_separator] || ",",
+          append: params[:append] || false
+        }
+        dataset_params.merge!({schema_file: Faraday::UploadIO.new(params[:schema_path], "application/json")}) if params[:schema_path]
+        response = multipart_connection.post("api/v1/data/datasets", {
+          dataset: dataset_params
+        }, "Authorization" => auth_header)
       else
         response = Faraday.post(
           "#{gobierto_url}/api/v1/data/datasets",

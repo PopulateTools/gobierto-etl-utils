@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "optparse"
+require "csv"
 require "bundler/setup"
 Bundler.require
 

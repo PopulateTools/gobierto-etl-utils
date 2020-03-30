@@ -41,8 +41,11 @@ BANNER
   opts.on("--file-path FILE_PATH", "Data file path") do |v|
     options[:file_path] = v
   end
-  opts.on("--append APPEND", "Append existing dataset (true or false). By default false") do |v|
-    options[:append] = (v == "true")
+  opts.on("--schema-path SCHEMA_PATH", "Schema file path") do |v|
+    options[:schema_path] = v
+  end
+  opts.on("--append", "Append existing dataset") do |v|
+    options[:append] = v
   end
   opts.on("--visibility-level VISIBILITY_LEVEL ", "Dataset visibility level (draft or active). By default active") do |v|
     options[:visibility_level] = v
