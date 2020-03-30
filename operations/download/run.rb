@@ -33,6 +33,7 @@ puts "[START] download/run.rb from #{url} to #{destination_file_name}"
 
 uri = URI.parse(url)
 http = Net::HTTP.new(uri.host, uri.port)
+http.read_timeout = 500
 if url =~ /\Ahttps/
   http.use_ssl = true
   http.verify_mode = OpenSSL::SSL::VERIFY_NONE
