@@ -90,7 +90,7 @@ Prepares a directory to be used during the ETL. Removes it and creates it.
 
 Usage:
 
-`ruby gobierto-etl-utils/operations/prepare-working-directory/run.rb /tmp/foo
+`ruby gobierto-etl-utils/operations/prepare-working-directory/run.rb /tmp/foo`
 
 ### gobierto-budgets/annual data
 
