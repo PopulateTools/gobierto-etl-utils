@@ -1,8 +1,6 @@
 #!/usr/bin/env ruby
 
-require "bundler/setup"
-Bundler.require
-require "csv"
+require_relative "../../lib/gobierto_etl_utils"
 
 # Usage:
 #
@@ -14,7 +12,7 @@ require "csv"
 #
 # Samples:
 #
-#   /path/to/project/operations/check-csv/run.rb input.csv
+#   $DEV_DIR/gobierto-etl-utils/operations/check-csv/run.rb input.csv
 #
 
 if ARGV.length != 1

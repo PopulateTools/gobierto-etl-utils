@@ -87,6 +87,7 @@ GEM
     rails-html-sanitizer (1.3.0)
       loofah (~> 2.3)
     rake (12.3.3)
+    rubyzip (2.3.0)
     thread_safe (0.3.6)
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
@@ -97,8 +98,11 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  faraday
   gobierto_data!
   nokogiri
+  rubyzip
+  zeitwerk
 
 BUNDLED WITH
    1.17.3

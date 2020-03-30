@@ -16,7 +16,7 @@ Downloads a file from an external URL
 
 Usage:
 
-`/path/to/project/operations/download/run.rb "https://input.json" /tmp/output.json`
+`ruby gobierto-etl-utils/operations/download/run.rb "https://input.json" /tmp/output.json`
 
 Output:
 
@@ -28,7 +28,7 @@ Downloads the files from S3 folder
 
 Usage:
 
-`/path/to/project/operations/download-s3/run.rb "dir1/dir2" /tmp/output_folder`
+`ruby gobierto-etl-utils/operations/download-s3/run.rb "dir1/dir2" /tmp/output_folder`
 
 Output:
 
@@ -40,7 +40,7 @@ Uploads a file to S3 gobierto-data bucket
 
 Usage:
 
-`/path/to/project/operations/upload-s3/run.rb /tmp/foo/execution_status.yml gobierto-etl-gencat/status/last_execution.yml`
+`ruby gobierto-etl-utils/operations/upload-s3/run.rb /tmp/foo/execution_status.yml gobierto-etl-gencat/status/last_execution.yml`
 
 Output:
 
@@ -52,7 +52,7 @@ Checks if a JSON file is valid JSON
 
 Usage:
 
-`/path/to/project/operations/check-json/run.rb /tmp/input.json`
+`ruby gobierto-etl-utils/operations/check-json/run.rb /tmp/input.json`
 
 Output:
 
@@ -65,7 +65,7 @@ Checks if a CSV file is valid CSV
 
 Usage:
 
-`/path/to/project/operations/check-csv/run.rb /tmp/input.csv`
+`ruby gobierto-etl-utils/operations/check-csv/run.rb /tmp/input.csv`
 
 Output:
 
@@ -78,11 +78,19 @@ Converts a file into UTF-8. By default it expects the encoding to be ISO-8859-1
 
 Usage:
 
-`/path/to/project/operations/convert-to-utf8/run.rb input_file.json output_file.json
+`ruby gobierto-etl-utils/operations/convert-to-utf8/run.rb input_file.json output_file.json
 
 Output:
 
 - The input file in UTF-8 encoding
+
+### common/prepare working directory
+
+Prepares a directory to be used during the ETL. Removes it and creates it.
+
+Usage:
+
+`ruby gobierto-etl-utils/operations/prepare-working-directory/run.rb /tmp/foo
 
 ### gobierto-budgets/annual data
 
@@ -92,7 +100,7 @@ This operation is a Gobierto runner.
 
 Usage:
 
-`/path/to/gobierto bin runner /path/to/project/operations/gobierto_budgets/annual_data/run.rb "2011 2012" organization_ids.txt`
+`/path/to/gobierto bin runner ruby gobierto-etl-utils/operations/gobierto_budgets/annual_data/run.rb "2011 2012" organization_ids.txt`
 
 Where:
 
@@ -109,7 +117,7 @@ Calculates the bubbles JSON file for a set of organization IDs.
 
 Usage:
 
-`/path/to/project/operations/gobierto_budgets/bubles/run.rb organization_ids.txt`
+`ruby gobierto-etl-utils/operations/gobierto_budgets/bubles/run.rb organization_ids.txt`
 
 Where:
 
@@ -125,7 +133,7 @@ Clear all the budgets data from an organization
 
 Usage:
 
-`/path/to/project/operations/gobierto_budgets/clear-budgets/run.rb organization_ids.txt`
+`ruby gobierto-etl-utils/operations/gobierto_budgets/clear-budgets/run.rb organization_ids.txt`
 
 Where:
 
@@ -141,7 +149,7 @@ Deletes total budgets data for a given set of years and a list of organizations.
 
 Usage:
 
-`/path/to/project/operations/gobierto_budgets/delete_total_budget/run.rb "2010 2012" organization_ids.txt`
+`ruby gobierto-etl-utils/operations/gobierto_budgets/delete_total_budget/run.rb "2010 2012" organization_ids.txt`
 
 Where:
 
@@ -158,7 +166,7 @@ Calculates total budgets data for a given set of years and a list of organizatio
 
 Usage:
 
-`/path/to/project/operations/gobierto_budgets/update_total_budget/run.rb "2010 2012" organization_ids.txt`
+`ruby gobierto-etl-utils/operations/gobierto_budgets/update_total_budget/run.rb "2010 2012" organization_ids.txt`
 
 Where:
 
@@ -175,7 +183,7 @@ Deletes from Populate Data the providers of an organization / location
 
 Usage:
 
-`/path/to/project/operations/gobierto_budgets/clear-previous-providers/run.rb 8019
+`ruby gobierto-etl-utils/operations/gobierto_budgets/clear-previous-providers/run.rb 8019
 
 Where:
 
@@ -191,7 +199,7 @@ Imports planned budgets from JSON file
 
 Usage:
 
-`/path/to/project/operations/gobierto_budgets/import-planned-budgets/run.rb input.json <year>
+`ruby gobierto-etl-utils/operations/gobierto_budgets/import-planned-budgets/run.rb input.json <year>
 
 Where:
 
@@ -208,7 +216,7 @@ Imports planned budgets updated from JSON file
 
 Usage:
 
-`/path/to/project/operations/gobierto_budgets/import-planned-budgets-updated/run.rb input.json <year>
+`ruby gobierto-etl-utils/operations/gobierto_budgets/import-planned-budgets-updated/run.rb input.json <year>
 
 Where:
 
@@ -225,7 +233,7 @@ Imports executed budgets from JSON file
 
 Usage:
 
-`/path/to/project/operations/gobierto_budgets/import-executed-budgets/run.rb input.json <year>
+`ruby gobierto-etl-utils/operations/gobierto_budgets/import-executed-budgets/run.rb input.json <year>
 
 Where:
 
@@ -244,7 +252,7 @@ This operation is a Gobierto runner.
 
 Usage:
 
-`/path/to/gobierto bin runner /path/to/project/operations/gobierto/publish-activity/run.rb budgets_updated organization_ids.txt`
+`/path/to/gobierto bin runner ruby gobierto-etl-utils/operations/gobierto/publish-activity/run.rb budgets_updated organization_ids.txt`
 
 Where:
 
@@ -263,10 +271,36 @@ This operation is a Gobierto runner.
 
 Usage:
 
-`/path/to/gobierto bin runner /path/to/project/operations/gobierto/clear-cache/run.rb`
+`/path/to/gobierto bin runner ruby gobierto-etl-utils/operations/gobierto/clear-cache/run.rb`
 
 Output:
 
 - Cache is cleared
 
+### gobierto-data/upload dataset
 
+Uploads (creates or updates) a dataset in Gobierto data
+
+Usage:
+
+```
+ruby $DEV_DIR/gobierto-etl-utils/operations/gobierto_data/upload-dataset/run.rb [options]
+
+       (*) all parameters are required except those with default value
+        --api-token API_TOKEN        Gobierto Data API Token
+        --gobierto-url GOBIERTO_URL  Gobierto Data URL (protocol + host, i.e http://datos.gobierto.es/
+        --name DATASET_NAME          Dataset name
+        --slug DATASET_SLUG          Dataset slug
+        --table-name TABLE_NAME      Dataset table-name
+        --file-path FILE_PATH        Data file path
+        --append APPEND              Append existing dataset (true or false). By default false
+        --visibility-level VISIBILITY_LEVEL
+                                     Dataset visibility level (draft or active). By default active
+        --csv-separator SEPARATOR    CSV separator. By default ','
+    -d, --debug                      Run with debug mode enabled
+    -h, --help                       Prints this help
+```
+
+Output:
+
+The command responds with a debug log with the HTTP responses
