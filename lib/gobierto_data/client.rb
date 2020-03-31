@@ -22,60 +22,29 @@ module GobiertoData
     end
 
     def create_dataset(params = {})
-      if params[:file_path]
-        dataset_params = {
-          data_file: Faraday::UploadIO.new(params[:file_path], "text/csv"),
-          name: params[:name],
-          table_name: params[:table_name],
-          slug: params[:slug],
-          visibility_level: params[:visibility_level],
-          csv_separator: params[:csv_separator] || ",",
-          append: params[:append] || false
-        }
-        dataset_params.merge!({schema_file: Faraday::UploadIO.new(params[:schema_path], "application/json")}) if params[:schema_path]
-        response = multipart_connection.post("api/v1/data/datasets", {
-          dataset: dataset_params
-        }, "Authorization" => auth_header)
-      else
-        response = Faraday.post(
-          "#{gobierto_url}/api/v1/data/datasets",
-          build_dataset_meta(params).to_json,
-          "Content-Type" => "application/json",
-          "Authorization" => auth_header
-        )
-      end
+      multipart = params[:file_path].present? || params[:schema_path].present?
+      response = connection(multipart).post(
+        "api/v1/data/datasets",
+        build_dataset_params(multipart, params),
+        build_dataset_request_headers(multipart)
+      )
       log_response(response) if debug
       response
     end
 
     def update_dataset(params = {})
-      if params[:file_path]
-        response = multipart_connection.put(
-          "api/v1/data/datasets/#{params[:slug]}",
-          {
-            dataset: {
-              data_file: Faraday::UploadIO.new(params[:file_path], "text/csv"),
-              visibility_level: params[:visibility_level],
-              csv_separator: params[:csv_separator] || ",",
-              append: params[:append] || false
-            }
-          },
-          "Authorization" => auth_header
-        )
-      else
-        response = Faraday.put(
-          "#{gobierto_url}/api/v1/data/datasets/#{params[:slug]}",
-          build_dataset_meta(params).to_json,
-          "Content-Type" => "application/json",
-          "Authorization" => auth_header
-        )
-      end
+      multipart = params[:file_path].present? || params[:schema_path].present?
+      response = connection(multipart).put(
+        "api/v1/data/datasets/#{params[:slug]}",
+        build_dataset_params(multipart, params),
+        build_dataset_request_headers(multipart)
+      )
       log_response(response) if debug
       response
     end
 
     def upsert_dataset(params = {})
-      response = Faraday.get("#{gobierto_url}/api/v1/data/datasets/#{params[:slug]}/meta")
+      response = connection.get("api/v1/data/datasets/#{params[:slug]}/meta")
       log_response(response) if debug
 
       if response.status == 200
@@ -94,30 +63,50 @@ module GobiertoData
       puts "\tBODY: #{response.body}" if (response.status < 200 || response.status > 299)
     end
 
-    def multipart_connection
-      @multipart_connection = begin
+    def connection(multipart = false)
+      @connection = begin
         Faraday.new(gobierto_url) do |f|
-          f.request :multipart
+          f.request(:multipart ) if multipart
           f.request :url_encoded
           f.adapter :net_http
         end
       end
     end
 
-    def build_dataset_meta(params = {})
-      {
-        data: {
-          type: "gobierto_data-dataset_forms",
-          attributes: {
-            name: params[:name],
-            table_name: params[:table_name],
-            slug: params[:slug],
-            data_path: params[:file_url],
-            local_data: false,
-            visibility_level: params[:visibility_level]
+    def build_dataset_params(multipart, params = {})
+      dataset_params = {
+        name: params[:name],
+        table_name: params[:table_name],
+        slug: params[:slug],
+        local_data: false,
+        visibility_level: params[:visibility_level],
+        csv_separator: params[:csv_separator] || ",",
+        append: params[:append] || false
+      }
+
+      dataset_params.merge!({data_path: params[:file_url]}) if params[:file_url]
+      dataset_params.merge!({data_file: Faraday::UploadIO.new(params[:file_path], "text/csv")}) if params[:file_path]
+      dataset_params.merge!({schema_file: Faraday::UploadIO.new(params[:schema_path], "application/json")}) if params[:schema_path]
+
+      if multipart
+        {dataset: dataset_params}
+      else
+        dataset_params = {
+          data: {
+            type: "gobierto_data-dataset_forms",
+            attributes: dataset_params
           }
         }
+        dataset_params.to_json
+      end
+    end
+
+    def build_dataset_request_headers(multipart)
+      default_headers = {
+        "Authorization" => auth_header
       }
+      default_headers.merge!({"Content-Type" => "application/json"}) unless multipart
+      default_headers
     end
   end
 end
