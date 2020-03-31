@@ -41,6 +41,9 @@ BANNER
   opts.on("--file-path FILE_PATH", "Data file path") do |v|
     options[:file_path] = v
   end
+  opts.on("--file-url FILE_URL", "Data file url") do |v|
+    options[:file_url] = v
+  end
   opts.on("--schema-path SCHEMA_PATH", "Schema file path") do |v|
     options[:schema_path] = v
   end
