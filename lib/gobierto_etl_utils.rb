@@ -2,6 +2,8 @@
 
 require "optparse"
 require "csv"
+require "fileutils"
+require "tempfile"
 require "bundler/setup"
 Bundler.require
 

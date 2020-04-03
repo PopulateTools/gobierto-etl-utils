@@ -2,7 +2,7 @@
 
 require "bundler/setup"
 Bundler.require
-require "fileutils"
+require_relative "../../lib/gobierto_etl_utils"
 
 # Removes the directory and creates it if doesn't exist
 #
