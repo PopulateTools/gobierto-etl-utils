@@ -29,6 +29,9 @@ module GobiertoData
         build_dataset_request_headers(multipart)
       )
       log_response(response) if debug
+      if response.status >= 300
+        raise ServerError, response.status
+      end
       response
     end
 
@@ -40,6 +43,9 @@ module GobiertoData
         build_dataset_request_headers(multipart)
       )
       log_response(response) if debug
+      if response.status >= 300
+        raise ServerError, response.status
+      end
       response
     end
 
@@ -47,11 +53,16 @@ module GobiertoData
       response = connection.get("api/v1/data/datasets/#{params[:slug]}/meta")
       log_response(response) if debug
 
-      if response.status == 200
+      response = if response.status == 200
         update_dataset(params)
       elsif response.status == 404
         create_dataset(params)
       else
+        raise ServerError, response.status
+      end
+
+      if response.status >= 300
+        log_response(response) if debug
         raise ServerError, response.status
       end
     end
