@@ -92,6 +92,20 @@ Usage:
 
 `ruby gobierto-etl-utils/operations/prepare-working-directory/run.rb /tmp/foo`
 
+### common/run Oracle query
+
+Runs a query in Oracle using `sqlplus` utility
+
+Usage:
+
+`$DEV_DIR/gobierto-etl-utils/operations/run-oracle-query/run.rb "CONNECTION STRING" input.sql $WORKING_DIR/output.csv`
+
+Where:
+
+- first argument: the connection string
+- second argument: a file with the query to execute
+- third argument: the output file (in CSV format)
+
 ### gobierto-budgets/annual data
 
 Calculates the CSV and JSON files for the open data section of the given sites with the organization ID provided.
