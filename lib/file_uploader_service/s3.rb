@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-require "aws-sdk"
+require "aws-sdk-s3"
+
 module FileUploaderService
   class S3
     attr_reader :file, :file_name
