@@ -42,6 +42,6 @@ file.close
 # Run the query and return in the standar output the results
 # The first row and the last 3 rows are removed because contain
 # metainformation of the query not in CSV format
-`cat #{file.path} | sqlplus -S /nolog | sed '1d' | head -n -3 > #{destination_name}`
+`export NLS_LANG=.AL32UTF8; cat #{file.path} | sqlplus -S /nolog | sed '1d' | head -n -3 > #{destination_name}`
 file.unlink
 puts "[END] run-oracle-query/run.rb"
