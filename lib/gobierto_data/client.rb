@@ -50,7 +50,11 @@ module GobiertoData
     end
 
     def upsert_dataset(params = {})
-      response = connection.get("api/v1/data/datasets/#{params[:slug]}/meta")
+      response = connection.get(
+        "api/v1/data/datasets/#{params[:slug]}/meta",
+        nil,
+        build_dataset_request_headers(false)
+      )
       log_response(response) if debug
 
       response = if response.status == 200
