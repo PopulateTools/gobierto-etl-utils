@@ -37,6 +37,8 @@ http.read_timeout = 500
 if url =~ /\Ahttps/
   http.use_ssl = true
   http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+  # Use and old cipher, necessary for some connections
+  http.ciphers = ['AES128-SHA']
 end
 request = Net::HTTP::Get.new(uri.request_uri)
 response = http.request(request)
