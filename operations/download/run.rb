@@ -15,21 +15,22 @@ require "net/https"
 #
 #  - 0: URL to download the content
 #  - 1: Output file
+#  - 2: --compatible
 #
 # Samples:
 #
 #   /path/to/project/operations/download/run.rb "http://input.json" /tmp/output.json
 #
 
-if ARGV.length != 2
+if ARGV.length < 2 || ARGV.length > 3
   raise "Review the arguments"
 end
 
 url = ARGV[0]
 destination_file_name = ARGV[1]
+compatible_mode = ARGV[2]
 
-puts "[START] download/run.rb from #{url} to #{destination_file_name}"
-
+puts "[START] download/run.rb from #{url} to #{destination_file_name} #{compatible_mode ? " using compatible mode" : ""}"
 
 uri = URI.parse(url)
 http = Net::HTTP.new(uri.host, uri.port)
@@ -37,8 +38,10 @@ http.read_timeout = 500
 if url =~ /\Ahttps/
   http.use_ssl = true
   http.verify_mode = OpenSSL::SSL::VERIFY_NONE
-  # Use and old cipher, necessary for some connections
-  http.ciphers = ['AES128-SHA']
+  if compatible_mode
+    # Use and old cipher, necessary for some connections
+    http.ciphers = ['AES128-SHA']
+  end
 end
 request = Net::HTTP::Get.new(uri.request_uri)
 response = http.request(request)
