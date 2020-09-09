@@ -16,7 +16,7 @@ Downloads a file from an external URL
 
 Usage:
 
-`ruby gobierto-etl-utils/operations/download/run.rb "https://input.json" /tmp/output.json`
+`ruby gobierto-etl-utils/operations/download/run.rb "https://input.json" /tmp/output.json [--compatible]`
 
 Output:
 
