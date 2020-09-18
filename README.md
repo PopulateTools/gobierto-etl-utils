@@ -22,6 +22,26 @@ Output:
 
 - File with the content of input URL
 
+### common/api-download
+
+Downloads content of an endpoint and saves it into a local file
+
+Usage:
+
+```
+ruby $DEV_DIR/gobierto-etl-utils/api-download/run.rb [options]
+
+        --source-url SOURCE_URL      Url of the resource to be downloaded. This field is required
+        --output-file OUTPUT_FILE    Path of the file to save the downloaded data. This field is required
+        --bearer-token BEARER_TOKEN  Bearer token to be sent in the request header. Ignored if blank
+        --compatible COMPATIBLE      Use and old cipher, necessary for some connections. False by default
+    -h, --help                       Prints this help
+```
+
+Output:
+
+- File with the endpoint content
+
 ### commond/download S3
 
 Downloads the files from S3 folder
