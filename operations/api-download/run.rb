@@ -56,6 +56,11 @@ end
 request = Net::HTTP::Get.new(uri.request_uri, headers)
 response = http.request(request)
 
+unless response.code == "200"
+  puts "[ERROR] Unexpected response code: #{response.code}: #{response.body}"
+  exit(-1)
+end
+
 if File.dirname(options[:output_file]) != "."
   FileUtils.mkdir_p(File.dirname(options[:output_file]))
 end
