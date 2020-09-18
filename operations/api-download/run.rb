@@ -27,6 +27,9 @@ OptionParser.new do |opts|
   opts.on("--bearer-token BEARER_TOKEN", "Bearer token to be sent in the request header. Ignored if blank") do |v|
     options[:bearer_token] = v
   end
+  opts.on("--compatible COMPATIBLE", FalseClass, "Use and old cipher, necessary for some connections. False by default") do |v|
+    options[:compatible] = v
+  end
   opts.on("-h", "--help", "Prints this help") do
     puts opts
     exit
