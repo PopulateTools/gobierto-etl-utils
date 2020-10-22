@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/gobierto_data.git
-  revision: 28aa9098d55d7debf5637b738ac58884cd945254
+  revision: 324b874ade88d956751056f64e96d8bdc54acee1
   specs:
     gobierto_data (0.1.0)
       actionpack
@@ -84,7 +84,7 @@ GEM
     multipart-post (2.1.1)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
-    oj (3.10.14)
+    oj (3.10.15)
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
