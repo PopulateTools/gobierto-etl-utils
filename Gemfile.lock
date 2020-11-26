@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/gobierto_data.git
-  revision: 324b874ade88d956751056f64e96d8bdc54acee1
+  revision: 644a85624ac68fac556f5d3c26cd56148787cd35
   specs:
     gobierto_data (0.1.0)
       actionpack
@@ -36,7 +36,7 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     ansi (1.5.0)
     aws-eventstream (1.1.0)
-    aws-partitions (1.397.0)
+    aws-partitions (1.399.0)
     aws-sdk-core (3.109.3)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
@@ -66,7 +66,7 @@ GEM
     elasticsearch-transport (6.8.2)
       faraday (~> 1)
       multi_json
-    erubi (1.9.0)
+    erubi (1.10.0)
     faraday (1.1.0)
       multipart-post (>= 1.2, < 3)
       ruby2_keywords
@@ -75,7 +75,7 @@ GEM
     ine-places (0.3.0)
       activesupport (>= 4.2)
     jmespath (1.4.0)
-    loofah (2.7.0)
+    loofah (2.8.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mini_portile2 (2.4.0)
@@ -84,7 +84,7 @@ GEM
     multipart-post (2.1.1)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
-    oj (3.10.15)
+    oj (3.10.16)
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -97,7 +97,7 @@ GEM
     ruby2_keywords (0.0.2)
     rubyzip (2.3.0)
     thread_safe (0.3.6)
-    tzinfo (1.2.7)
+    tzinfo (1.2.8)
       thread_safe (~> 0.1)
     zeitwerk (2.4.1)
 
