@@ -80,7 +80,7 @@ module GobiertoData
 
     def connection(multipart = false)
       @connection = begin
-        Faraday.new(gobierto_url) do |f|
+        Faraday.new(gobierto_url, request: { timeout: 600 }) do |f|
           f.request(:multipart ) if multipart
           f.request :url_encoded
           f.adapter :net_http
