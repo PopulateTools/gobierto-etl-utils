@@ -27,7 +27,7 @@ OptionParser.new do |opts|
   opts.on("--bearer-token BEARER_TOKEN", "Bearer token to be sent in the request header. Ignored if blank") do |v|
     options[:bearer_token] = v
   end
-  opts.on("--basic_auth USER_AND_PASSWORD", "User and password separated by a colon to be used with basic auth in the request. Ignored if blank") do |v|
+  opts.on("--basic-auth USER_AND_PASSWORD", "User and password separated by a colon to be used with basic auth in the request. Ignored if blank") do |v|
     options[:basic_auth_user], options[:basic_auth_password] = v.split(":")
   end
   opts.on("--compatible COMPATIBLE", FalseClass, "Use and old cipher, necessary for some connections. False by default") do |v|
