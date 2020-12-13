@@ -27,6 +27,9 @@ OptionParser.new do |opts|
   opts.on("--bearer-token BEARER_TOKEN", "Bearer token to be sent in the request header. Ignored if blank") do |v|
     options[:bearer_token] = v
   end
+  opts.on("--basic-auth USER_AND_PASSWORD", "User and password separated by a colon to be used with basic auth in the request. Ignored if blank") do |v|
+    options[:basic_auth_user], options[:basic_auth_password] = v.split(":")
+  end
   opts.on("--compatible COMPATIBLE", FalseClass, "Use and old cipher, necessary for some connections. False by default") do |v|
     options[:compatible] = v
   end
@@ -36,7 +39,7 @@ OptionParser.new do |opts|
   end
 end.parse!
 
-puts "[START] api-download/run.rb with #{options.except(:bearer_token)}"
+puts "[START] api-download/run.rb with #{options.except(:bearer_token, :basic_auth_user, :basic_auth_password)}"
 
 headers = {}
 headers["Authorization"] = "Bearer #{options[:bearer_token]}" if options[:bearer_token].present?
@@ -54,6 +57,7 @@ if options[:source_url] =~ /\Ahttps/
 end
 
 request = Net::HTTP::Get.new(uri.request_uri, headers)
+request.basic_auth(options[:basic_auth_user], options[:basic_auth_password]) if options.values_at(:basic_auth_user, :basic_auth_password).all?(&:present?)
 response = http.request(request)
 
 unless response.code == "200"
