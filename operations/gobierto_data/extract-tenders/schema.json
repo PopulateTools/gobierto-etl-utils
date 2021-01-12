@@ -1,0 +1,22 @@
+{
+  "id":{"type":"integer"},
+  "title":{"type":"text"},
+  "document_number":{"type":"text"},
+  "permalink":{"type":"text"},
+  "status":{"type":"text"},
+  "minor_contract":{"type":"boolean"},
+  "contract_type":{"type":"text"},
+  "submission_date":{"type":"date"},
+  "open_proposals_date":{"type":"date"},
+  "number_of_batches":{"type":"integer"},
+  "number_of_proposals":{"type":"integer"},
+  "contractor":{"type":"text"},
+  "contractor_type":{"type":"text"},
+  "contract_value":{"type":"numeric"},
+  "initial_amount":{"type":"numeric"},
+  "initial_amount_no_taxes":{"type":"numeric"},
+  "cpvs":{"type":"text"},
+  "process_type":{"type":"text"},
+  "category_id":{"type":"integer"},
+  "category_title":{"type":"text"}
+}
