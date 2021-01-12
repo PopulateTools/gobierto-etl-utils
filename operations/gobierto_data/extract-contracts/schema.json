@@ -3,7 +3,6 @@
   "title":{"type":"text"},
   "permalink":{"type":"text"},
   "batch_number":{"type":"integer"},
-  "award_date":{"type":"date"},
   "start_date":{"type":"date"},
   "end_date":{"type":"date"},
   "duration":{"type":"integer"},
