@@ -338,3 +338,18 @@ ruby $DEV_DIR/gobierto-etl-utils/operations/gobierto_data/upload-dataset/run.rb 
 Output:
 
 The command responds with a debug log with the HTTP responses
+
+### gobierto-data/extract-contracts
+
+This is not an operation but the query to extract contracts from Gobierto Data. It contains a variable `<PLACE_ID>` that needs to be replaced by the corresponding INE code. Then it can be converted to URI params to be used in the import. Example:
+
+```
+QUERY=`sed "s/<PLACE_ID>/${ALCOBENDAS_INE_CODE}/g" ${ETL_UTILS}/operations/gobierto_data/extract-tenders/query.sql | jq -s -R -r @uri`
+```
+
+Where sed replaces `<PLACE_ID>` by the value of the enviornment variable `${ALCOBENDAS_INE_CODE}`
+
+
+### gobierto-data/extract-tenders
+
+This is not an operation but the query to extract tenders from Gobierto Data. Please refer to extract-contracts for a detailed example.
