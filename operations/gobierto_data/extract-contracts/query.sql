@@ -3,7 +3,7 @@ SELECT
   contracts.title,
   contracts.permalink,
   contracts.batch_number,
-  contracts.award_date,
+  contracts.contract_award_published_at as award_date,
   contracts.start_date,
   contracts.end_date,
   contracts.duration,
