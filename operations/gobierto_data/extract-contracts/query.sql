@@ -3,7 +3,9 @@ SELECT
   contracts.title,
   contracts.permalink,
   contracts.batch_number,
-  contracts.contract_award_published_at as award_date,
+  COALESCE(
+    contracts.contract_award_published_at, contracts.contract_formalized_published_at, contracts.start_date
+  ) AS award_date,
   contracts.start_date,
   contracts.end_date,
   contracts.duration,
