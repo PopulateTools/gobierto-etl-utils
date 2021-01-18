@@ -29,7 +29,8 @@ SELECT
     contracts.contract_award_published_at, contracts.contract_formalized_published_at, contracts.start_date
   )::date AS award_date,
   tenders.open_proposals_date,
-  tenders.submission_date
+  tenders.submission_date,
+  tenders.number_of_proposals
 FROM
   contracts
   LEFT JOIN fiscal_entities contractors ON contractor_id = contractors.id
