@@ -30,7 +30,8 @@ SELECT
   )::date AS award_date,
   tenders.open_proposals_date,
   tenders.submission_date,
-  tenders.number_of_proposals
+  tenders.number_of_proposals,
+  tenders.contract_value AS estimated_value
 FROM
   contracts
   LEFT JOIN fiscal_entities contractors ON contractor_id = contractors.id

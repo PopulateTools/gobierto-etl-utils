@@ -24,5 +24,6 @@
   "award_date":{"type":"date"},
   "open_proposals_date":{"type":"date"},
   "submission_date":{"type":"date"},
-  "number_of_proposals":{"type":"integer"}
+  "number_of_proposals":{"type":"integer"},
+  "estimated_value":{"type": "numeric"}
 }
