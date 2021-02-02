@@ -83,7 +83,7 @@ module GobiertoData
     def connection(multipart = false)
       @connection = begin
                       options = { request: { timeout: 600 } }
-                      options.merge!(ssl: { verify: false }) unless no_verify_ssl
+                      options.merge!(ssl: { verify: false }) if no_verify_ssl
                       Faraday.new(gobierto_url, options) do |f|
                         f.request(:multipart ) if multipart
                         f.request :url_encoded
