@@ -10,12 +10,14 @@ module GobiertoData
     attr_accessor(
       :gobierto_url,
       :auth_header,
-      :debug
+      :debug,
+      :no_verify_ssl
     )
 
     def initialize(params = {})
       self.gobierto_url = params[:gobierto_url]
       self.debug = params[:debug] || false
+      self.no_verify_ssl = params[:no_verify_ssl]
 
       raise "API token can't be blank" unless params[:api_token].present?
       self.auth_header = "Bearer #{params[:api_token]}"
@@ -80,12 +82,14 @@ module GobiertoData
 
     def connection(multipart = false)
       @connection = begin
-        Faraday.new(gobierto_url, request: { timeout: 600 }) do |f|
-          f.request(:multipart ) if multipart
-          f.request :url_encoded
-          f.adapter :net_http
-        end
-      end
+                      options = { request: { timeout: 600 } }
+                      options.merge!(ssl: { verify: false }) unless no_verify_ssl
+                      Faraday.new(gobierto_url, options) do |f|
+                        f.request(:multipart ) if multipart
+                        f.request :url_encoded
+                        f.adapter :net_http
+                      end
+                    end
     end
 
     def build_dataset_params(multipart, params = {})

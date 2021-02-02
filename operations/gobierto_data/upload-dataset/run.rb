@@ -12,7 +12,8 @@ options = {
   debug: true,
   csv_separator: ',',
   append: false,
-  visibility_level: 'active'
+  visibility_level: 'active',
+  no_verify_ssl: false
 }
 
 OptionParser.new do |opts|
@@ -56,6 +57,9 @@ BANNER
   opts.on("--csv-separator SEPARATOR", "CSV separator. By default ','") do |v|
     options[:csv_separator] = v
   end
+  opts.on("--no-verify-ssl", "Skip SSL verification") do |v|
+    options[:no_verify_ssl] = true
+  end
   opts.on("-d", "--debug", "Run with debug mode enabled") do |v|
     options[:debug] = v
   end
@@ -67,7 +71,7 @@ end.parse!
 
 puts "[START] upload-dataset/run.rb with #{ARGV.join(' - ')}"
 
-gobierto_data_client = GobiertoData::Client.new(options.slice(:api_token, :gobierto_url, :debug))
+gobierto_data_client = GobiertoData::Client.new(options.slice(:api_token, :gobierto_url, :debug, :no_verify_ssl))
 gobierto_data_client.upsert_dataset(options.except(:api_token, :gobierto_url, :debug))
 
 puts "[END] upload-dataset/run.rb"
