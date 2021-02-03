@@ -24,7 +24,30 @@ SELECT
   END as minor_contract,
   array_to_string(contracts.cpvs, ',') AS cpvs,
   categories.id as category_id,
-  categories.title as category_title,
+  CASE categories.title
+    WHEN 'agriculture' THEN 'Servicios agrícolas y forestales'
+    WHEN 'architecture' THEN 'Arquitectura e ingeniería'
+    WHEN 'audiovisual' THEN 'Audiovisual'
+    WHEN 'catering' THEN 'Hostelería y restauración'
+    WHEN 'construction' THEN 'Construcción y mantenimiento'
+    WHEN 'culture' THEN 'Cultura y deporte'
+    WHEN 'education' THEN 'Enseñanza y formación'
+    WHEN 'electrical' THEN 'Equipos eléctricos y de iluminación'
+    WHEN 'environment' THEN 'Medio ambiente'
+    WHEN 'finance' THEN 'Servicios financieros y seguros'
+    WHEN 'furniture' THEN 'Mobiliario'
+    WHEN 'health' THEN 'Salud'
+    WHEN 'industry' THEN 'Industria y maquinaria'
+    WHEN 'legal' THEN 'Jurídico, contabilidad, mercadotecnia...'
+    WHEN 'other' THEN 'Otros'
+    WHEN 'print' THEN 'Impresión y material de oficina'
+    WHEN 'security' THEN 'Seguridad'
+    WHEN 'social_services' THEN 'Servicios sociales'
+    WHEN 'software' THEN 'Consultoría y desarrollo de software, equipos y licencias'
+    WHEN 'telecom' THEN 'Telecomunicaciones y correos'
+    WHEN 'textile' THEN 'Textil'
+    WHEN 'transportation' THEN 'Transporte'
+  END as category_title,
   COALESCE(
     contracts.contract_award_published_at, contracts.contract_formalized_published_at, contracts.start_date
   )::date AS award_date,
