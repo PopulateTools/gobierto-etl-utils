@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/gobierto_data.git
-  revision: 53641a2ad7333243a04d8cdd66c821292142796f
+  revision: ae3bb71c5988df7947817782798630cfa7d96f01
   specs:
     gobierto_data (0.1.0)
       actionpack
@@ -36,7 +36,7 @@ GEM
       zeitwerk (~> 2.3)
     ansi (1.5.0)
     aws-eventstream (1.1.0)
-    aws-partitions (1.422.0)
+    aws-partitions (1.424.0)
     aws-sdk-core (3.112.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
