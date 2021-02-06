@@ -45,8 +45,8 @@ SELECT
     WHEN 'telecom' THEN 'Telecomunicaciones y correos'
     WHEN 'textile' THEN 'Textil'
     WHEN 'transportation' THEN 'Transporte'
-  END as category_titleFROM
-  tenders
+  END as category_title
+  FROM tenders
   LEFT JOIN fiscal_entities contractors ON contractor_id = contractors.id
   LEFT JOIN entity_types contractors_types ON contractors_types.id = contractors.entity_type
   LEFT JOIN contract_types ON contract_type = contract_types.id
