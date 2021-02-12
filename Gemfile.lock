@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/gobierto_data.git
-  revision: ae3bb71c5988df7947817782798630cfa7d96f01
+  revision: 1df5213c01c611915038538334d6d5a0b8f59d11
   specs:
     gobierto_data (0.1.0)
       actionpack
@@ -36,7 +36,7 @@ GEM
       zeitwerk (~> 2.3)
     ansi (1.5.0)
     aws-eventstream (1.1.0)
-    aws-partitions (1.424.0)
+    aws-partitions (1.426.0)
     aws-sdk-core (3.112.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
@@ -55,15 +55,15 @@ GEM
     byebug (11.1.3)
     concurrent-ruby (1.1.8)
     crass (1.0.6)
-    elasticsearch (6.8.2)
-      elasticsearch-api (= 6.8.2)
-      elasticsearch-transport (= 6.8.2)
-    elasticsearch-api (6.8.2)
+    elasticsearch (6.8.3)
+      elasticsearch-api (= 6.8.3)
+      elasticsearch-transport (= 6.8.3)
+    elasticsearch-api (6.8.3)
       multi_json
     elasticsearch-extensions (0.0.33)
       ansi
       elasticsearch
-    elasticsearch-transport (6.8.2)
+    elasticsearch-transport (6.8.3)
       faraday (~> 1)
       multi_json
     erubi (1.10.0)
