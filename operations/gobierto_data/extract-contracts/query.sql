@@ -1,5 +1,8 @@
 SELECT
-  contracts.id,
+  CASE process_types.text
+    WHEN 'Contrato menor' THEN contracts.id
+    ELSE tenders.id
+  END as id,
   contracts.title,
   contracts.permalink,
   contracts.batch_number,
