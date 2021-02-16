@@ -48,9 +48,8 @@ SELECT
     WHEN 'textile' THEN 'Textil'
     WHEN 'transportation' THEN 'Transporte'
   END as category_title,
-  COALESCE(
-    contracts.contract_award_published_at, contracts.contract_formalized_published_at, contracts.start_date
-  )::date AS award_date,
+  contracts.contract_award_published_at::date AS award_date,
+  contracts.contract_formalized_published_at::date AS formalized_date,
   tenders.open_proposals_date,
   tenders.submission_date,
   tenders.number_of_proposals,
