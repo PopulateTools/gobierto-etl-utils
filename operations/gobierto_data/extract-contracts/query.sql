@@ -53,6 +53,7 @@ SELECT
   END as category_title,
   contracts.contract_award_published_at::date AS award_date,
   contracts.contract_formalized_published_at::date AS formalized_date,
+  contracts.gobierto_start_date AS gobierto_start_date,
   tenders.open_proposals_date,
   tenders.submission_date,
   tenders.number_of_proposals,
