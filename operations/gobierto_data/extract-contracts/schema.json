@@ -23,6 +23,7 @@
   "category_title":{"type":"text"},
   "award_date":{"type":"date"},
   "formalized_date":{"type":"date"},
+  "gobierto_start_date":{"type":"date"},
   "open_proposals_date":{"type":"date"},
   "submission_date":{"type":"date"},
   "number_of_proposals":{"type":"integer"},
