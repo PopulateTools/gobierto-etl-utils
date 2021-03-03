@@ -22,7 +22,7 @@ SELECT
   array_to_string(tenders.cpvs, ',') AS cpvs,
   process_types.text AS process_type,
   categories.id as category_id,
-  categories.title as category_title,
+  categories.title as category_title
   FROM tenders
   LEFT JOIN fiscal_entities contractors ON contractor_id = contractors.id
   LEFT JOIN entity_types contractors_types ON contractors_types.id = contractors.entity_type
