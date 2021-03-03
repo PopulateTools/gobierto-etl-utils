@@ -26,8 +26,8 @@ SELECT
     ELSE false
   END as minor_contract,
   array_to_string(contracts.cpvs, ',') AS cpvs,
-  categories.id as category_id,
-  categories.title as category_title,
+  COALESCE(categories.id, 23) as category_id,
+  COALESCE(categories.title, 'other') as category_title,
   contracts.contract_award_published_at::date AS award_date,
   contracts.contract_formalized_published_at::date AS formalized_date,
   contracts.gobierto_start_date AS gobierto_start_date,
