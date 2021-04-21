@@ -32,3 +32,4 @@ SELECT
   LEFT JOIN cpv_categorizations ON cpv_categorizations.cpv_division = tenders.cpvs_divisions[1]
   LEFT JOIN categories ON categories.id = cpv_categorizations.category_id
 WHERE contractors.custom_place_id = <PLACE_ID>
+AND tenders.import_pending = false
