@@ -22,7 +22,7 @@ SELECT
   contract_types.text AS contract_type,
   process_types.text AS process_type,
   CASE process_types.text
-    WHEN 'Contrato menor' THEN true
+    WHEN 'minor_contract' THEN true
     ELSE false
   END as minor_contract,
   array_to_string(contracts.cpvs, ',') AS cpvs,
