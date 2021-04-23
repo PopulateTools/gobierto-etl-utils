@@ -1,6 +1,6 @@
 SELECT
   CASE process_types.text
-    WHEN 'Contrato menor' THEN contracts.id
+    WHEN 'minor_contract' THEN contracts.id
     ELSE tenders.id
   END as id,
   contracts.title,
