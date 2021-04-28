@@ -54,6 +54,7 @@ output_path = File.dirname(output_full_path)
 output_filename = File.basename(output_full_path)
 
 yesterday_full_path = File.join(output_path, "#{Date.today.prev_day.to_s}-#{output_filename}")
+day_before_yesterday_full_path = File.join(output_path, "#{Date.today.prev_day.prev_day.to_s}-#{output_filename}")
 today_full_path = File.join(output_path, "#{Date.today.to_s}-#{output_filename}")
 temp_copy_full_path = "#{output_full_path}.tmp"
 
@@ -83,8 +84,9 @@ NR==FNR{
     end
   end
 
-  # Remove the temporary file without headers
+  # Remove the temporary file without headers and the day before yesterday csv if it exists
   FileUtils.rm temp_copy_full_path
+  FileUtils.rm(day_before_yesterday_full_path) if File.exists?(day_before_yesterday_full_path)
 else
   puts "[RUN] download-csv-diff/run.rb creating full version"
   # Otherwise we just use the latest in its entirety
