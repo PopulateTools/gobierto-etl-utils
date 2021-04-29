@@ -4,7 +4,6 @@ require "bundler/setup"
 Bundler.require
 require "fileutils"
 require "open-uri"
-require "net/http"
 require "net/https"
 require "date"
 
