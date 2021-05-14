@@ -11,3 +11,4 @@ gem "gobierto_data", git: "https://github.com/PopulateTools/gobierto_data.git"
 gem "faraday"
 gem "rubyzip"
 gem "aws-sdk-s3"
+gem 'pry'
