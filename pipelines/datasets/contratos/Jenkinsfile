@@ -1,0 +1,47 @@
+email = "popu-servers+jenkins@populate.tools "
+pipeline {
+    agent any
+    environment {
+        FOLDER = "contratos"
+        PATH = "$HOME/.rbenv/shims:$PATH"
+        ETL_UTILS = "/var/www/gobierto-etl-utils/current/"
+        DATASET_NAME = "Contratos"
+        DATASET_SLUG = "contratos"
+        DATASET_TABLE_NAME = "${FOLDER}"
+        // Variables that must be defined via Jenkins UI:
+        // GOBIERTO_DATA_SOURCE_URL = ""
+        // GOBIERTO_DATA_DEST_URL = ""
+        // INE_CODE = ""
+        // READ_API_TOKEN = ""
+        // WRITE_API_TOKEN = ""
+    }
+    stages {
+        stage('Import contratos') {
+            steps {
+              sh '''#!/bin/bash
+                cd ${ETL_UTILS};
+                QUERY=`sed "s/<PLACE_ID>/${INE_CODE}/g" ${ETL_UTILS}/operations/gobierto_data/extract-contracts/query.sql | jq -s -R -r @uri`
+                FILEURL=$GOBIERTO_DATA_SOURCE_URL"/api/v1/data/data.csv?token="$READ_API_TOKEN"&sql="$QUERY
+                ruby operations/gobierto_data/upload-dataset/run.rb \
+                  --api-token $WRITE_API_TOKEN \
+                  --name "$DATASET_NAME" \
+                  --slug $DATASET_SLUG \
+                  --table-name $DATASET_TABLE_NAME \
+                  --gobierto-url $GOBIERTO_DATA_DEST_URL \
+                  --schema-path ${ETL_UTILS}/operations/gobierto_data/extract-contracts/schema.json \
+                  --file-url $FILEURL
+              '''
+            }
+        }
+    }
+    post {
+        failure {
+            echo 'This will run only if failed'
+            mail body: "Project: ${env.JOB_NAME} - Build Number: ${env.BUILD_NUMBER} - URL de build: ${env.BUILD_URL}",
+                charset: 'UTF-8',
+                subject: "ERROR CI: Project name -> ${env.JOB_NAME}",
+                to: email
+        }
+    }
+}
+
