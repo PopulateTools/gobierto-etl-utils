@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/gobierto_data.git
-  revision: 08203656360e1f7e9e52df43fd39ce74746efbe2
+  revision: 591057d7539481a75959e47ad2526788c3aabb27
   specs:
     gobierto_data (0.1.0)
       actionpack
@@ -54,7 +54,7 @@ GEM
     builder (3.2.4)
     byebug (11.1.3)
     coderay (1.1.3)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.9)
     crass (1.0.6)
     elasticsearch (6.8.3)
       elasticsearch-api (= 6.8.3)
@@ -86,7 +86,7 @@ GEM
     ine-places (0.3.0)
       activesupport (>= 4.2)
     jmespath (1.4.0)
-    loofah (2.9.1)
+    loofah (2.10.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     method_source (1.0.0)
@@ -97,7 +97,7 @@ GEM
     nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
-    oj (3.11.2)
+    oj (3.11.5)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
