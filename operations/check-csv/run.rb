@@ -33,16 +33,16 @@ status = :success
 begin
   CSV.read(input_file, encoding: 'utf-8')
 rescue => e
-  status = :error_reading_spaces_separated
+  status = :error_reading_comma_separated
 end
 
-if status == :error_reading_spaces_separated
+if status == :error_reading_comma_separated
   begin
     CSV.read(input_file, col_sep: ";", encoding: "utf-8")
     status = :success
   rescue StandardError => e
     puts "Error: #{e.message}"
-    error = :error_reading_comma_separated
+    status = :error_reading_semicolon_separated
   end
 end
 
