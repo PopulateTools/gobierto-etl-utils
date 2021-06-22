@@ -15,6 +15,7 @@ require_relative "../../lib/gobierto_etl_utils"
 #   $DEV_DIR/gobierto-etl-utils/operations/check-csv/run.rb input.csv
 #
 
+
 if ARGV.length != 1
   raise "Review the arguments"
 end
@@ -27,27 +28,32 @@ unless File.file?(input_file)
   raise "File #{input_file} doesn't exist"
 end
 
-error = false
+status = :success
 
 begin
-  error = false
   CSV.read(input_file, encoding: 'utf-8')
-rescue
-  error = true
+rescue => e
+  status = :error_reading_comma_separated
 end
 
-if error
+if status == :error_reading_comma_separated
   begin
-    error = false
     CSV.read(input_file, col_sep: ";", encoding: "utf-8")
+    status = :success
   rescue StandardError => e
     puts "Error: #{e.message}"
-    error = true
+    status = :error_reading_semicolon_separated
   end
 end
 
-if error
-  puts "[ERROR] Invalid CSV format"
+if status == :success
+  if CSV.table(input_file).count < 2
+    status = :csv_without_lines
+  end
+end
+
+unless status == :success
+  puts "[ERROR] Invalid CSV format #{status}"
   exit(-1)
 end
 
