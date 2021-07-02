@@ -29,7 +29,7 @@ pipeline {
                   --table-name $DATASET_TABLE_NAME \
                   --gobierto-url $GOBIERTO_DATA_DEST_URL \
                   --schema-path ${ETL_UTILS}/operations/gobierto_data/extract-contracts/schema.json \
-                  --file-url $FILEURL
+                  --file-url $FILEURL \
                   --no-verify-ssl
               '''
             }
