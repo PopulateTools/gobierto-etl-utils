@@ -30,6 +30,7 @@ pipeline {
                   --gobierto-url $GOBIERTO_DATA_DEST_URL \
                   --schema-path ${ETL_UTILS}/operations/gobierto_data/extract-tenders/schema.json \
                   --file-url $FILEURL
+                  --no-verify-ssl
               '''
             }
         }
