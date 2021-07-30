@@ -15,6 +15,9 @@ pipeline {
         // READ_API_TOKEN = ""
         // WRITE_API_TOKEN = ""
     }
+    options {
+        retry(3)
+    }
     stages {
         stage('Import contratos') {
             steps {
