@@ -39,12 +39,12 @@ FROM
   INNER JOIN (
     SELECT id, name, entity_type
     FROM public_entities
-    WHERE dir3 = <DIR3>
+    WHERE dir3 = '<DIR3>'
     UNION
     SELECT descendants.id, descendants.name, descendants.entity_type
     FROM public_entities
     LEFT JOIN public_entities descendants ON descendants.root_id = public_entities.id
-    WHERE public_entities.dir3 = <DIR3>
+    WHERE public_entities.dir3 = '<DIR3>'
   ) contractors ON contractor_entity_id = contractors.id
   LEFT JOIN private_entities assignees ON assignee_entity_id = assignees.id
   LEFT JOIN entity_types contractors_types ON contractors_types.id = contractors.entity_type
