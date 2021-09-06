@@ -24,12 +24,11 @@ SELECT
   COALESCE(categories.id, 23) as category_id,
   COALESCE(categories.title, 'other') as category_title
   FROM tenders
-  LEFT JOIN fiscal_entities contractors ON contractor_id = contractors.id
+  LEFT JOIN public_entities contractors ON contractor_entity_id = contractors.id
   LEFT JOIN entity_types contractors_types ON contractors_types.id = contractors.entity_type
   LEFT JOIN contract_types ON contract_type = contract_types.id
   LEFT JOIN contract_statuses ON status = contract_statuses.id
   LEFT JOIN process_types ON tenders.process_type = process_types.id
   LEFT JOIN cpv_categorizations ON cpv_categorizations.cpv_division = tenders.cpvs_divisions[1]
   LEFT JOIN categories ON categories.id = cpv_categorizations.category_id
-WHERE contractors.custom_place_id = <PLACE_ID>
-AND tenders.import_pending = false
+WHERE contractors.dir3 = <DIR3>
