@@ -36,7 +36,16 @@ SELECT
   tenders.contract_value AS estimated_value
 FROM
   contracts
-  LEFT JOIN public_entities contractors ON contractor_entity_id = contractors.id
+  INNER JOIN (
+    SELECT id, name, entity_type
+    FROM public_entities
+    WHERE dir3 = <DIR3>
+    UNION
+    SELECT descendants.id, descendants.name, descendants.entity_type
+    FROM public_entities
+    LEFT JOIN public_entities descendants ON descendants.root_id = public_entities.id
+    WHERE public_entities.dir3 = <DIR3>
+  ) contractors ON contractor_entity_id = contractors.id
   LEFT JOIN private_entities assignees ON assignee_entity_id = assignees.id
   LEFT JOIN entity_types contractors_types ON contractors_types.id = contractors.entity_type
   LEFT JOIN contract_types ON contract_type = contract_types.id
@@ -45,4 +54,3 @@ FROM
   LEFT JOIN process_types ON contracts.process_type = process_types.id
   LEFT JOIN cpv_categorizations ON cpv_categorizations.cpv_division = contracts.cpvs_divisions[1]
   LEFT JOIN categories ON categories.id = cpv_categorizations.category_id
-WHERE contractors.dir3 = <DIR3>
