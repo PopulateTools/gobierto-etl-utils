@@ -11,7 +11,7 @@ pipeline {
         // Variables that must be defined via Jenkins UI:
         // GOBIERTO_DATA_SOURCE_URL = ""
         // GOBIERTO_DATA_DEST_URL = ""
-        // INE_CODE = ""
+        // DIR3_SOURCE = ""
         // READ_API_TOKEN = ""
         // WRITE_API_TOKEN = ""
     }
@@ -23,7 +23,7 @@ pipeline {
             steps {
               sh '''#!/bin/bash
                 cd ${ETL_UTILS};
-                QUERY=`sed "s/<PLACE_ID>/${INE_CODE}/g" ${ETL_UTILS}/operations/gobierto_data/extract-tenders/query.sql | jq -s -R -r @uri`
+                QUERY=`sed "s/<DIR3>/${DIR3_SOURCE}/g" ${ETL_UTILS}/operations/gobierto_data/extract-tenders/query.sql | jq -s -R -r @uri`
                 FILEURL=$GOBIERTO_DATA_SOURCE_URL"/api/v1/data/data.csv?token="$READ_API_TOKEN"&sql="$QUERY
                 ruby operations/gobierto_data/upload-dataset/run.rb \
                   --api-token $WRITE_API_TOKEN \
