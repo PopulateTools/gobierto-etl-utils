@@ -10,7 +10,6 @@ SELECT
   contracts.end_date,
   contracts.duration,
   assignees.name AS assignee,
-  assignees_types.text AS assignee_type,
   contract_statuses.text AS status,
   contracts.initial_amount,
   contracts.initial_amount_no_taxes,
@@ -37,15 +36,21 @@ SELECT
   tenders.contract_value AS estimated_value
 FROM
   contracts
-  LEFT JOIN fiscal_entities contractors ON contractor_id = contractors.id
-  LEFT JOIN fiscal_entities assignees ON assignee_id = assignees.id
+  INNER JOIN (
+    SELECT id, name, entity_type
+    FROM public_entities
+    WHERE dir3 = '<DIR3>'
+    UNION
+    SELECT descendants.id, descendants.name, descendants.entity_type
+    FROM public_entities
+    LEFT JOIN public_entities descendants ON descendants.root_id = public_entities.id
+    WHERE public_entities.dir3 = '<DIR3>'
+  ) contractors ON contractor_entity_id = contractors.id
+  LEFT JOIN private_entities assignees ON assignee_entity_id = assignees.id
   LEFT JOIN entity_types contractors_types ON contractors_types.id = contractors.entity_type
-  LEFT JOIN entity_types assignees_types ON assignees_types.id = assignees.entity_type
   LEFT JOIN contract_types ON contract_type = contract_types.id
   LEFT JOIN contract_statuses ON status = contract_statuses.id
   LEFT JOIN tenders ON contracts.permalink = tenders.permalink
   LEFT JOIN process_types ON contracts.process_type = process_types.id
   LEFT JOIN cpv_categorizations ON cpv_categorizations.cpv_division = contracts.cpvs_divisions[1]
   LEFT JOIN categories ON categories.id = cpv_categorizations.category_id
-WHERE contractors.custom_place_id = <PLACE_ID>
-AND contracts.import_pending = false
