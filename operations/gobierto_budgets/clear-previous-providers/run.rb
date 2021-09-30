@@ -19,8 +19,8 @@ if ARGV.length != 1
   raise "At least one argument is required"
 end
 
-index = GobiertoData::GobiertoBudgets::ES_INDEX_INVOICES
-type =  GobiertoData::GobiertoBudgets::INVOICE_TYPE
+index = GobiertoBudgetsData::GobiertoBudgets::ES_INDEX_INVOICES
+type =  GobiertoBudgetsData::GobiertoBudgets::INVOICE_TYPE
 organization_id = ARGV[0].to_s
 
 puts "[START] clear-previous-providers/run.rb organization_id=#{organization_id}"
@@ -43,14 +43,14 @@ query = {
 }
 
 count = 0
-response = GobiertoData::GobiertoBudgets::SearchEngine.client.search index: index, type: type, body: query
+response = GobiertoBudgetsData::GobiertoBudgets::SearchEngine.client.search index: index, type: type, body: query
 while response['hits']['total'] > 0
   delete_request_body = response['hits']['hits'].map do |h|
     count += 1
     { delete: h.slice("_index", "_type", "_id") }
   end
-  GobiertoData::GobiertoBudgets::SearchEngineWriting.client.bulk index: index, type: type, body: delete_request_body
-  response = GobiertoData::GobiertoBudgets::SearchEngine.client.search index: index, type: type, body: query
+  GobiertoBudgetsData::GobiertoBudgets::SearchEngineWriting.client.bulk index: index, type: type, body: delete_request_body
+  response = GobiertoBudgetsData::GobiertoBudgets::SearchEngine.client.search index: index, type: type, body: query
 end
 
 puts "[END] clear-previous-providers/run.rb. Deleted #{count} items"
