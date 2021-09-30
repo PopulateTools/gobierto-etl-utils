@@ -6,7 +6,7 @@ Utilities for ETL scripts for Gobierto
 
 Edit `.env.example` and copy it to `.env` or `.rbenv-vars` with the expected values.
 
-This gem relies heavily in [gobierto_data](https://github.com/PopulateTools/gobierto_data)
+This gem relies heavily in [gobierto_budgets_data](https://github.com/PopulateTools/gobierto_budgets_data)
 
 ## Available operations
 
