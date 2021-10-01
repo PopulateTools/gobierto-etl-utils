@@ -51,7 +51,7 @@ puts "[START] transform-planned/run.rb with dictionary=#{xbrl_dictionary_path} d
 
 output_data = []
 if place = INE::Places::Place.find(organization_id)
-  population = GobiertoData::GobiertoBudgets::Population.get(place.id, year)
+  population = GobiertoBudgetsData::GobiertoBudgets::Population.get(place.id, year)
   base_data = {
     organization_id: organization_id,
     ine_code: place.id.to_i,
@@ -99,7 +99,7 @@ xbrl_budget_line_ids.each do |budget_line_id|
     next
   end
 
-  kind = (budget_line_info['kind'] == 'I' ? GobiertoData::GobiertoBudgets::INCOME : GobiertoData::GobiertoBudgets::EXPENSE)
+  kind = (budget_line_info['kind'] == 'I' ? GobiertoBudgetsData::GobiertoBudgets::INCOME : GobiertoBudgetsData::GobiertoBudgets::EXPENSE)
   code = budget_line_info['code']
   level = code.length
   next if level > 5

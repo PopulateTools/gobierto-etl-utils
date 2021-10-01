@@ -1,8 +1,8 @@
 GIT
-  remote: https://github.com/PopulateTools/gobierto_data.git
-  revision: f5c5b1b0846ded63e034edcda2edee425d9d72bd
+  remote: https://github.com/PopulateTools/gobierto_budgets_data.git
+  revision: 17761ea394fdb07418ee89a751482da4c6ebdaaf
   specs:
-    gobierto_data (0.1.0)
+    gobierto_budgets_data (0.1.0)
       actionpack
       activesupport
       aws-sdk-s3
@@ -130,7 +130,7 @@ DEPENDENCIES
   aws-sdk-s3
   byebug
   faraday
-  gobierto_data!
+  gobierto_budgets_data!
   nokogiri
   pry
   rubyzip

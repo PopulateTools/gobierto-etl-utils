@@ -37,7 +37,7 @@ if organizations_ids.any?
 
   organizations_ids.each do |organization_id|
     puts " - Calculating bubbles for organization #{organization_id}"
-    GobiertoData::GobiertoBudgets::Bubbles.dump(organization_id)
+    GobiertoBudgetsData::GobiertoBudgets::Bubbles.dump(organization_id)
   end
 else
   puts "[SUMMARY] No organizations to calculate bubbles"

@@ -24,16 +24,16 @@ ORGANIZATIONS_IDS_FILE_PATH = ARGV[0]
 year = ARGV[1]
 
 indices = [
-  GobiertoData::GobiertoBudgets::ES_INDEX_FORECAST,
-  GobiertoData::GobiertoBudgets::ES_INDEX_EXECUTED,
-  GobiertoData::GobiertoBudgets::ES_INDEX_FORECAST_UPDATED
+  GobiertoBudgetsData::GobiertoBudgets::ES_INDEX_FORECAST,
+  GobiertoBudgetsData::GobiertoBudgets::ES_INDEX_EXECUTED,
+  GobiertoBudgetsData::GobiertoBudgets::ES_INDEX_FORECAST_UPDATED
 ]
 
 types = [
-  GobiertoData::GobiertoBudgets::TOTAL_BUDGET_TYPE,
-  GobiertoData::GobiertoBudgets::ECONOMIC_BUDGET_TYPE,
-  GobiertoData::GobiertoBudgets::FUNCTIONAL_BUDGET_TYPE,
-  GobiertoData::GobiertoBudgets::CUSTOM_BUDGET_TYPE
+  GobiertoBudgetsData::GobiertoBudgets::TOTAL_BUDGET_TYPE,
+  GobiertoBudgetsData::GobiertoBudgets::ECONOMIC_BUDGET_TYPE,
+  GobiertoBudgetsData::GobiertoBudgets::FUNCTIONAL_BUDGET_TYPE,
+  GobiertoBudgetsData::GobiertoBudgets::CUSTOM_BUDGET_TYPE
 ]
 
 organizations_ids = []
@@ -73,14 +73,14 @@ organizations_ids.each do |organization_id|
   count = 0
   indices.each do |index|
     types.each do |type|
-      response = GobiertoData::GobiertoBudgets::SearchEngine.client.search index: index, type: type, body: query
+      response = GobiertoBudgetsData::GobiertoBudgets::SearchEngine.client.search index: index, type: type, body: query
       while response['hits']['total'] > 0
         delete_request_body = response['hits']['hits'].map do |h|
           count += 1
           { delete: h.slice("_index", "_type", "_id") }
         end
-        GobiertoData::GobiertoBudgets::SearchEngineWriting.client.bulk index: index, type: type, body: delete_request_body
-        response = GobiertoData::GobiertoBudgets::SearchEngine.client.search index: index, type: type, body: query
+        GobiertoBudgetsData::GobiertoBudgets::SearchEngineWriting.client.bulk index: index, type: type, body: delete_request_body
+        response = GobiertoBudgetsData::GobiertoBudgets::SearchEngine.client.search index: index, type: type, body: query
       end
     end
   end

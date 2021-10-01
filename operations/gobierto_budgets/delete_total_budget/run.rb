@@ -27,9 +27,9 @@ ORGANIZATIONS_IDS_FILE_PATH = ARGV[1]
 puts "[START] delete_total_budgets/run.rb with years=#{YEARS} file=#{ORGANIZATIONS_IDS_FILE_PATH}"
 
 TOTAL_BUDGET_INDEXES = [
-  GobiertoData::GobiertoBudgets::ES_INDEX_FORECAST,
-  GobiertoData::GobiertoBudgets::ES_INDEX_EXECUTED,
-  GobiertoData::GobiertoBudgets::ES_INDEX_FORECAST_UPDATED
+  GobiertoBudgetsData::GobiertoBudgets::ES_INDEX_FORECAST,
+  GobiertoBudgetsData::GobiertoBudgets::ES_INDEX_EXECUTED,
+  GobiertoBudgetsData::GobiertoBudgets::ES_INDEX_FORECAST_UPDATED
 ].freeze
 
 organizations_ids = []
@@ -48,7 +48,7 @@ if organizations_ids.any?
       TOTAL_BUDGET_INDEXES.each do |index|
         puts " - Deleting totals for #{organization_id} in year #{year} for index #{index}"
 
-        total_budget_calculator = GobiertoData::GobiertoBudgets::TotalBudgetCalculator.new(
+        total_budget_calculator = GobiertoBudgetsData::GobiertoBudgets::TotalBudgetCalculator.new(
           organization_id: organization_id,
           year: year,
           index: index
