@@ -9,7 +9,7 @@ SELECT
   contracts.start_date,
   contracts.end_date,
   contracts.duration,
-  assignees.name AS assignee,
+  COALESCE(private_assignees.name, public_assignees.name) AS assignee,
   contract_statuses.text AS status,
   contracts.initial_amount,
   contracts.initial_amount_no_taxes,
@@ -46,7 +46,8 @@ FROM
     LEFT JOIN public_entities descendants ON descendants.root_id = public_entities.id
     WHERE public_entities.dir3 = '<DIR3>'
   ) contractors ON contractor_entity_id = contractors.id
-  LEFT JOIN private_entities assignees ON assignee_entity_id = assignees.id
+  LEFT JOIN private_entities private_assignees ON assignee_entity_id = private_assignees.id AND assignee_entity_type='PrivateEntity'
+  LEFT JOIN public_entities public_assignees ON assignee_entity_id = public_assignees.id AND assignee_entity_type='PublicEntity'
   LEFT JOIN entity_types contractors_types ON contractors_types.id = contractors.entity_type
   LEFT JOIN contract_types ON contract_type = contract_types.id
   LEFT JOIN contract_statuses ON status = contract_statuses.id
@@ -54,3 +55,4 @@ FROM
   LEFT JOIN process_types ON contracts.process_type = process_types.id
   LEFT JOIN cpv_categorizations ON cpv_categorizations.cpv_division = contracts.cpvs_divisions[1]
   LEFT JOIN categories ON categories.id = cpv_categorizations.category_id
+WHERE contracts.import_pending='false'

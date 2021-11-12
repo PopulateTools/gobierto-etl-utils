@@ -40,3 +40,4 @@ SELECT
   LEFT JOIN process_types ON tenders.process_type = process_types.id
   LEFT JOIN cpv_categorizations ON cpv_categorizations.cpv_division = tenders.cpvs_divisions[1]
   LEFT JOIN categories ON categories.id = cpv_categorizations.category_id
+WHERE tenders.import_pending='false'
