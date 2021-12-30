@@ -299,13 +299,13 @@ Output:
 
 ### gobierto/clear cache
 
-Clears rails cache.
+Clears rails cache of a site and module namespace.
 
 This operation is a Gobierto runner.
 
 Usage:
 
-`/path/to/gobierto bin runner ruby gobierto-etl-utils/operations/gobierto/clear-cache/run.rb`
+`/path/to/gobierto bin runner ruby gobierto-etl-utils/operations/gobierto/clear-cache/run.rb --site-organization-id "INE_CODE" --namespace "GobiertoBudgets"`
 
 Output:
 
