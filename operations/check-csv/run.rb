@@ -48,7 +48,7 @@ end
 
 if status == :success
   if CSV.table(input_file).count < 2
-    status = :csv_without_lines
+    puts "[WARNING] the CSV file has no content"
   end
 end
 
