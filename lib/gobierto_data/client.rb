@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative "../gobierto_etl_utils"
+require "faraday/multipart"
 
 module GobiertoData
   class Client
