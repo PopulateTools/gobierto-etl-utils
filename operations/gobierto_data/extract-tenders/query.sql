@@ -12,7 +12,6 @@ SELECT
   submission_date,
   open_proposals_date,
   number_of_batches,
-  number_of_proposals,
   contractors.name AS contractor,
   contractors.id AS contractor_id,
   contractors_types.text AS contractor_type,
