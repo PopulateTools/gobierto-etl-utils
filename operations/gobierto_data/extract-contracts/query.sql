@@ -15,6 +15,7 @@ SELECT
   contracts.initial_amount_no_taxes,
   contracts.final_amount,
   contracts.final_amount_no_taxes,
+  contracts.number_of_proposals,
   contractors.name AS contractor,
   contractors.id AS contractor_id,
   contractors_types.text AS contractor_type,
@@ -32,7 +33,6 @@ SELECT
   contracts.gobierto_start_date AS gobierto_start_date,
   tenders.open_proposals_date,
   tenders.submission_date,
-  tenders.number_of_proposals,
   tenders.contract_value AS estimated_value
 FROM
   contracts
