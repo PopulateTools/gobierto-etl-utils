@@ -8,4 +8,5 @@ require "bundler/setup"
 Bundler.require
 
 loader = Zeitwerk::Loader.for_gem
+loader.ignore("#{__dir__}/file_uploader.rb")
 loader.setup
