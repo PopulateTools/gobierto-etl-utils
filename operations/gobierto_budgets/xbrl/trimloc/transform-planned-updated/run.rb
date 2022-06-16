@@ -74,7 +74,12 @@ xbrl_budget_line_ids.each do |budget_line_id|
     (forecast_node.name == 'EstimacionPrevisionDefinivaAFinEjercicioCorriente') || (forecast_node.name == 'EstimacionCreditosDefinitivosAFinEjercicioCorriente')
   end.first
 
-  amount = forecast_node.children.text.to_f.round(2)
+
+  amount = if forecast_node
+             forecast_node.children.text.to_f.round(2)
+           else
+             0
+           end
 
   next if amount == 0 || (budget_line_info = xbrl_dictionary['dictionary'][budget_line_id]).nil?
 

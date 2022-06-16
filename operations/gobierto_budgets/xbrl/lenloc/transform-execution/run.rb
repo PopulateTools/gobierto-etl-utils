@@ -23,12 +23,12 @@ Parameters:
 
 Example:
 
-$DEV_DIR/gobierto-etl-utils/gobierto_budgets/xbrl/trimloc/transform-execution/run.rb dictionary.yml data.xbrl <organization_id> <year> output.json
+$DEV_DIR/gobierto-etl-utils/gobierto_budgets/xbrl/lenloc/transform-execution/run.rb dictionary.yml data.xbrl <organization_id> <year> output.json
 
 =end
 
 if ARGV.length != 5
-  puts "$DEV_DIR/gobierto-etl-utils/gobierto_budgets/xbrl/trimloc/transform-execution/run.rb dictionary.yml data.xbrl <organization_id> <year> output.json"
+  puts "$DEV_DIR/gobierto-etl-utils/gobierto_budgets/xbrl/lenloc/transform-execution/run.rb dictionary.yml data.xbrl <organization_id> <year> output.json"
   raise "Missing argumnets"
 end
 
@@ -66,8 +66,6 @@ def extract_amount(xbrl_file, budget_line_id, budget_terms)
   forecast_node = xbrl_file.xpath("//*[@contextRef='#{budget_line_id}']").find do |forecast_node|
     budget_terms.include?(forecast_node.name)
   end
-
-  return 0.0 if forecast_node.nil?
 
   forecast_node.children.text.to_f.round(2)
 end
