@@ -29,16 +29,18 @@ unless File.file?(input_file)
 end
 
 status = :success
+separator = ","
 
 begin
-  CSV.read(input_file, encoding: 'utf-8')
+  CSV.read(input_file, col_sep: separator, encoding: 'utf-8')
 rescue => e
   status = :error_reading_comma_separated
 end
 
 if status == :error_reading_comma_separated
+  separator = ";"
   begin
-    CSV.read(input_file, col_sep: ";", encoding: "utf-8")
+    CSV.read(input_file, col_sep: separator, encoding: 'utf-8')
     status = :success
   rescue StandardError => e
     puts "Error: #{e.message}"
@@ -47,7 +49,7 @@ if status == :error_reading_comma_separated
 end
 
 if status == :success
-  if CSV.table(input_file).count < 2
+  if CSV.table(input_file, col_sep: separator, encoding: 'utf-8').count < 2
     puts "[WARNING] the CSV file has no content"
   end
 end
