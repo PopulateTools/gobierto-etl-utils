@@ -107,7 +107,7 @@ GEM
     rubyzip (2.3.2)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
-    zeitwerk (2.6.0)
+    zeitwerk (2.5.4)
 
 PLATFORMS
   ruby
@@ -121,7 +121,7 @@ DEPENDENCIES
   nokogiri
   pry
   rubyzip
-  zeitwerk
+  zeitwerk (~> 2.5.4)
 
 BUNDLED WITH
    2.1.4
