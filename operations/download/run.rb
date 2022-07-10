@@ -60,6 +60,11 @@ if File.dirname(destination_file_name) != "."
   FileUtils.mkdir_p(File.dirname(destination_file_name))
 end
 
-File.write(destination_file_name, response.body)
+File.open(destination_file_name, 'wb') do |file|
+  body_io = StringIO.new(response.body)
+  until body_io.eof?
+    file.write(body_io.read(1024*1024)) # Write 1 MB chunks at a time to avoid Errno::EINVAL errors like `Invalid argument @ io_fread` and `Invalid argument @ io_write`.
+  end
+end
 
 puts "[END] download/run.rb"
