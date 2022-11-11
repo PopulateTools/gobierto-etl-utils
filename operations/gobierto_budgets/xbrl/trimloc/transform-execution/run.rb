@@ -83,8 +83,8 @@ puts '[DEBUG] Parsing budgets execution data...'
 
 xbrl_budget_line_ids.each do |budget_line_id|
 
-  amount = extract_amount(xbrl_file, budget_line_id, %w(EstimacionDerechosReconocidosNetosA31Del12 EstimacionObligacionesReconocidasNetasA31Del12))
-  amount = extract_amount(xbrl_file, budget_line_id, %w(ObligacionesReconocidasDelEjercicioCorriente DerechosReconocidosDelEjercicioCorriente)) if amount.zero?
+  amount = extract_amount(xbrl_file, budget_line_id, %w(ObligacionesReconocidasDelEjercicioCorriente DerechosReconocidosDelEjercicioCorriente))
+  amount = extract_amount(xbrl_file, budget_line_id, %w(EstimacionDerechosReconocidosNetosA31Del12 EstimacionObligacionesReconocidasNetasA31Del12)) if amount.zero?
 
   next if amount.zero? || (budget_line_info = xbrl_dictionary['dictionary'][budget_line_id]).nil?
 
