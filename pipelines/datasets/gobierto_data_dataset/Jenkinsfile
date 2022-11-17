@@ -19,7 +19,7 @@ pipeline {
             steps {
               sh '''#!/bin/bash
                 cd ${ETL_UTILS};
-                ruby gobierto-etl-utils/operations/gobierto_data/clone-dataset/run.rb \
+                ruby operations/gobierto_data/clone-dataset/run.rb \
                   --origin $ORIGIN_URL \
                   --origin-api-token $ORIGIN_API_TOKEN \
                   --destination $DESTINATION_URL \
