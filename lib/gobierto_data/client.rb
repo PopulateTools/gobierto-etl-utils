@@ -24,6 +24,16 @@ module GobiertoData
       self.auth_header = "Bearer #{params[:api_token]}"
     end
 
+    def metadata(dataset_slug)
+      response = connection.get(
+        "/api/v1/data/datasets/#{dataset_slug}/meta.json",
+        {},
+        build_dataset_request_headers(false)
+      )
+      log_response(response) if debug
+      response
+    end
+
     def create_dataset(params = {})
       multipart = params[:file_path].present? || params[:schema_path].present?
       response = connection(multipart).post(
