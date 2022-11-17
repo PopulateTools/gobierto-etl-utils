@@ -114,6 +114,7 @@ module GobiertoData
         append: params[:append] || false
       }
 
+      dataset_params.merge!({schema: params[:schema]}) if params[:schema]
       dataset_params.merge!({data_path: params[:file_url]}) if params[:file_url]
       dataset_params.merge!({data_file: Faraday::UploadIO.new(params[:file_path], "text/csv")}) if params[:file_path]
       dataset_params.merge!({schema_file: Faraday::UploadIO.new(params[:schema_path], "application/json")}) if params[:schema_path]
