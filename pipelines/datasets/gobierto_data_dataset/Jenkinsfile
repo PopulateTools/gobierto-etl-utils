@@ -1,0 +1,42 @@
+email = "popu-servers+jenkins@populate.tools "
+pipeline {
+    agent any
+    environment {
+        PATH = "$HOME/.rbenv/shims:$PATH"
+        ETL_UTILS = "/var/www/gobierto-etl-utils/current/"
+        // Variables that must be defined via Jenkins UI:
+        // ORIGIN_URL = ""
+        // ORIGIN_API_TOKEN = ""
+        // DESTINATION_URL = ""
+        // DESTINATION_API_TOKEN = ""
+        // INE_CODE = ""
+    }
+    options {
+        retry(3)
+    }
+    stages {
+        stage('Import contratos') {
+            steps {
+              sh '''#!/bin/bash
+                cd ${ETL_UTILS};
+                ruby $DEV_DIR/gobierto-etl-utils/operations/gobierto_data/clone-dataset/run.rb \
+                  --origin $ORIGIN_URL \
+                  --origin-api-token $ORIGIN_API_TOKEN \
+                  --destination $DESTINATION_URL \
+                  --destination-api-token $DESTINATION_API_TOKEN \
+                  --ine-code $INE_CODE
+              '''
+            }
+        }
+    }
+    post {
+        failure {
+            echo 'This will run only if failed'
+            mail body: "Project: ${env.JOB_NAME} - Build Number: ${env.BUILD_NUMBER} - URL de build: ${env.BUILD_URL}",
+                charset: 'UTF-8',
+                subject: "ERROR CI: Project name -> ${env.JOB_NAME}",
+                to: email
+        }
+    }
+}
+
