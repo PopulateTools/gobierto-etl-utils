@@ -11,6 +11,7 @@ Bundler.require
 #
 #  - 0: Absolute path to a file containing the organizations_ids for the deletion
 #  - 1: Year (optional)
+#  - 2: types to remove (optional). Valid values: economic, functional, custom, total
 #
 # Samples:
 #
@@ -35,6 +36,22 @@ types = [
   GobiertoBudgetsData::GobiertoBudgets::FUNCTIONAL_BUDGET_TYPE,
   GobiertoBudgetsData::GobiertoBudgets::CUSTOM_BUDGET_TYPE
 ]
+
+if ARGV[2].present?
+  types = []
+  ARGV[2].split(',').each do |type|
+    case type
+      when "total"
+        types << GobiertoBudgetsData::GobiertoBudgets::TOTAL_BUDGET_TYPE
+      when "economic"
+        types << GobiertoBudgetsData::GobiertoBudgets::ECONOMIC_BUDGET_TYPE
+      when "functional"
+        types << GobiertoBudgetsData::GobiertoBudgets::FUNCTIONAL_BUDGET_TYPE
+      when "custom"
+        types << GobiertoBudgetsData::GobiertoBudgets::CUSTOM_BUDGET_TYPE
+    end
+  end
+end
 
 organizations_ids = []
 
