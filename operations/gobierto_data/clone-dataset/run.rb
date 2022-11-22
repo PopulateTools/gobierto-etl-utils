@@ -36,8 +36,8 @@ BANNER
   opts.on("--destination DESTINATION GOBIERTO_URL", "Gobierto Data URL (protocol + host, i.e http://datos.gobierto.es/") do |v|
     options[:destination] = v
   end
-  opts.on("--ine-code INE_CODE", "Place INE code") do |v|
-    options[:ine_code] = v
+  opts.on("--where-contition", "WHERE contition") do |v|
+    options[:where_condition] = v
   end
   opts.on("--no-verify-ssl", "Skip SSL verification") do |v|
     options[:no_verify_ssl] = true
@@ -67,7 +67,7 @@ name = body.dig("data", "attributes", "name")
 slug = body.dig("data", "attributes", "slug")
 table_name = body.dig("data", "attributes", "table_name")
 schema = body.dig("data", "attributes", "columns")
-query = "SELECT * FROM #{table_name} WHERE place_id = #{options[:ine_code]}"
+query = "SELECT * FROM #{table_name} WHERE #{options[:where_condition]}"
 
 client = GobiertoData::Client.new({
   api_token: options[:destination_api_token],

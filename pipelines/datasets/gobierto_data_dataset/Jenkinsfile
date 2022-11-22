@@ -9,7 +9,7 @@ pipeline {
         // ORIGIN_API_TOKEN = ""
         // DESTINATION_URL = ""
         // DESTINATION_API_TOKEN = ""
-        // INE_CODE = ""
+        // WHERE_CONDITION = ""
     }
     options {
         retry(3)
@@ -24,7 +24,7 @@ pipeline {
                   --origin-api-token $ORIGIN_API_TOKEN \
                   --destination $DESTINATION_URL \
                   --destination-api-token $DESTINATION_API_TOKEN \
-                  --ine-code $INE_CODE
+                  --where-condition $WHERE_CONDITION
               '''
             }
         }
@@ -39,4 +39,3 @@ pipeline {
         }
     }
 }
-
