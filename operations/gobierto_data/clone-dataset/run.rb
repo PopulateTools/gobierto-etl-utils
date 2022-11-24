@@ -36,7 +36,7 @@ BANNER
   opts.on("--destination DESTINATION GOBIERTO_URL", "Gobierto Data URL (protocol + host, i.e http://datos.gobierto.es/") do |v|
     options[:destination] = v
   end
-  opts.on("--where-contition", "WHERE contition") do |v|
+  opts.on("--where-condition", "WHERE condition") do |v|
     options[:where_condition] = v
   end
   opts.on("--no-verify-ssl", "Skip SSL verification") do |v|
