@@ -41,9 +41,9 @@ s3 = Aws::S3::Resource.new(
 
 objects = s3.bucket(ENV.fetch("GOBIERTO_DATA_S3_BUCKET_NAME")).objects(prefix: folder).each do |object|
   next if object.get.content_type == "application/x-directory"
-  destination_file = "#{destination_folder}/#{destination_file || File.basename(object.public_url)}"
-  puts "- Downloading #{object.public_url} in #{destination_file}"
-  object.get(response_target: destination_file)
+  destination = "#{destination_folder}/#{destination_file || File.basename(object.public_url)}"
+  puts "- Downloading #{object.public_url} in #{destination}"
+  object.get(response_target: destination)
 end
 
 puts "[END] download-s3/run.rb"
