@@ -18,6 +18,7 @@ if ARGV.length < 1
   end
 
 zipfile_name  =  ARGV[0]
+destination_path = ARGV[1]
 
 Zip::File.open(zipfile_name) do |zip_file|
     # Handle entries one by one
@@ -26,7 +27,7 @@ Zip::File.open(zipfile_name) do |zip_file|
       raise 'File too large when extracted' if entry.size > MAX_SIZE
   
       # Extract to file or directory based on name in the archive
-      entry.extract
+      zip_file.extract(entry, destination_path)
     end
   end
 
