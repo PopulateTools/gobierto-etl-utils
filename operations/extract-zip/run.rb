@@ -7,10 +7,11 @@ require 'zip'
 # Arguments:
 #
 #  - 0: Zipfile with extension (.zip)
+#  - 1: Destination path
 #
 # Samples:
 #
-#   /path/to/project/operations/extract-zip/run.rb /tmp/zipfile.zip
+#   /path/to/project/operations/extract-zip/run.rb /tmp/zipfile.zip documents/tmp
 #
 
 if ARGV.length < 1
