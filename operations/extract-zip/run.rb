@@ -1,3 +1,5 @@
+require "bundler/setup"
+Bundler.require
 require 'zip'
 
 # Usage:
