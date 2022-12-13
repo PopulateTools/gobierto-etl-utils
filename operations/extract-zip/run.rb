@@ -23,6 +23,9 @@ if ARGV.length < 1
 zipfile_name  =  ARGV[0]
 destination_path = ARGV[1]
 
+Zip.on_exists_proc = true
+Zip.continue_on_exists_proc = true
+
 Zip::File.open(zipfile_name) do |zip_file|
     # Handle entries one by one
     zip_file.each do |entry|
