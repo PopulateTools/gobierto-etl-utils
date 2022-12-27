@@ -51,7 +51,7 @@ BANNER
   end
 end.parse!
 
-puts "[START] upload-dataset/run.rb with #{ARGV.join(' - ')}"
+puts "[START] clone-dataset/run.rb with #{ARGV.join(' - ')}"
 
 origin_host = options[:origin].split("/")[0..2].join("/")
 
@@ -60,6 +60,7 @@ client = GobiertoData::Client.new({
   gobierto_url: origin_host,
   debug: true
 })
+
 metadata = client.metadata(options[:origin].split('/').last)
 body = JSON.parse(metadata.body)
 
@@ -75,6 +76,15 @@ client = GobiertoData::Client.new({
   debug: true
 })
 
+begin
+  destination_metadata = client.metadata(slug)
+  body = JSON.parse(metadata.body)
+
+  name = body.dig("data", "attributes", "name")
+rescue ServerError
+  puts "Dataset #{slug} does not exist in destination"
+end
+
 params = {
   name: name,
   table_name: table_name,
@@ -83,8 +93,8 @@ params = {
   csv_separator: ",",
   append: false,
   schema: schema,
-  file_url: "#{origin_host}/api/v1/data/data.csv?sql=#{CGI.escape(query)}&token=#{options[:origin_api_token]}",
+  file_url: "#{origin_host}/api/v1/data/data.csv?sql=#{CGI.escape(query)}&token=#{options[:origin_api_token]}"
 }
 client.upsert_dataset(params)
 
-puts "[END] upload-dataset/run.rb"
+puts "[END] clone-dataset/run.rb"
