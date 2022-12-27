@@ -55,7 +55,7 @@ module GobiertoData
       multipart = params[:file_path].present? || params[:schema_path].present?
       response = connection(multipart).put(
         "api/v1/data/datasets/#{params[:slug]}",
-        build_dataset_params(multipart, params),
+        build_dataset_params(multipart, params.except(:name)),
         build_dataset_request_headers(multipart)
       )
       log_response(response) if debug
