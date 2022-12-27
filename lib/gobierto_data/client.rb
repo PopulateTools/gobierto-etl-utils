@@ -31,6 +31,9 @@ module GobiertoData
         build_dataset_request_headers(false)
       )
       log_response(response) if debug
+      if response.status >= 300
+        raise ServerError, response.status
+      end
       response
     end
 
