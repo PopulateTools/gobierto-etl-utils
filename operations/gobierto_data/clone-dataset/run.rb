@@ -78,7 +78,7 @@ client = GobiertoData::Client.new({
 
 begin
   destination_metadata = client.metadata(slug)
-  body = JSON.parse(metadata.body)
+  body = JSON.parse(destination_metadata.body)
 
   name = body.dig("data", "attributes", "name")
 rescue ServerError
