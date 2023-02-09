@@ -31,7 +31,7 @@ Zip::File.open(zipfile_name) do |zip_file|
   zip_file.each do |entry|
     puts "Extracting #{entry.name}"
     # Extract to file or directory based on name in the archive
-    entry.extract(destination_path)
+    entry.extract(destination_path + "/#{entry.name}")
   end
 end
 
