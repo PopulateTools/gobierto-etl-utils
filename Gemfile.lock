@@ -124,4 +124,4 @@ DEPENDENCIES
   zeitwerk (~> 2.5.4)
 
 BUNDLED WITH
-   2.1.4
+   2.4.6
