@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require "bundler/setup"
-Bundler.require
+require 'roo'
+
 
 # Usage:
 #
@@ -30,6 +30,8 @@ end
 
 puts "[START] excel-to-csv/run.rb #{input_file} to #{output_file}"
 
-system("ssconvert #{input_file} #{output_file} --export-type=Gnumeric_stf:stf_csv")
+xlsx = Roo::Excelx.new(input_file)
+csv = xlsx.to_csv
+File.write(output_file, csv)
 
 puts "[END] excel-to-csv/run.rb"
