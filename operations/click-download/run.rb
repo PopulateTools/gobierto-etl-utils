@@ -32,7 +32,7 @@ page = agent.get(url)
 download_link = page.link_with(text: text_button)
 
 # Click the link to download the Excel file
-excel_file = download_link.click
+excel_file = agent.get(download_link)
 
 # Save the Excel file
 File.open(output_file, 'wb') { |f| f.write(excel_file.body) }
