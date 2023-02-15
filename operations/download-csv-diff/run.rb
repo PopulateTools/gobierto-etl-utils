@@ -85,7 +85,7 @@ NR==FNR{
 
   # Remove the temporary file without headers and the day before yesterday csv if it exists
   FileUtils.rm temp_copy_full_path
-  FileUtils.rm(day_before_yesterday_full_path) if File.exists?(day_before_yesterday_full_path)
+  FileUtils.rm(day_before_yesterday_full_path) if File.exist?(day_before_yesterday_full_path)
 else
   puts "[RUN] download-csv-diff/run.rb creating full version"
   # Otherwise we just use the latest in its entirety
