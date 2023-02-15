@@ -73,6 +73,7 @@ GEM
     faraday-multipart (1.0.4)
       multipart-post (~> 2)
     faraday-net_http (2.0.3)
+    fileutils (1.7.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     ine-places (0.3.0)
@@ -117,6 +118,7 @@ DEPENDENCIES
   byebug
   faraday
   faraday-multipart
+  fileutils
   gobierto_budgets_data!
   nokogiri
   pry
