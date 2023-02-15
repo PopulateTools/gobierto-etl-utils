@@ -60,7 +60,7 @@ temp_copy_full_path = "#{output_full_path}.tmp"
 # We save today's version either way for the next time
 File.write(today_full_path, response.body)
 
-if File.exists?(yesterday_full_path)
+if File.exist?(yesterday_full_path)
   puts "[RUN] download-csv-diff/run.rb creating diff version"
   # If yesterday's version exists, we make the diff
   cmd = "awk '
