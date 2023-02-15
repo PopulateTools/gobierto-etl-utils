@@ -1,6 +1,7 @@
 require "bundler/setup"
 Bundler.require
 require 'zip'
+require 'fileutils'
 
 # Usage:
 #
@@ -29,9 +30,12 @@ Zip.continue_on_exists_proc = true
 Zip::File.open(zipfile_name) do |zip_file|
   # Handle entries one by one
   zip_file.each do |entry|
+    fpath = File.join(destination_path, entry.name)
+    # Create necessary subdirectories in the destination directory
+    FileUtils.mkdir_p(File.dirname(fpath))
     puts "Extracting #{entry.name}"
     # Extract to file or directory based on name in the archive
-    entry.extract(destination_path + "/#{entry.name}")
+    entry.extract(destination_path + "/#{entry.name}") unless File.exist?(fpath)
   end
 end
 
