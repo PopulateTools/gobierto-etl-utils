@@ -13,3 +13,4 @@ gem "faraday-multipart"
 gem "rubyzip"
 gem "aws-sdk-s3"
 gem 'pry'
+gem "roo"
