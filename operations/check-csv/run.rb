@@ -50,7 +50,8 @@ end
 
 if status == :success
   if CSV.table(input_file, col_sep: separator, encoding: 'utf-8').count < 2
-    puts "[WARNING] the CSV file has no content"
+    puts "[ERROR] the CSV file has no content"
+    exit(-1)
   end
 end
 
