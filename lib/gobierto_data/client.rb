@@ -2,6 +2,7 @@
 
 require_relative "../gobierto_etl_utils"
 require "faraday/multipart"
+require "faraday/net_http_persistent"
 
 module GobiertoData
   class Client
