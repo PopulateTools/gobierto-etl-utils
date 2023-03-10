@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/gobierto_budgets_data.git
-  revision: f1924baef10f5bc3734ac5b679e9f7951e671b7b
+  revision: 17dc276394afae8f5eb54cf3a294c7e21d66d94d
   specs:
     gobierto_budgets_data (0.1.0)
       actionpack
@@ -35,16 +35,16 @@ GEM
       tzinfo (~> 2.0)
     ansi (1.5.0)
     aws-eventstream (1.2.0)
-    aws-partitions (1.710.0)
+    aws-partitions (1.724.0)
     aws-sdk-core (3.170.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.5)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.62.0)
+    aws-sdk-kms (1.63.0)
       aws-sdk-core (~> 3, >= 3.165.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.119.0)
+    aws-sdk-s3 (1.119.1)
       aws-sdk-core (~> 3, >= 3.165.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.4)
@@ -53,7 +53,7 @@ GEM
     builder (3.2.4)
     byebug (11.1.3)
     coderay (1.1.3)
-    concurrent-ruby (1.2.0)
+    concurrent-ruby (1.2.2)
     crass (1.0.6)
     elasticsearch (6.8.0)
       elasticsearch-api (= 6.8.0)
@@ -83,10 +83,10 @@ GEM
       nokogiri (>= 1.5.9)
     method_source (1.0.0)
     mini_portile2 (2.8.1)
-    minitest (5.17.0)
+    minitest (5.18.0)
     multi_json (1.15.0)
     multipart-post (2.3.0)
-    nokogiri (1.14.1)
+    nokogiri (1.14.2)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     oj (3.14.2)
@@ -94,7 +94,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     racc (1.6.2)
-    rack (2.2.6.2)
+    rack (2.2.6.3)
     rack-test (2.0.2)
       rack (>= 1.3)
     rails-dom-testing (2.0.3)
