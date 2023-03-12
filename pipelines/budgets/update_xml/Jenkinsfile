@@ -28,12 +28,12 @@ pipeline {
         }
        stage('Transform > Transform planned budgets files') {
             steps {
-                sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/gobierto_budgets/official_xml/transform_planned/run.rb ${WORKING_DIR}/${YEAR}_${INE_CODE}.xml ${INE_CODE} ${YEAR} $WORKING_DIR/budgets-planned-updated-${YEAR}.json"
+                sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/gobierto_budgets/official_xml/transform_planned/run.rb ${WORKING_DIR}/${YEAR}_${INE_CODE}.xml ${INE_CODE} ${YEAR} $WORKING_DIR/budgets-planned-${YEAR}.json"
             }
         }
         stage('Load > Import planned budget files') {
             steps {
-              sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/gobierto_budgets/import-planned-budgets-updated/run.rb ${WORKING_DIR}/budgets-planned-updated-${YEAR}.json ${YEAR}"
+              sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/gobierto_budgets/import-planned-budgets/run.rb ${WORKING_DIR}/budgets-planned-${YEAR}.json ${YEAR}"
             }
         }
         stage('Load > Prepare Organization ids') {
