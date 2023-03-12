@@ -10,6 +10,7 @@ gem "nokogiri"
 gem "gobierto_budgets_data", git: "https://github.com/PopulateTools/gobierto_budgets_data.git"
 gem "faraday"
 gem "faraday-multipart"
+gem "faraday-net_http_persistent"
 gem "rubyzip"
 gem "aws-sdk-s3"
 gem 'pry'
