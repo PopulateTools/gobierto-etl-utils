@@ -129,8 +129,12 @@ xml_file = open(xml_file_path) { |f| Nokogiri::XML(f) }
                  "total_programa"
                end
 
-    amount = node.css(selector).first.text.to_f.round(2)
+    node_amount = node.css(selector).first
+    next if node_amount.nil?
+
+    amount = node_amount.text.to_f.round(2)
     next if amount.zero?
+
     code = node.name.gsub("n_", "")
 
     track_amount(amount, code, output_data, base_data, population, batch[:kind], batch[:type])
