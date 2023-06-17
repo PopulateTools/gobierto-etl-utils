@@ -40,7 +40,7 @@ def http_response url
     http.use_ssl = true
     http.verify_mode = OpenSSL::SSL::VERIFY_NONE
   end
-  request = Net::HTTP::Get.new(uri.request_uri)
+  request = Net::HTTP::Get.new(uri.to_s)
   response = http.request(request)
 end
 

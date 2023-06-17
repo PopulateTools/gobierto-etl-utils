@@ -38,7 +38,7 @@ def fetch(url, compatible_mode, limit = 10)
       http.ciphers = ['AES128-SHA']
     end
   end
-  request = Net::HTTP::Get.new(uri.request_uri)
+  request = Net::HTTP::Get.new(uri.to_s)
   response = http.request(request)
 
   case response

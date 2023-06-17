@@ -56,7 +56,7 @@ if options[:source_url] =~ /\Ahttps/
   end
 end
 
-request = Net::HTTP::Get.new(uri.request_uri, headers)
+request = Net::HTTP::Get.new(uri.to_s, headers)
 request.basic_auth(options[:basic_auth_user], options[:basic_auth_password]) if options.values_at(:basic_auth_user, :basic_auth_password).all?(&:present?)
 response = http.request(request)
 
