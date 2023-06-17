@@ -44,7 +44,7 @@ puts "[START] api-download/run.rb with #{options.except(:bearer_token, :basic_au
 headers = {}
 headers["Authorization"] = "Bearer #{options[:bearer_token]}" if options[:bearer_token].present?
 
-uri = URI.parse(options[:source_url])
+uri = URI.parse(CGI.unescape(options[:source_url]))
 http = Net::HTTP.new(uri.host, uri.port)
 http.read_timeout = 500
 if options[:source_url] =~ /\Ahttps/
