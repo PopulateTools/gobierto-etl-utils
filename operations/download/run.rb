@@ -34,7 +34,7 @@ puts "[START] download/run.rb from #{url} to #{destination_file_name} #{compatib
 
 command = "wget -O #{destination_file_name}"
 command += " --no-check-certificate" if compatible_mode
-command += " #{url}"
+command += " '#{url}'"
 
 puts command
 system(command)
