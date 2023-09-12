@@ -30,7 +30,7 @@ SELECT
   COALESCE(categories.title, 'other') as category_title,
   contracts.contract_award_published_at::date AS award_date,
   contracts.contract_formalized_published_at::date AS formalized_date,
-  contracts.gobierto_start_date AS gobierto_start_date,
+  COALESCE(contracts.formalized_date, contracts.awarded_date, contracts.gobierto_start_date) AS gobierto_start_date,
   tenders.open_proposals_date,
   tenders.submission_date,
   tenders.contract_value AS estimated_value
