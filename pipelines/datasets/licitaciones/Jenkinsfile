@@ -1,6 +1,6 @@
 email = "popu-servers+jenkins@populate.tools "
 pipeline {
-    agent any
+    agent { label 'remote' }
     environment {
         FOLDER = "licitaciones"
         PATH = "$HOME/.rbenv/shims:$PATH"
