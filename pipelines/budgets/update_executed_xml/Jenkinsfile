@@ -1,0 +1,79 @@
+
+email = "popu-servers+jenkins@populate.tools "
+pipeline {
+    agent any
+    environment {
+        PATH = "$HOME/.rbenv/shims:$PATH"
+        GOBIERTO_ETL_UTILS = "/var/www/gobierto-etl-utils/current"
+        WORKING_DIR = "/tmp/budgets_update_xml/"
+        // Variables that must be defined via Jenkins UI:
+        // GOBIERTO = "/var/www/gobierto/current"
+        // FILE_PATH = "getafe/budgets/XX-TrimLoc-2020_9.xbrl"
+        // INE_CODE = "28065"
+        // YEAR = 2022
+    }
+    options {
+        retry(3)
+    }
+    stages {
+        stage('Remove working dir') {
+            steps {
+                sh "rm -rf ${WORKING_DIR}"
+            }
+        }
+        stage('Extract > Download data sources') {
+            steps {
+                sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/download-s3/run.rb '${FILE_PATH}' ${WORKING_DIR} ${YEAR}_${INE_CODE}.xml"
+            }
+        }
+       stage('Transform > Transform executed budgets files') {
+            steps {
+                sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/gobierto_budgets/official_xml/transform_executed/run.rb ${WORKING_DIR}/${YEAR}_${INE_CODE}.xml ${INE_CODE} ${YEAR} $WORKING_DIR/budgets-executed-${YEAR}.json"
+            }
+        }
+        stage('Load > Import executed budget files') {
+            steps {
+              sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/gobierto_budgets/import-executed-budgets/run.rb ${WORKING_DIR}/budgets-executed-${YEAR}.json ${YEAR}"
+            }
+        }
+        stage('Load > Prepare Organization ids') {
+            steps {
+              sh "echo ${INE_CODE} > ${WORKING_DIR}/organization.id.txt"
+            }
+        }
+        stage('Load > Calculate totals') {
+            steps {
+              sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/gobierto_budgets/update_total_budget/run.rb '${YEAR}' ${WORKING_DIR}/organization.id.txt"
+            }
+        }
+        stage('Load > Calculate bubbles') {
+            steps {
+              sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/gobierto_budgets/bubbles/run.rb ${WORKING_DIR}/organization.id.txt"
+            }
+        }
+        stage('Load > Calculate annual data') {
+            steps {
+              sh "cd ${GOBIERTO}; bin/rails runner ${GOBIERTO_ETL_UTILS}/operations/gobierto_budgets/annual_data/run.rb '${YEAR}' ${WORKING_DIR}/organization.id.txt"
+            }
+        }
+        stage('Load > Publish activity') {
+            steps {
+              sh "cd ${GOBIERTO}; bin/rails runner ${GOBIERTO_ETL_UTILS}/operations/gobierto/publish-activity/run.rb budgets_updated ${WORKING_DIR}/organization.id.txt"
+            }
+        }
+        stage('Load > Reset cache') {
+            steps {
+              sh "cd ${GOBIERTO}; bin/rails runner ${GOBIERTO_ETL_UTILS}/operations/gobierto/clear-cache/run.rb --site-organization-id '${INE_CODE}' --namespace 'GobiertoBudgets'"
+            }
+        }
+    }
+    post {
+        failure {
+            echo 'This will run only if failed'
+            mail body: "Project: ${env.JOB_NAME} - Build Number: ${env.BUILD_NUMBER} - URL de build: ${env.BUILD_URL}",
+                charset: 'UTF-8',
+                subject: "ERROR CI: Project name -> ${env.JOB_NAME}",
+                to: email
+        }
+    }
+}
