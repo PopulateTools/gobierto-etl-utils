@@ -124,7 +124,9 @@ xml_file = open(xml_file_path) { |f| Nokogiri::XML(f) }
   batch[:nodes].select{ |node| node.name.starts_with?("n_") }.each do |node|
     selector = case batch[:type]
                when GobiertoBudgetsData::GobiertoBudgets::ECONOMIC_AREA_NAME
-                 batch[:kind] == GobiertoBudgetsData::GobiertoBudgets::INCOME ? "estimacion_previsiones_definitivas_final_ejercicio_ejercicio_corriente" : "estimacion_creditos_definitivas_final_ejercicio_ejercicio_corriente"
+                 batch[:kind] == GobiertoBudgetsData::GobiertoBudgets::INCOME ?
+                  "derechos_reconocidos_netos_ejercicio_corriente" :
+                  "obligaciones_reconocidas_netas_ejercicio_corriente"
                when GobiertoBudgetsData::GobiertoBudgets::FUNCTIONAL_AREA_NAME
                  "total_programa"
                end
