@@ -27,8 +27,8 @@ class EncodingUtils
 
     charset = result.strip.split("charset=").last
 
-    if unknown_charset?(charset) && fallback_charset.present?
-      fallback_charset
+    if unknown_charset?(charset)
+      fallback_charset || "latin1"
     else
       charset
     end
