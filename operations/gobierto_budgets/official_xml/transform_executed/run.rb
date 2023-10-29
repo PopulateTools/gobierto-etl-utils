@@ -115,7 +115,7 @@ xml_file = open(xml_file_path) { |f| Nokogiri::XML(f) }
   {
     nodes: xml_file.css("desglose_gastos_capital_y_financieros").children +
            xml_file.css("desglose_gastos_corrientes").children +
-           xml_file.css("resumen_clasificacion_economica_gastos").children
+           xml_file.css("resumen_clasificacion_economica_gastos").children,
     kind: GobiertoBudgetsData::GobiertoBudgets::EXPENSE,
     type: GobiertoBudgetsData::GobiertoBudgets::ECONOMIC_AREA_NAME
   },
