@@ -126,16 +126,26 @@ xml_file = open(xml_file_path) { |f| Nokogiri::XML(f) }
   }
 ].each do |batch|
   batch[:nodes].select{ |node| node.name.starts_with?("n_") }.each do |node|
-    selector = case batch[:type]
-               when GobiertoBudgetsData::GobiertoBudgets::ECONOMIC_AREA_NAME
-                 batch[:kind] == GobiertoBudgetsData::GobiertoBudgets::INCOME ?
-                  "derechos_reconocidos_netos_ejercicio_corriente" :
-                  "obligaciones_reconocidas_netas_ejercicio_corriente"
-               when GobiertoBudgetsData::GobiertoBudgets::FUNCTIONAL_AREA_NAME
-                 "total_programa"
-               end
+    selectors = case batch[:type]
+                when GobiertoBudgetsData::GobiertoBudgets::ECONOMIC_AREA_NAME
+                  batch[:kind] == GobiertoBudgetsData::GobiertoBudgets::INCOME ?
+                   [
+                     "derechos_reconocidos_netos_ejercicio_corriente",
+                     "ejercicio_corriente_derechos_reconocidos"
+                   ] :
+                   [
+                     "obligaciones_reconocidas_netas_ejercicio_corriente",
+                     "ejercicio_corriente_obligaciones_reconocidas"
+                   ]
+                when GobiertoBudgetsData::GobiertoBudgets::FUNCTIONAL_AREA_NAME
+                  ["total_programa"]
+                end
 
-    node_amount = node.css(selector).first
+    node_amount = nil
+    selectors.each do |selector|
+      node_amount = node.css(selector).first
+      break if node_amount.present?
+    end
     next if node_amount.nil?
 
     amount = node_amount.text.to_f.round(2)
