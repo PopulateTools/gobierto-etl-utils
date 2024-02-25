@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/gobierto_budgets_data.git
-  revision: 802a1fe28158468eb881e95ccaca799ff96e0603
+  revision: 57b8ed14c6ebd06f720579d21ec4cfc27c2bfb52
   specs:
     gobierto_budgets_data (0.1.0)
       actionpack
@@ -15,9 +15,9 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actionpack (7.1.3)
-      actionview (= 7.1.3)
-      activesupport (= 7.1.3)
+    actionpack (7.1.3.2)
+      actionview (= 7.1.3.2)
+      activesupport (= 7.1.3.2)
       nokogiri (>= 1.8.5)
       racc
       rack (>= 2.2.4)
@@ -25,13 +25,13 @@ GEM
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.2)
       rails-html-sanitizer (~> 1.6)
-    actionview (7.1.3)
-      activesupport (= 7.1.3)
+    actionview (7.1.3.2)
+      activesupport (= 7.1.3.2)
       builder (~> 3.1)
       erubi (~> 1.11)
       rails-dom-testing (~> 2.2)
       rails-html-sanitizer (~> 1.6)
-    activesupport (7.1.3)
+    activesupport (7.1.3.2)
       base64
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
@@ -43,12 +43,11 @@ GEM
       tzinfo (~> 2.0)
     ansi (1.5.0)
     aws-eventstream (1.3.0)
-    aws-partitions (1.892.0)
-    aws-sdk-core (3.191.2)
+    aws-partitions (1.894.0)
+    aws-sdk-core (3.191.3)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.8)
-      base64
       jmespath (~> 1, >= 1.6.1)
     aws-sdk-kms (1.77.0)
       aws-sdk-core (~> 3, >= 3.191.0)
@@ -102,7 +101,7 @@ GEM
     mini_portile2 (2.8.5)
     minitest (5.22.2)
     multi_json (1.15.0)
-    multipart-post (2.3.0)
+    multipart-post (2.4.0)
     mutex_m (0.2.0)
     net-http (0.4.1)
       uri
@@ -119,7 +118,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     racc (1.7.3)
-    rack (3.0.9)
+    rack (3.0.9.1)
     rack-session (2.0.0)
       rack (>= 3.0.0)
     rack-test (2.1.0)
@@ -132,7 +131,7 @@ GEM
       loofah (~> 2.21)
       nokogiri (~> 1.14)
     rake (13.1.0)
-    roo (2.10.0)
+    roo (2.10.1)
       nokogiri (~> 1)
       rubyzip (>= 1.3.0, < 3.0.0)
     ruby2_keywords (0.0.5)
@@ -160,4 +159,4 @@ DEPENDENCIES
   zeitwerk (~> 2.5.4)
 
 BUNDLED WITH
-   2.4.6
+   2.5.6
