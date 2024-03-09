@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/gobierto_budgets_data.git
-  revision: 57b8ed14c6ebd06f720579d21ec4cfc27c2bfb52
+  revision: b107fea6509be911424d5cad6b4ad786f89c3861
   specs:
     gobierto_budgets_data (0.1.0)
       actionpack
@@ -43,7 +43,7 @@ GEM
       tzinfo (~> 2.0)
     ansi (1.5.0)
     aws-eventstream (1.3.0)
-    aws-partitions (1.894.0)
+    aws-partitions (1.896.0)
     aws-sdk-core (3.191.3)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
@@ -66,8 +66,7 @@ GEM
     concurrent-ruby (1.2.3)
     connection_pool (2.4.1)
     crass (1.0.6)
-    drb (2.2.0)
-      ruby2_keywords
+    drb (2.2.1)
     elasticsearch (6.8.0)
       elasticsearch-api (= 6.8.0)
       elasticsearch-transport (= 6.8.0)
@@ -89,7 +88,7 @@ GEM
     faraday-net_http_persistent (2.1.0)
       faraday (~> 2.5)
       net-http-persistent (~> 4.0)
-    i18n (1.14.1)
+    i18n (1.14.4)
       concurrent-ruby (~> 1.0)
     ine-places (0.3.0)
       activesupport (>= 4.2)
@@ -134,7 +133,6 @@ GEM
     roo (2.10.1)
       nokogiri (~> 1)
       rubyzip (>= 1.3.0, < 3.0.0)
-    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
