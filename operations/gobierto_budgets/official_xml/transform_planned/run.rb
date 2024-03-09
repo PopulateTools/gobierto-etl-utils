@@ -58,6 +58,31 @@ def track_amount(amount, code, output_data, base_data, population, kind, type, f
   return output_data
 end
 
+def complete_data(output_data, base_data, population, kind, type)
+  complete_codes_list = []
+  0.upto(9) do |level|
+    complete_codes_list << level.to_s
+    0.upto(9) do |level2|
+      complete_codes_list << "#{level}#{level2}"
+      0.upto(9) do |level3|
+        complete_codes_list << "#{level}#{level2}#{level3}"
+      end
+    end
+  end
+  complete_codes_list = complete_codes_list.sort_by{ |n| n.to_s.length }.reverse
+
+  complete_codes_list.each do |code|
+    codes = output_data.select{ |d| d[:kind] == kind && d[:type] == type && d[:code].to_s == code }
+    if codes.empty?
+      parent_codes = output_data.select{ |d| d[:kind] == kind && d[:type] == type && d[:parent_code].to_s == code }
+      next if parent_codes.empty?
+
+      amount = parent_codes.sum{ |d| d[:amount] }
+      track_amount(amount, code, output_data, base_data, population, kind, type)
+    end
+  end
+end
+
 if ARGV.length != 4
   puts "$DEV_DIR/gobierto-etl-utils/gobierto_budgets/official_xml/transform-planned/run.rb data.xml <organization_id> <year> output.json"
   raise "Missing argumnets"
@@ -128,12 +153,16 @@ xml_file = open(xml_file_path) { |f| Nokogiri::XML(f) }
                when GobiertoBudgetsData::GobiertoBudgets::FUNCTIONAL_AREA_NAME
                  "total_programa"
                end
+    amount = nil
 
     node_amount = node.css(selector).first
-    next if node_amount.nil?
-
-    amount = node_amount.text.to_f.round(2)
-    next if amount.zero?
+    if node_amount.nil?
+      # When total_programa is not present, we sum all the children
+      amount = node.css("*").sum{ |n| n.text.to_f.round(2) }
+    else
+      amount = node_amount.text.to_f.round(2)
+      next if amount.zero?
+    end
 
     code = node.name.gsub("n_", "")
 
@@ -161,6 +190,23 @@ xml_file = open(xml_file_path) { |f| Nokogiri::XML(f) }
       end
     end
   end
+end
+
+[
+  {
+    kind: GobiertoBudgetsData::GobiertoBudgets::INCOME,
+    type: GobiertoBudgetsData::GobiertoBudgets::ECONOMIC_AREA_NAME
+  },
+  {
+    kind: GobiertoBudgetsData::GobiertoBudgets::EXPENSE,
+    type: GobiertoBudgetsData::GobiertoBudgets::ECONOMIC_AREA_NAME
+  },
+  {
+    kind: GobiertoBudgetsData::GobiertoBudgets::EXPENSE,
+    type: GobiertoBudgetsData::GobiertoBudgets::FUNCTIONAL_AREA_NAME
+  }
+].each do |batch|
+  complete_data(output_data, base_data, population, batch[:kind], batch[:type])
 end
 
 File.write(output_file_path, output_data.to_json)

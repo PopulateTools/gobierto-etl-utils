@@ -32,24 +32,25 @@ status = :success
 separator = ","
 
 begin
-  CSV.read(input_file, col_sep: separator, encoding: 'utf-8')
+  CSV.read(input_file, col_sep: separator, encoding: 'utf-8', liberal_parsing: true)
 rescue => e
+  puts "Error using separator #{separator}: #{e.message}"
   status = :error_reading_comma_separated
 end
 
 if status == :error_reading_comma_separated
   separator = ";"
   begin
-    CSV.read(input_file, col_sep: separator, encoding: 'utf-8')
+    CSV.read(input_file, col_sep: separator, encoding: 'utf-8', liberal_parsing: true)
     status = :success
   rescue StandardError => e
-    puts "Error: #{e.message}"
+    puts "Error using separator #{separator}: #{e.message}"
     status = :error_reading_semicolon_separated
   end
 end
 
 if status == :success
-  if CSV.table(input_file, col_sep: separator, encoding: 'utf-8').count < 2
+  if CSV.table(input_file, col_sep: separator, encoding: 'utf-8', liberal_parsing: true).count < 2
     puts "[ERROR] the CSV file has no content"
     exit(-1)
   end
