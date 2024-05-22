@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/gobierto_budgets_data.git
-  revision: e16091dec3dadd25cdc8c685869c48660460d42c
+  revision: b6d6e1f797fb4e4f295ffc342429f3aa20b349e9
   branch: bump-elasticsearch
   specs:
     gobierto_budgets_data (0.1.0)
