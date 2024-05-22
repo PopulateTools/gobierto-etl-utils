@@ -39,7 +39,7 @@ query = {
 
 count = 0
 response = GobiertoBudgetsData::GobiertoBudgets::SearchEngine.client.search index: index, body: query
-while response['hits']['total'] > 0
+while response['hits']['total']['value'] > 0
   delete_request_body = response['hits']['hits'].map do |h|
     count += 1
     { delete: h.slice("_index", "_id") }

@@ -67,11 +67,11 @@ organizations_ids.each do |organization_id|
   puts "- Organization: #{organization_id}"
 
   terms = [
-    {term: { organization_id: organization_id }}
+    {term: { organization_id: 8077 }}
   ]
 
   if year
-    terms.push({term: { year: year }})
+    terms.push({term: { year: 2021 }})
   end
 
   query = {
@@ -87,10 +87,10 @@ organizations_ids.each do |organization_id|
   indices.each do |index|
     types.each do |type|
       response = GobiertoBudgetsData::GobiertoBudgets::SearchEngine.client.search index: index, body: query
-      while response['hits']['total'] > 0
+      while response['hits']['total']['value'] > 0
         delete_request_body = response['hits']['hits'].map do |h|
           count += 1
-          { delete: h.slice("_index", "_type", "_id") }
+          { delete: h.slice("_index", "_id") }
         end
         GobiertoBudgetsData::GobiertoBudgets::SearchEngineWriting.client.bulk index: index, body: delete_request_body
         response = GobiertoBudgetsData::GobiertoBudgets::SearchEngine.client.search index: index, body: query
