@@ -76,12 +76,8 @@ organizations_ids.each do |organization_id|
 
   query = {
     query: {
-      filtered: {
-        filter: {
-          bool: {
-            must: terms
-          }
-        }
+      bool: {
+        must: terms
       }
     },
     size: 10_000
@@ -90,14 +86,14 @@ organizations_ids.each do |organization_id|
   count = 0
   indices.each do |index|
     types.each do |type|
-      response = GobiertoBudgetsData::GobiertoBudgets::SearchEngine.client.search index: index, type: type, body: query
+      response = GobiertoBudgetsData::GobiertoBudgets::SearchEngine.client.search index: index, body: query
       while response['hits']['total'] > 0
         delete_request_body = response['hits']['hits'].map do |h|
           count += 1
           { delete: h.slice("_index", "_type", "_id") }
         end
-        GobiertoBudgetsData::GobiertoBudgets::SearchEngineWriting.client.bulk index: index, type: type, body: delete_request_body
-        response = GobiertoBudgetsData::GobiertoBudgets::SearchEngine.client.search index: index, type: type, body: query
+        GobiertoBudgetsData::GobiertoBudgets::SearchEngineWriting.client.bulk index: index, body: delete_request_body
+        response = GobiertoBudgetsData::GobiertoBudgets::SearchEngine.client.search index: index, body: query
       end
     end
   end
