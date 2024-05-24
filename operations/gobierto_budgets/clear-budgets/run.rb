@@ -67,11 +67,11 @@ organizations_ids.each do |organization_id|
   puts "- Organization: #{organization_id}"
 
   terms = [
-    {term: { organization_id: 8077 }}
+    {term: { organization_id: organiization_id }}
   ]
 
   if year
-    terms.push({term: { year: 2021 }})
+    terms.push({term: { year: year }})
   end
 
   query = {
