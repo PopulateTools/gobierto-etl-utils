@@ -31,12 +31,22 @@ pipeline {
                 sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/gobierto_budgets/xbrl/trimloc/transform-execution/run.rb operations/gobierto_budgets/xbrl/dictionaries/xbrl_trimloc_dictionary.yml ${WORKING_DIR}/${YEAR}_${INE_CODE}.xbrl ${INE_CODE} ${YEAR} ${WORKING_DIR}/budgets-execution-${YEAR}.json"
             }
         }
-       stage('Transform > Transform planned budgets files') {
+       stage('Transform > Transform planned updated budgets files') {
             steps {
                 sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/gobierto_budgets/xbrl/trimloc/transform-planned-updated/run.rb operations/gobierto_budgets/xbrl/dictionaries/xbrl_trimloc_dictionary.yml $WORKING_DIR/${YEAR}_${INE_CODE}.xbrl ${INE_CODE} ${YEAR} $WORKING_DIR/budgets-planned-updated-${YEAR}.json"
             }
         }
+        stage('Transform > Transform planned budgets files') {
+            steps {
+                sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/gobierto_budgets/xbrl/trimloc/transform-planned/run.rb operations/gobierto_budgets/xbrl/dictionaries/xbrl_trimloc_dictionary.yml $WORKING_DIR/${YEAR}_${INE_CODE}.xbrl ${INE_CODE} ${YEAR} $WORKING_DIR/budgets-planned-${YEAR}.json"
+            }
+        }
         stage('Load > Import planned budget files') {
+            steps {
+              sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/gobierto_budgets/import-planned-budgets/run.rb ${WORKING_DIR}/budgets-planned-${YEAR}.json ${YEAR}"
+            }
+        }
+        stage('Load > Import planned updated budget files') {
             steps {
               sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/gobierto_budgets/import-planned-budgets-updated/run.rb ${WORKING_DIR}/budgets-planned-updated-${YEAR}.json ${YEAR}"
             }
