@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'roo'
+require 'roo-xls'
 
 
 # Usage:
@@ -30,8 +31,14 @@ end
 
 puts "[START] excel-to-csv/run.rb #{input_file} to #{output_file}"
 
-xlsx = Roo::Excelx.new(input_file)
-csv = xlsx.to_csv
-File.write(output_file, csv)
+begin
+  xlsx = Roo::Excelx.new(input_file)
+  csv = xlsx.to_csv
+rescue TypeError
+  xls = Roo::Excel.new(input_file)
+  csv = xls.to_csv
+ensure
+  File.write(output_file, csv)
+end
 
 puts "[END] excel-to-csv/run.rb"
