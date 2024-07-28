@@ -19,11 +19,14 @@ require 'roo-xls'
 #   /path/to/project/operations/excel-to-csv/run.rb /tmp/dataset.xlsx /tmp/dataset.csv
 #
 
-if ARGV.length != 2
+if ARGV.length > 2
   raise "Review the arguments. Usage: ruby operations/excel-to-csv/run.rb /tmp/dataset.xlsx /tmp/dataset.csv"
 end
 
 input_file, output_file = ARGV
+if output_file.nil?
+  output_file = input_file.gsub(/\.xlsx?\z/, '.csv')
+end
 
 unless File.file?(input_file)
   raise "[ERROR] File #{input_file} doesn't exist"
