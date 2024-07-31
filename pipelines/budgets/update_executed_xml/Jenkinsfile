@@ -16,9 +16,9 @@ pipeline {
         retry(3)
     }
     stages {
-        stage('Remove working dir') {
+        stage('Prepare working dir') {
             steps {
-                sh "rm -rf ${WORKING_DIR}"
+                sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/prepare-working-dir/run.rb ${WORKING_DIR}"
             }
         }
         stage('Extract > Download data sources') {
