@@ -16,14 +16,14 @@ pipeline {
         retry(3)
     }
     stages {
-        stage('Remove working dir') {
+        stage('Prepare working dir') {
             steps {
-                sh "rm -rf ${WORKING_DIR}"
+                sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/prepare-working-directory/run.rb ${WORKING_DIR}"
             }
         }
         stage('Extract > Download data sources') {
             steps {
-                sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/download-s3/run.rb '${FILE_PATH}' ${WORKING_DIR} ${YEAR}_${INE_CODE}.xml"
+                sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/download/run.rb '${FILE_PATH}' ${WORKING_DIR}/${YEAR}_${INE_CODE}.xml"
             }
         }
        stage('Transform > Transform executed budgets files') {
