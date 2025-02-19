@@ -108,10 +108,10 @@ GEM
       uri
     net-http-persistent (4.0.4)
       connection_pool (~> 2.2)
-    nokogiri (1.17.2)
+    nokogiri (1.18.3)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.17.2-x86_64-linux)
+    nokogiri (1.18.3-x86_64-linux-gnu)
       racc (~> 1.4)
     oj (3.16.8)
       bigdecimal (>= 3.0)
