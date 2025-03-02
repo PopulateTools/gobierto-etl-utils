@@ -68,6 +68,7 @@ GEM
     concurrent-ruby (1.3.5)
     connection_pool (2.5.0)
     crass (1.0.6)
+    csv (3.3.2)
     drb (2.2.1)
     elasticsearch (7.17.11)
       elasticsearch-api (= 7.17.11)
@@ -161,6 +162,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk-s3
+  csv
   faraday
   faraday-multipart
   faraday-net_http_persistent

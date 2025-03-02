@@ -15,3 +15,4 @@ gem "aws-sdk-s3"
 gem 'pry'
 gem "roo"
 gem "roo-xls"
+gem "csv"
