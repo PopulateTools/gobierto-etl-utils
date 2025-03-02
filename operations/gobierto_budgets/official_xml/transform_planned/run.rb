@@ -174,8 +174,12 @@ xml_file = open(xml_file_path) { |f| Nokogiri::XML(f) }
       {
         "gastos_personal" => "1",
         "gastos_corrientes_bienes_y_servicios" => "2",
+        "gastos_financieros" => "3",
         "transferencias_corrientes" => "4",
-        "inversiones_reales" => "6"
+        "inversiones_reales" => "6",
+        "transferencias_capital" => "7",
+        "activos_financieros" => "8",
+        "pasivos_financieros" => "9"
       }.each do |selector, economic_code|
           code = node.name.gsub("n_", "")
 
