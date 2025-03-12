@@ -96,7 +96,7 @@ GEM
     ine-places (0.3.0)
       activesupport (>= 4.2)
     jmespath (1.6.2)
-    json (2.10.1)
+    json (2.10.2)
     logger (1.6.6)
     loofah (2.24.0)
       crass (~> 1.0.2)
