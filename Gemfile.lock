@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/gobierto_budgets_data.git
-  revision: 74faf44fe18bdde9040273ff12e387b19bc0d0a0
+  revision: 3edcd962fa652e48afd1ea27cda14d5b200c1fa7
   specs:
     gobierto_budgets_data (0.1.0)
       actionpack
@@ -14,9 +14,9 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actionpack (8.0.1)
-      actionview (= 8.0.1)
-      activesupport (= 8.0.1)
+    actionpack (8.0.2)
+      actionview (= 8.0.2)
+      activesupport (= 8.0.2)
       nokogiri (>= 1.8.5)
       rack (>= 2.2.4)
       rack-session (>= 1.0.1)
@@ -24,13 +24,13 @@ GEM
       rails-dom-testing (~> 2.2)
       rails-html-sanitizer (~> 1.6)
       useragent (~> 0.16)
-    actionview (8.0.1)
-      activesupport (= 8.0.1)
+    actionview (8.0.2)
+      activesupport (= 8.0.2)
       builder (~> 3.1)
       erubi (~> 1.11)
       rails-dom-testing (~> 2.2)
       rails-html-sanitizer (~> 1.6)
-    activesupport (8.0.1)
+    activesupport (8.0.2)
       base64
       benchmark (>= 0.3)
       bigdecimal
@@ -43,9 +43,9 @@ GEM
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
       uri (>= 0.13.1)
-    aws-eventstream (1.3.1)
-    aws-partitions (1.1058.0)
-    aws-sdk-core (3.219.0)
+    aws-eventstream (1.3.2)
+    aws-partitions (1.1068.0)
+    aws-sdk-core (3.220.1)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)
       aws-sigv4 (~> 1.9)
@@ -96,24 +96,24 @@ GEM
     ine-places (0.3.0)
       activesupport (>= 4.2)
     jmespath (1.6.2)
-    json (2.10.1)
+    json (2.10.2)
     logger (1.6.6)
     loofah (2.24.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     method_source (1.1.0)
     mini_portile2 (2.8.8)
-    minitest (5.25.4)
+    minitest (5.25.5)
     multi_json (1.15.0)
     multipart-post (2.4.1)
     net-http (0.6.0)
       uri
     net-http-persistent (4.0.5)
       connection_pool (~> 2.2)
-    nokogiri (1.18.3)
+    nokogiri (1.18.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.18.3-x86_64-linux-gnu)
+    nokogiri (1.18.4-x86_64-linux-gnu)
       racc (~> 1.4)
     oj (3.16.10)
       bigdecimal (>= 3.0)
@@ -175,4 +175,4 @@ DEPENDENCIES
   zeitwerk (~> 2.5.4)
 
 BUNDLED WITH
-   2.6.5
+   2.6.6
