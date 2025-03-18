@@ -54,7 +54,7 @@ pipeline {
                   --table-name "functional_budgets_odss" \
                   --gobierto-url $GOBIERTO_DATA_DEST_URL \
                   --schema-path ${GOBIERTO_ETL_UTILS}/operations/gobierto_budgets/odss/budgets_odss_schema.json \
-                  --file-url ${WORKING_DIR}/budgets_odss.csv \
+                  --file-path ${WORKING_DIR}/budgets_odss.csv \
                   --no-verify-ssl
               '''
             }
@@ -70,7 +70,7 @@ pipeline {
                   --table-name "odss_budgets" \
                   --gobierto-url $GOBIERTO_DATA_DEST_URL \
                   --schema-path ${GOBIERTO_ETL_UTILS}/operations/gobierto_budgets/odss/odss.json \
-                  --file-url ${WORKING_DIR}/ods_budgets.csv \
+                  --file-path ${WORKING_DIR}/ods_budgets.csv \
                   --no-verify-ssl
               '''
             }
