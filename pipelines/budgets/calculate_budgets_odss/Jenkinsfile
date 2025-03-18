@@ -1,0 +1,88 @@
+
+email = "popu-servers+jenkins@populate.tools "
+pipeline {
+    agent { label 'local' }
+    environment {
+        PATH = "$HOME/.rbenv/shims:$PATH"
+        GOBIERTO_ETL_UTILS = "/var/www/gobierto-etl-utils/current"
+        WORKING_DIR = "/tmp/budgets_odss/"
+        // Variables that must be defined via Jenkins UI:
+        // GOBIERTO = "/var/www/gobierto/current"
+        // INE_CODE = "28065"
+        // YEAR = 2022
+        // WRITE_API_TOKEN = ""
+        // GOBIERTO_DATA_DEST_URL = ""
+    }
+    options {
+        retry(3)
+    }
+    stages {
+        stage('Prepare working dir') {
+            steps {
+                sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/prepare-working-directory/run.rb ${WORKING_DIR}"
+            }
+        }
+        stage('Extract > Download budgets files') {
+            steps {
+              sh "cd ${GOBIERTO_ETL_UTILS}; ruby operations/download/run.rb 'https://gobierto-populate-production.s3.eu-west-1.amazonaws.com/gobierto_budgets/${INE_CODE}/data/annual/${YEAR}.csv' ${WORKING_DIR}/budgets.csv"
+            }
+        }
+        stage('Transform > Export functional budgets ODSs') {
+            steps {
+              sh '''#!/bin/bash
+                cd ${GOBIERTO_ETL_UTILS};
+                ruby operations/gobierto_budgets/odss/export_functional_budgets_odss.rb ${WORKING_DIR}/budgets.csv ${GOBIERTO_ETL_UTILS}/operations/gobierto_budgets/odss/ods_template_functional_codes.csv ${WORKING_DIR}/budgets_odss.csv
+              '''
+            }
+        }
+        stage('Transform > Export ODSs budgets') {
+            steps {
+              sh '''#!/bin/bash
+                cd ${GOBIERTO_ETL_UTILS};
+                ruby operations/gobierto_budgets/odss/export_odss.rb ${WORKING_DIR}/budgets_odss.csv ${WORKING_DIR}/ods_budgets.csv
+              '''
+            }
+        }
+        stage('Load > Import funcitonal budgets ODSs') {
+            steps {
+              sh '''#!/bin/bash
+                cd ${GOBIERTO_ETL_UTILS};
+                ruby operations/gobierto_data/upload-dataset/run.rb \
+                  --api-token $WRITE_API_TOKEN \
+                  --name "Functional budgets ODSs" \
+                  --slug "functional-budgets-odss" \
+                  --table-name "functional_budgets_odss" \
+                  --gobierto-url $GOBIERTO_DATA_DEST_URL \
+                  --schema-path ${GOBIERTO_ETL_UTILS}/operations/gobierto_budgets/odss/budgets_odss_schema.json \
+                  --file-url ${WORKING_DIR}/budgets_odss.csv \
+                  --no-verify-ssl
+              '''
+            }
+        }
+        stage('Load > Import ODSs budgets') {
+            steps {
+              sh '''#!/bin/bash
+                cd ${GOBIERTO_ETL_UTILS};
+                ruby operations/gobierto_data/upload-dataset/run.rb \
+                  --api-token $WRITE_API_TOKEN \
+                  --name "ODSS budgets" \
+                  --slug "odss-budgets" \
+                  --table-name "odss_budgets" \
+                  --gobierto-url $GOBIERTO_DATA_DEST_URL \
+                  --schema-path ${GOBIERTO_ETL_UTILS}/operations/gobierto_budgets/odss/odss.json \
+                  --file-url ${WORKING_DIR}/ods_budgets.csv \
+                  --no-verify-ssl
+              '''
+            }
+        }
+    }
+    post {
+        failure {
+            echo 'This will run only if failed'
+            mail body: "Project: ${env.JOB_NAME} - Build Number: ${env.BUILD_NUMBER} - URL de build: ${env.BUILD_URL}",
+                charset: 'UTF-8',
+                subject: "ERROR CI: Project name -> ${env.JOB_NAME}",
+                to: email
+        }
+    }
+}
