@@ -1,0 +1,9 @@
+{
+  "functional_code":{"type":"text"},
+  "name":{"type":"text"},
+  "primary_ods":{"type":"text"},
+  "secondary_ods_1":{"type":"text"},
+  "secondary_ods_2":{"type":"text"},
+  "secondary_ods_3":{"type":"text"},
+  "secondary_ods_4":{"type":"text"}
+}

@@ -1,0 +1,4 @@
+{
+  "ods_code":{"type":"text"},
+  "amount":{"type":"numeric"}
+}
