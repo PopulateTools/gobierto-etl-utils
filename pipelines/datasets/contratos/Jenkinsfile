@@ -1,6 +1,6 @@
 email = "popu-servers+jenkins@populate.tools "
 pipeline {
-    agent { label 'remote' }
+    agent { label 'gobierto-transparencia' }
     environment {
         FOLDER = "contratos"
         PATH = "$HOME/.rbenv/shims:$PATH"
