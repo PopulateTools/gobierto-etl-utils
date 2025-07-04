@@ -33,9 +33,12 @@ $DEV_DIR/gobierto-etl-utils/gobierto_budgets/official_xml/transform-planned/run.
 def track_amount(amount, code, output_data, base_data, population, kind, type, functional_code = nil)
   amount_per_inhabitant = base_data[:population] ? (amount.to_f / population).round(2) : nil
   level = code.length
-  return if level > 5
+  return if level > 6
 
-  if level == 5
+  if level == 6
+    parent_code = code[0...3]
+    code = "#{parent_code}-#{code[4..5]}"
+  elsif level == 5
     parent_code = code[0...3]
     code = "#{parent_code}-#{code[3..4]}"
   else
