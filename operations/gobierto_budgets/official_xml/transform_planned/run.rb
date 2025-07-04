@@ -38,9 +38,11 @@ def track_amount(amount, code, output_data, base_data, population, kind, type, f
   if level == 6
     parent_code = code[0...3]
     code = "#{parent_code}-#{code[4..5]}"
+    level = 4
   elsif level == 5
     parent_code = code[0...3]
     code = "#{parent_code}-#{code[3..4]}"
+    level = 4
   else
     parent_code = code[0..-2]
   end
@@ -158,9 +160,8 @@ xml_file = open(xml_file_path) { |f| Nokogiri::XML(f) }
                end
     amount = nil
 
-    node_amount = node.css(selector).first
+    node_amount = node.xpath("./*[contains(name(), '#{selector}')]").first
     if node_amount.nil?
-      # When total_programa is not present, we sum all the children
       amount = node.css("*").sum{ |n| n.text.to_f.round(2) }
     else
       amount = node_amount.text.to_f.round(2)
