@@ -29,6 +29,10 @@ unless File.file?(input_file)
   raise "File #{input_file} doesn't exist"
 end
 
+if File.size(input_file) == 0
+  raise "File #{input_file} is empty"
+end
+
 begin
   JSON.parse(File.read(input_file))
 rescue

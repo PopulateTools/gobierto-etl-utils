@@ -154,7 +154,7 @@ xml_file = open(xml_file_path) { |f| Nokogiri::XML(f) }
   batch[:nodes].select{ |node| node.name.starts_with?("n_") }.each do |node|
     selector = case batch[:type]
                when GobiertoBudgetsData::GobiertoBudgets::ECONOMIC_AREA_NAME
-                 batch[:kind] == GobiertoBudgetsData::GobiertoBudgets::INCOME ? "previsiones_iniciales" : "creditos_iniciales"
+                 batch[:kind] == GobiertoBudgetsData::GobiertoBudgets::INCOME ? "estimacion_previsiones" : "estimacion_creditos"
                when GobiertoBudgetsData::GobiertoBudgets::FUNCTIONAL_AREA_NAME
                  "total_programa"
                end
@@ -162,6 +162,7 @@ xml_file = open(xml_file_path) { |f| Nokogiri::XML(f) }
 
     node_amount = node.xpath("./*[contains(name(), '#{selector}')]").first
     if node_amount.nil?
+      # When total_programa is not present, we sum all the children
       amount = node.css("*").sum{ |n| n.text.to_f.round(2) }
     else
       amount = node_amount.text.to_f.round(2)
