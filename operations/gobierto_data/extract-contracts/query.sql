@@ -55,4 +55,4 @@ FROM
   LEFT JOIN process_types ON contracts.process_type = process_types.id
   LEFT JOIN cpv_categorizations ON cpv_categorizations.cpv_division = contracts.cpvs_divisions[1]
   LEFT JOIN categories ON categories.id = cpv_categorizations.category_id
-WHERE contracts.import_pending='false'
+WHERE contracts.import_pending='false' AND (contracts.gobierto_start_date IS NULL OR contracts.gobierto_start_date > '2007-12-31')
