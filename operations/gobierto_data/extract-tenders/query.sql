@@ -2,6 +2,7 @@ SELECT
   tenders.id,
   tenders.title,
   document_number,
+  tenders.contracting_system,
   permalink,
   contract_statuses.text AS status,
   CASE process_types.text
