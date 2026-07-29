@@ -1,9 +1,13 @@
 SELECT
   CASE process_types.text
     WHEN 'minor_contract' THEN contracts.id
-    ELSE tenders.id
-  END as id,
+    ELSE COALESCE(contracts.establishment_tender_id, contracts.tender_id, tenders.id)
+  END AS id,
+  contracts.id AS contract_id,
+  COALESCE(contracts.establishment_tender_id, contracts.tender_id) AS tender_id,
   contracts.title,
+  contracts.document_number,
+  contracts.contracting_system,
   contracts.permalink,
   contracts.batch_number,
   contracts.start_date,

@@ -1,6 +1,10 @@
 {
   "id":{"type":"integer"},
+  "contract_id":{"type":"integer"},
+  "tender_id":{"type":"integer"},
   "title":{"type":"text"},
+  "document_number":{"type":"text"},
+  "contracting_system":{"type":"integer"},
   "permalink":{"type":"text"},
   "batch_number":{"type":"integer"},
   "start_date":{"type":"date"},

@@ -2,6 +2,7 @@
   "id":{"type":"integer"},
   "title":{"type":"text"},
   "document_number":{"type":"text"},
+  "contracting_system":{"type":"integer"},
   "permalink":{"type":"text"},
   "status":{"type":"text"},
   "minor_contract":{"type":"boolean"},
