@@ -2,6 +2,7 @@
 
 require "bundler/setup"
 Bundler.require
+require_relative "../../../../lib/gobierto_etl_utils"
 
 require "yaml"
 require "json"
@@ -31,24 +32,18 @@ $DEV_DIR/gobierto-etl-utils/gobierto_budgets/official_xml/transform-executed/run
 # ------------------------------------------------------------------------------
 
 def track_amount(amount, code, output_data, base_data, population, kind, type, functional_code = nil)
-  amount_per_inhabitant = base_data[:population] ? (amount.to_f / population).round(2) : nil
-  level = code.length
-  return if level > 5
+  budget_line_code = BudgetLineCode.parse(code)
+  return if budget_line_code.nil?
 
-  if level == 5
-    parent_code = code[0...3]
-    code = "#{parent_code}-#{code[3..4]}"
-  else
-    parent_code = code[0..-2]
-  end
+  amount_per_inhabitant = base_data[:population] ? (amount.to_f / population).round(2) : nil
 
   attributes = base_data.merge({
     amount: amount,
-    code: code,
-    level: level,
+    code: budget_line_code.code,
+    level: budget_line_code.level,
     kind: kind,
     amount_per_inhabitant: amount_per_inhabitant,
-    parent_code: parent_code,
+    parent_code: budget_line_code.parent_code,
     type: type
   })
   attributes.merge!({ functional_code: functional_code }) if functional_code

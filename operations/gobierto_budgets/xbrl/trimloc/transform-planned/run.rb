@@ -2,6 +2,7 @@
 
 require "bundler/setup"
 Bundler.require
+require_relative "../../../../../lib/gobierto_etl_utils"
 
 require "yaml"
 require "json"
@@ -87,26 +88,19 @@ xbrl_budget_line_ids.each do |budget_line_id|
   next if budget_line_info['code'].nil?
 
   kind = (budget_line_info['kind'] == 'I' ? GobiertoBudgetsData::GobiertoBudgets::INCOME : GobiertoBudgetsData::GobiertoBudgets::EXPENSE)
-  code = budget_line_info['code']
-  level = code.length
-  next if level > 5
-  if level == 5
-    parent_code = code[0...3]
-    code = "#{parent_code}-#{code[3..4]}"
-  else
-    parent_code = code[0..-2]
-  end
+  budget_line_code = BudgetLineCode.parse(budget_line_info['code'])
+  next if budget_line_code.nil?
   type = budget_line_info['area']
 
   amount_per_inhabitant = base_data[:population] ? (amount.to_f / population.to_f).round(2) : nil
 
   output_data.push base_data.merge({
     amount: amount,
-    code: code,
-    level: level,
+    code: budget_line_code.code,
+    level: budget_line_code.level,
     kind: kind,
     amount_per_inhabitant: amount_per_inhabitant,
-    parent_code: parent_code,
+    parent_code: budget_line_code.parent_code,
     type: type
   })
 end
