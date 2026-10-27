@@ -35,7 +35,7 @@ Zip::File.open(zipfile_name) do |zip_file|
     FileUtils.mkdir_p(File.dirname(fpath))
     puts "Extracting #{entry.name}"
     # Extract to file or directory based on name in the archive
-    entry.extract(destination_path + "/#{entry.name}") unless File.exist?(fpath)
+    entry.extract(entry.name, destination_directory: destination_path) unless File.exist?(fpath)
   end
 end
 
