@@ -95,9 +95,10 @@ GEM
       net-http-persistent (>= 4.0.4, < 5)
     i18n (1.15.2)
       concurrent-ruby (~> 1.0)
-    ine-places (0.7.0)
+    ine-places (0.7.1)
       activesupport (>= 4.2)
       csv (>= 3.3)
+      ostruct
       zeitwerk (>= 2.1.2)
     io-console (0.9.5)
     jmespath (1.6.2)
@@ -204,7 +205,6 @@ DEPENDENCIES
   faraday-net_http_persistent
   gobierto_budgets_data!
   nokogiri
-  ostruct
   pry
   roo
   roo-xls
@@ -240,7 +240,7 @@ CHECKSUMS
   faraday-net_http_persistent (2.3.1) sha256=23ffba37d6a27807a10f033d01918ec958aa73fa6ff0fccfbcd5ce2d2e68fca3
   gobierto_budgets_data (0.1.0)
   i18n (1.15.2) sha256=00f9eb62412fe593b2a65a97daa75300d37abb8f7202ec748e94b6d46a9dd1b5
-  ine-places (0.7.0) sha256=7178edfd16bfbbdcdb2c01416e975c139021f89e23830ebd963296147713d318
+  ine-places (0.7.1) sha256=70498114302ca5ee092ef131ba9bedc22f48497495e0d51dc72c4b6b5b61fd70
   io-console (0.9.5) sha256=83dd9bbf4c4680416629245b39cd4212eb5f4d9a4ea91804870c1f6b846414d5
   jmespath (1.6.2) sha256=238d774a58723d6c090494c8879b5e9918c19485f7e840f2c1c7532cf84ebcb1
   json (3.1.0) sha256=3ce7ccf8fde58960177a3a756c31f292a4c1e1dedee884547096a5b0604e3bd8
