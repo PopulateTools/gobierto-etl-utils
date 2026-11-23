@@ -92,6 +92,18 @@ Output:
 - Returns exit code 0 if valid file
 - Returns exit -1 if invalid file
 
+### common/concat CSV
+
+Concatenates two or more CSV files that share the same header into one CSV file, writing the header once. It fails if an input file doesn't exist, is empty, has no data rows or has a different header.
+
+Usage:
+
+`ruby gobierto-etl-utils/operations/concat-csv/run.rb /tmp/output.csv /tmp/input_1.csv /tmp/input_2.csv`
+
+Output:
+
+- The output file with the header and the rows of every input file, in the given order
+
 ### common/convert to UTF-8
 
 Converts a file into UTF-8. By default it expects the encoding to be ISO-8859-1
