@@ -22,6 +22,8 @@ Output:
 
 - File with the content of input URL
 
+To download through a proxy, set `DOWNLOAD_PROXY_LIST_URL` (URL of a list of proxy IPs, one per line) and `DOWNLOAD_PROXY_PORT`. Each run picks a random IP from the list.
+
 ### common/api-download
 
 Downloads content of an endpoint and saves it into a local file
